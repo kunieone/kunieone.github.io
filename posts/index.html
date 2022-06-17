@@ -87,9 +87,9 @@
     "itemListElement":[{
             "@type":"ListItem",
             "position":  1 ,
-            "name": "MARKDOWN写作指南",
-            "description": "Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text\nMarkup : Common text Emphasized text\nMarkup : _Emphasized text_ or *Emphasized text* Strikethrough text\nMarkup : ~~Strikethrough text~~ Strong text\nMarkup : __Strong text__ or **Strong text** Strong emphasized text",
-            "url": "https://kunieone.github.io/posts/markdown/"
+            "name": "Linux 下文件的三个时间：ctime、mtime、atime 的区别",
+            "description": "Linux 下文件的三个时间：ctime、mtime、atime 的区别\nmodification time(mtime):内容修改时间\n这里的修改时间指的是文件的内容发生变化，而更新的时间。\nEg:vi 后保存文件。\nstatus time(ctime):状态修改时间\n这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。\nEg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。\naccess time(atime):最后访问时间\n这里的访问时间是指文件被读取，而更新的时间。",
+            "url": "https://kunieone.github.io/posts/linux_time/"
         },{
             "@type":"ListItem",
             "position":  2 ,
@@ -99,21 +99,27 @@
         },{
             "@type":"ListItem",
             "position":  3 ,
-            "name": "想法:脚本自动给文章添加时间",
-            "description": "每次写文档的时间都要自动更新，十分烦人。",
-            "url": "https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/"
-        },{
-            "@type":"ListItem",
-            "position":  4 ,
             "name": "经典句型",
             "description": "可想而知\u0026hellip;\nIt\u0026rsquo;s conceivable/obvious/apparent that\u0026hellip;\n我们绝对不能\u0026hellip;\nOn no account can we \u0026hellip;\n那些什么的人\u0026hellip;\nThose who\u0026hellip;\n\u0026hellip;值得我们关注\n\u0026hellip;.., which is worthy of our attention\n该是\u0026hellip;的时候了\nIt is time + 主语+ 过去式\n正如\u0026hellip;生动的描述了\u0026hellip;\nAs is vividly depicted in the \u0026hellip;, \u0026hellip;\n充分理解寓意..\nTo grasp the full implication\n毋庸置疑\u0026hellip;\nThere is no denying that \u0026hellip;\n一个可笑的场景..\nA ridiculous situation\u0026hellip;\n认真做决定..\nTo make careful decision\n无法理解\u0026hellip;\nBeyond one\u0026rsquo;s comprehension\n关注..的人寥寥无几\nFew people could pay attention to \u0026hellip;\n犯下严重的错误..\nCommit a terrible blunder\u0026hellip;",
             "url": "https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/"
+        },{
+            "@type":"ListItem",
+            "position":  4 ,
+            "name": "想法:脚本自动给文章添加时间",
+            "description": "每次写文档的时间都要自动更新，十分烦人。",
+            "url": "https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/"
         },{
             "@type":"ListItem",
             "position":  5 ,
             "name": "一些单词的高级表达",
             "description": " 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous ",
             "url": "https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/"
+        },{
+            "@type":"ListItem",
+            "position":  6 ,
+            "name": "MARKDOWN写作指南",
+            "description": "Markup : - - - - Image with alt :\nMarkup : ![picture alt](http://via.placeholder.com/200x150 \u0026quot;Title is optional\u0026quot;) Foldable text:\nTitle 1 Content 1 Content 1 Content 1 Content 1 Content 1\nTitle 2 Content 2 Content 2 Content 2 Content 2 Content 2\nMarkup : \u0026lt;details\u0026gt; \u0026lt;summary\u0026gt;Title 1\u0026lt;/summary\u0026gt; \u0026lt;p\u0026gt;Content 1 Content 1 Content 1 Content 1 Content 1\u0026lt;/p\u0026gt; \u0026lt;/details\u0026gt; \u0026lt;h3\u0026gt;HTML\u0026lt;/h3\u0026gt; \u0026lt;p\u0026gt;Some HTML code here\u0026lt;/p\u0026gt; Link to a specific part of the page:\nGo To TOP",
+            "url": "https://kunieone.github.io/posts/markdown/"
         }
     ]
 }
@@ -148,7 +154,7 @@
 
 
 
-<meta property="og:updated_time" content="2022-06-17T13:11:22&#43;08:00" />
+<meta property="og:updated_time" content="2022-06-18T06:23:08&#43;08:00" />
 
 
 
@@ -245,15 +251,19 @@
   
   <div class="w-full ">
     <div class="prose">
-  <a href="https://kunieone.github.io/posts/markdown/" class="no-underline">
-    <h3 class="mt-0">MARKDOWN写作指南</h3>
+  <a href="https://kunieone.github.io/posts/linux_time/" class="no-underline">
+    <h3 class="mt-0">Linux 下文件的三个时间：ctime、mtime、atime 的区别</h3>
   </a>
   
-    Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text
-Markup : Common text Emphasized text
-Markup : _Emphasized text_ or *Emphasized text* Strikethrough text
-Markup : ~~Strikethrough text~~ Strong text
-Markup : __Strong text__ or **Strong text** Strong emphasized text
+    Linux 下文件的三个时间：ctime、mtime、atime 的区别
+modification time(mtime):内容修改时间
+这里的修改时间指的是文件的内容发生变化，而更新的时间。
+Eg:vi 后保存文件。
+status time(ctime):状态修改时间
+这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
+Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
+access time(atime):最后访问时间
+这里的访问时间是指文件被读取，而更新的时间。
   
 
   
@@ -263,12 +273,12 @@ Markup : __Strong text__ or **Strong text** Strong emphasized text
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
+    <span>1分钟阅读时长</span>
   </div>
 
   
@@ -305,48 +315,7 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
-  <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="no-underline">
-    <h3 class="mt-0">想法:脚本自动给文章添加时间</h3>
-  </a>
-  
-    每次写文档的时间都要自动更新，十分烦人。
-  
-
-  
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-17</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
@@ -412,7 +381,7 @@ Commit a terrible blunder…
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-05-31</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
@@ -463,6 +432,47 @@ Commit a terrible blunder…
   
   <div class="w-full ">
     <div class="prose">
+  <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="no-underline">
+    <h3 class="mt-0">想法:脚本自动给文章添加时间</h3>
+  </a>
+  
+    每次写文档的时间都要自动更新，十分烦人。
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-06-18</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>1分钟阅读时长</span>
+  </div>
+
+  
+
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
   <a href="https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/" class="no-underline">
     <h3 class="mt-0">一些单词的高级表达</h3>
   </a>
@@ -477,7 +487,7 @@ Commit a terrible blunder…
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-05-31</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
@@ -511,6 +521,52 @@ Commit a terrible blunder…
         >
       
     </div>
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://kunieone.github.io/posts/markdown/" class="no-underline">
+    <h3 class="mt-0">MARKDOWN写作指南</h3>
+  </a>
+  
+    Markup : - - - - Image with alt :
+Markup : ![picture alt](http://via.placeholder.com/200x150 &#34;Title is optional&#34;) Foldable text:
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
+Markup : &lt;details&gt; &lt;summary&gt;Title 1&lt;/summary&gt; &lt;p&gt;Content 1 Content 1 Content 1 Content 1 Content 1&lt;/p&gt; &lt;/details&gt; &lt;h3&gt;HTML&lt;/h3&gt; &lt;p&gt;Some HTML code here&lt;/p&gt; Link to a specific part of the page:
+Go To TOP
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022-06-17</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>1分钟阅读时长</span>
+  </div>
+
+  
+
   
 </div>
 

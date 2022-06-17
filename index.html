@@ -110,7 +110,7 @@
 
 
 
-<meta property="og:updated_time" content="2022-06-17T13:11:22&#43;08:00" />
+<meta property="og:updated_time" content="2022-06-18T06:23:08&#43;08:00" />
 
 
 
@@ -411,15 +411,19 @@
   
   
   <div class="prose px-6 pt-6 pb-4">
-    <a href="https://kunieone.github.io/posts/markdown/" class="no-underline">
-      <h3 class="mt-0">MARKDOWN写作指南</h3>
+    <a href="https://kunieone.github.io/posts/linux_time/" class="no-underline">
+      <h3 class="mt-0">Linux 下文件的三个时间：ctime、mtime、atime 的区别</h3>
     </a>
     
-      Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text
-Markup : Common text Emphasized text
-Markup : _Emphasized text_ or *Emphasized text* Strikethrough text
-Markup : ~~Strikethrough text~~ Strong text
-Markup : __Strong text__ or **Strong text** Strong emphasized text
+      Linux 下文件的三个时间：ctime、mtime、atime 的区别
+modification time(mtime):内容修改时间
+这里的修改时间指的是文件的内容发生变化，而更新的时间。
+Eg:vi 后保存文件。
+status time(ctime):状态修改时间
+这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
+Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
+access time(atime):最后访问时间
+这里的访问时间是指文件被读取，而更新的时间。
     
     <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -427,12 +431,12 @@ Markup : __Strong text__ or **Strong text** Strong emphasized text
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
+    <span>1分钟阅读时长</span>
   </div>
 
   
@@ -467,7 +471,7 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
@@ -494,11 +498,36 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
   
   
   <div class="prose px-6 pt-6 pb-4">
-    <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="no-underline">
-      <h3 class="mt-0">想法:脚本自动给文章添加时间</h3>
+    <a href="https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/" class="no-underline">
+      <h3 class="mt-0">经典句型</h3>
     </a>
     
-      每次写文档的时间都要自动更新，十分烦人。
+      可想而知…
+It’s conceivable/obvious/apparent that…
+我们绝对不能…
+On no account can we …
+那些什么的人…
+Those who…
+…值得我们关注
+….., which is worthy of our attention
+该是…的时候了
+It is time &#43; 主语&#43; 过去式
+正如…生动的描述了…
+As is vividly depicted in the …, …
+充分理解寓意..
+To grasp the full implication
+毋庸置疑…
+There is no denying that …
+一个可笑的场景..
+A ridiculous situation…
+认真做决定..
+To make careful decision
+无法理解…
+Beyond one’s comprehension
+关注..的人寥寥无几
+Few people could pay attention to …
+犯下严重的错误..
+Commit a terrible blunder…
     
     <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -506,16 +535,40 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
+      >2022-06-18</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
+    <span>2分钟阅读时长</span>
   </div>
 
   
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://kunieone.github.io/categories/%E8%8B%B1%E8%AF%AD/" class="hover:text-eureka"
+          >英语</a
+        >
+      
+        
+          <span>, </span>
+        <a href="https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/" class="hover:text-eureka"
+          >学习</a
+        >
+      
+    </div>
+  
 
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-th-list me-1"></i>
+      
+        <a href="https://kunieone.github.io/series/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/" class="hover:text-eureka"
+          >英语单词</a
+        >
+      
+    </div>
   
 </div>
 

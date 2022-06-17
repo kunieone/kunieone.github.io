@@ -8,18 +8,19 @@
     <language>zh</language>
     <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 13:11:22 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jun 2022 22:13:39 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MARKDOWN写作指南</title>
       <link>https://kunieone.github.io/posts/markdown/</link>
-      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/markdown/</guid>
-      <description>Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text
-Markup : Common text Emphasized text
-Markup : _Emphasized text_ or *Emphasized text* Strikethrough text
-Markup : ~~Strikethrough text~~ Strong text
-Markup : __Strong text__ or **Strong text** Strong emphasized text</description>
+      <description>Markup : - - - - Image with alt :
+Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
+Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
+Go To TOP</description>
     </item>
     
   </channel>

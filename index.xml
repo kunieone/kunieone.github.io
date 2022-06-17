@@ -8,24 +8,28 @@
     <language>zh</language>
     <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 13:11:22 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 06:23:08 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MARKDOWN写作指南</title>
-      <link>https://kunieone.github.io/posts/markdown/</link>
-      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
+      <link>https://kunieone.github.io/posts/linux_time/</link>
+      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
       
-      <guid>https://kunieone.github.io/posts/markdown/</guid>
-      <description>Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text
-Markup : Common text Emphasized text
-Markup : _Emphasized text_ or *Emphasized text* Strikethrough text
-Markup : ~~Strikethrough text~~ Strong text
-Markup : __Strong text__ or **Strong text** Strong emphasized text</description>
+      <guid>https://kunieone.github.io/posts/linux_time/</guid>
+      <description>Linux 下文件的三个时间：ctime、mtime、atime 的区别
+modification time(mtime):内容修改时间
+这里的修改时间指的是文件的内容发生变化，而更新的时间。
+Eg:vi 后保存文件。
+status time(ctime):状态修改时间
+这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
+Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
+access time(atime):最后访问时间
+这里的访问时间是指文件被读取，而更新的时间。</description>
     </item>
     
     <item>
       <title>NodeList和HTMLCollection有什么区别</title>
       <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
       <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
@@ -33,18 +37,9 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
     </item>
     
     <item>
-      <title>想法:脚本自动给文章添加时间</title>
-      <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
-      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
-    </item>
-    
-    <item>
       <title>经典句型</title>
       <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
-      <pubDate>Tue, 31 May 2022 13:11:22 +0800</pubDate>
+      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
       <description>可想而知&amp;hellip;
@@ -76,12 +71,53 @@ Commit a terrible blunder&amp;hellip;</description>
     </item>
     
     <item>
+      <title>想法:脚本自动给文章添加时间</title>
+      <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
+      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
+    </item>
+    
+    <item>
       <title>一些单词的高级表达</title>
       <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
-      <pubDate>Tue, 31 May 2022 13:11:22 +0800</pubDate>
+      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
       <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
+    </item>
+    
+    <item>
+      <title>MARKDOWN写作指南</title>
+      <link>https://kunieone.github.io/posts/markdown/</link>
+      <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/markdown/</guid>
+      <description>Markup : - - - - Image with alt :
+Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
+Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
+Go To TOP</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/secret/svelte/chapter-3/</link>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/chapter-3/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
+      <pubDate>Fri, 17 Jun 2022 10:23:35 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,15 +167,6 @@ Commit a terrible blunder&amp;hellip;</description>
     
     <item>
       <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
       <link>https://kunieone.github.io/docs/svelte/chapter-4/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
@@ -162,15 +189,6 @@ Commit a terrible blunder&amp;hellip;</description>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kunieone.github.io/secret/svelte/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-3/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-3/</guid>
       <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
     </item>
     
