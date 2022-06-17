@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>高级表达？这不就是？ | ∆STAREVAN</title>
+<title>NodeList和HTMLCollection有什么区别 | ∆STAREVAN</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -75,7 +75,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content=" 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous ">
+  content="首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,8 +88,8 @@
       "item":"https://kunieone.github.io/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"高级表达？这不就是？",
-      "item":"https://kunieone.github.io/posts/better-words/"}]
+      "name":"NodeList和HTMLCollection有什么区别",
+      "item":"https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/"}]
 }
 </script>
 
@@ -100,11 +101,11 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/posts/better-words/"
+        "@id": "https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/"
     },
-    "headline": "高级表达？这不就是？ | ∆STAREVAN","datePublished": "2022-05-31T13:11:22+08:00",
-    "dateModified": "2022-05-31T13:11:22+08:00",
-    "wordCount":  40 ,
+    "headline": "NodeList和HTMLCollection有什么区别 | ∆STAREVAN","datePublished": "2022-06-17T13:11:22+08:00",
+    "dateModified": "2022-06-17T13:11:22+08:00",
+    "wordCount":  39 ,
     "author": {
         "@type": "Person",
         "name": ["starevan"]
@@ -117,21 +118,22 @@
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": " 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous "
+    "description": "首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。\nNodeList 中包含的节点类型可能是 Element\/Text\/Comment\/Document\/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https:\/\/blog.csdn.net\/m0_38102188\/article\/details\/86299212"
 }
-</script><meta property="og:title" content="高级表达？这不就是？ | ∆STAREVAN" />
+</script><meta property="og:title" content="NodeList和HTMLCollection有什么区别 | ∆STAREVAN" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/posts/better-words/" />
+<meta property="og:url" content="https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/" />
 
 
 
 
-<meta property="og:description" content=" 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous " />
+<meta property="og:description" content="首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212" />
 
 
 
@@ -148,33 +150,25 @@
 
 
 
-<meta property="article:published_time" content="2022-05-31T13:11:22&#43;08:00" />
+<meta property="article:published_time" content="2022-06-17T13:11:22&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-05-31T13:11:22&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-17T13:11:22&#43;08:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="表达" />
+<meta property="article:tag" content="前端" />
 
-<meta property="article:tag" content="英语" />
-
-
+<meta property="article:tag" content="html" />
 
 
 
 
 
-
-
-
-
-<meta property="og:see_also" content="https://kunieone.github.io/posts/better-sentences/" />
-
-
+<meta property="og:see_also" content="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" />
 
 
 
@@ -257,10 +251,10 @@
   
   <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
     <div
-      class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
     >
       <article class="prose">
-  <h1 class="mb-4">高级表达？这不就是？</h1>
+  <h1 class="mb-4">NodeList和HTMLCollection有什么区别</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -268,7 +262,7 @@
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-05-31</span
+      >2022-06-17</span
     >
   </div>
   <div class="me-6 my-2">
@@ -277,31 +271,7 @@
   </div>
 
   
-    <div class="me-6 my-2">
-      <i class="fas fa-folder me-1"></i>
-      
-        <a href="https://kunieone.github.io/categories/%E8%8B%B1%E8%AF%AD/" class="hover:text-eureka"
-          >英语</a
-        >
-      
-        
-          <span>, </span>
-        <a href="https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/" class="hover:text-eureka"
-          >学习</a
-        >
-      
-    </div>
-  
 
-  
-    <div class="me-6 my-2">
-      <i class="fas fa-th-list me-1"></i>
-      
-        <a href="https://kunieone.github.io/series/%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D/" class="hover:text-eureka"
-          >英语单词</a
-        >
-      
-    </div>
   
 </div>
 
@@ -309,67 +279,12 @@
   
   
 
-  <table>
-<thead>
-<tr>
-<th>词义</th>
-<th>基础</th>
-<th>升级</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>繁荣兴旺</td>
-<td>boom</td>
-<td>flourish;thrive;prosper</td>
-</tr>
-<tr>
-<td>导致</td>
-<td>cause</td>
-<td>lead to; bring about;result in;spark off;conduce to;generate</td>
-</tr>
-<tr>
-<td>艰巨的</td>
-<td>difficult</td>
-<td>arduous;heavy</td>
-</tr>
-<tr>
-<td>掩盖</td>
-<td>cover</td>
-<td>mask;veil;conceal</td>
-</tr>
-<tr>
-<td>消除</td>
-<td>clear</td>
-<td>eliminate;remove;take away</td>
-</tr>
-<tr>
-<td>重要的</td>
-<td>important</td>
-<td>crucial;significant;vital</td>
-</tr>
-<tr>
-<td>加强</td>
-<td>heighten</td>
-<td>enhance;reinforce;enforce;strengthen</td>
-</tr>
-<tr>
-<td>满足</td>
-<td>meet</td>
-<td>satisfy;suit;fill;fulfill;accommodate</td>
-</tr>
-<tr>
-<td>流行的</td>
-<td>popular</td>
-<td>prevailing;prevalent;widespread</td>
-</tr>
-<tr>
-<td>有益的</td>
-<td>useful</td>
-<td>helpful;beneficial;advantageous</td>
-</tr>
-</tbody>
-</table>
+  <p>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。</p>
+<p>NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。
+HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。
+————————————————
+版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</p>
 
 </article>
 
@@ -377,9 +292,9 @@
       
         <div class="my-4">
     
-    <a href="https://kunieone.github.io/tags/%E8%A1%A8%E8%BE%BE/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#表达</a>
+    <a href="https://kunieone.github.io/tags/%E5%89%8D%E7%AB%AF/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#前端</a>
     
-    <a href="https://kunieone.github.io/tags/%E8%8B%B1%E8%AF%AD/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#英语</a>
+    <a href="https://kunieone.github.io/tags/html/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#html</a>
     
 </div>
       
@@ -451,13 +366,13 @@
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="block">想法:脚本自动给文章添加时间</a>
+        <a href="https://kunieone.github.io/posts/markdown/" class="block">MARKDOWN写作指南</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/posts/better-sentences/" class="block">经典句型</a>
+        <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="block">想法:脚本自动给文章添加时间</a>
       
     </div>
   </div>
@@ -469,35 +384,15 @@
 
     </div>
     
-      <div class="col-span-2">
-        
-          
-<div class="bg-secondary-bg prose max-w-none rounded p-6">
-  <h3>系列文章</h3>
-  
-    
-      <a href="https://kunieone.github.io/posts/better-words/" class="no-underline">高级表达？这不就是？</a>
-      <br />
-    
-      <a href="https://kunieone.github.io/posts/better-sentences/" class="no-underline">经典句型</a>
-      <br />
-    
-  
-</div>
-
-        
-        
-      </div>
-    
 
     
     
       <div
-        class=" bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
+        class="lg:col-start-2 bg-secondary-bg prose col-span-2 rounded p-6 lg:col-span-6"
       >
         <h3>相关</h3>
         
-          <a href="https://kunieone.github.io/posts/better-sentences/" class="no-underline">经典句型</a>
+          <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="no-underline">想法:脚本自动给文章添加时间</a>
           <br />
         
       </div>

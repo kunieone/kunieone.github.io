@@ -23,6 +23,25 @@ Markup : __Strong text__ or **Strong text** Strong emphasized text</description>
     </item>
     
     <item>
+      <title>NodeList和HTMLCollection有什么区别</title>
+      <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
+      <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
+    </item>
+    
+    <item>
+      <title>想法:脚本自动给文章添加时间</title>
+      <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
+      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
+    </item>
+    
+    <item>
       <title>高级表达？这不就是？</title>
       <link>https://kunieone.github.io/posts/better-words/</link>
       <pubDate>Tue, 31 May 2022 13:11:22 +0800</pubDate>
