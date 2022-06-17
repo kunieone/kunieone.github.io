@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>star_evan on ∆STAREVAN</title>
+    <link>https://kunieone.github.io/authors/starevan/</link>
+    <description>Recent content in star_evan on ∆STAREVAN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>@Starevan
+</copyright>
+    <lastBuildDate>Fri, 17 Jun 2022 13:11:22 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/authors/starevan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MARKDOWN写作指南</title>
+      <link>https://kunieone.github.io/posts/markdown/</link>
+      <pubDate>Fri, 17 Jun 2022 13:11:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/markdown/</guid>
+      <description>Heading 1 Markup : # Heading 1 # -OR- Markup : ============= (below H1 text) Heading 2 Markup : ## Heading 2 ## -OR- Markup: --------------- (below H2 text) Heading 3 Markup : ### Heading 3 ### Heading 4 Markup : #### Heading 4 #### Common text
+Markup : Common text Emphasized text
+Markup : _Emphasized text_ or *Emphasized text* Strikethrough text
+Markup : ~~Strikethrough text~~ Strong text
+Markup : __Strong text__ or **Strong text** Strong emphasized text</description>
+    </item>
+    
+    <item>
+      <title>高级表达？这不就是？</title>
+      <link>https://kunieone.github.io/posts/better-words/</link>
+      <pubDate>Tue, 31 May 2022 13:11:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/better-words/</guid>
+      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
+    </item>
+    
+    <item>
+      <title>经典句型</title>
+      <link>https://kunieone.github.io/posts/better-sentences/</link>
+      <pubDate>Tue, 31 May 2022 13:11:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/better-sentences/</guid>
+      <description>consg 1D= 1000 * 60 * 60 * 24 class Knowledge { #exprience = 100; study() { this.#exprience++; } } const knowledge = new Knowledge(); setTimeout(() =&amp;gt; { knowledge.study(); }, 1D); 可想而知&amp;hellip;
+It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
+我们绝对不能&amp;hellip;
+On no account can we &amp;hellip;
+那些什么的人&amp;hellip;
+Those who&amp;hellip;
+&amp;hellip;值得我们关注
+&amp;hellip;.., which is worthy of our attention
+该是&amp;hellip;的时候了
+It is time + 主语+ 过去式
+正如&amp;hellip;生动的描述了&amp;hellip;
+As is vividly depicted in the &amp;hellip;, &amp;hellip;
+充分理解寓意..
+To grasp the full implication</description>
+    </item>
+    
+    <item>
+      <title>svelte开发记录</title>
+      <link>https://kunieone.github.io/docs/svelte/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/</guid>
+      <description>This is the root of example doc.
+Duis vel leo nec mi convallis sodales Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh.</description>
+    </item>
+    
+    <item>
+      <title>svelte开发记录</title>
+      <link>https://kunieone.github.io/secret/svelte/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/</guid>
+      <description>This is the root of example doc.
+Duis vel leo nec mi convallis sodales Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh.</description>
+    </item>
+    
+  </channel>
+</rss>
