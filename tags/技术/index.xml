@@ -10,12 +10,16 @@
 </copyright>
     <lastBuildDate>Sat, 18 Jun 2022 03:05:22 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>想法:脚本自动给文章添加时间</title>
+      <title>脚本自动给markdown添加front_matter</title>
       <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
       <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
-      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
+      <description>目前的想法: 使用 ruby 给文档添加时间 子模块 遍历目录
+查找 front_matter，分几种情况：
+有合格的 date 和 lastmod 字段 没有这两个时间字段 有但是不完整 针对一个 md 文件，获得该文件的创建时间和最后修改时间，，合理插入到 front_matter。
+首先我们明确目标，提取文件的修改和创建时间，作为 YAML-Front-Matter 放到 md 文件的开头，并且需要格式正确。
+由于开发设备是 mac，mac 和 linux 一样不能从 ctime 等时间找到创建时间，但是 mac 有一个比较罕见的指令</description>
     </item>
     
   </channel>

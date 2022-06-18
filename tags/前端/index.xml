@@ -8,7 +8,19 @@
     <language>zh</language>
     <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Sat, 18 Jun 2022 03:01:49 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 20:41:20 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>css 的隐藏和不显示</title>
+      <link>https://kunieone.github.io/posts/%E9%9A%90%E8%97%8F%E5%92%8C%E4%B8%8D%E6%98%BE%E7%A4%BA/</link>
+      <pubDate>Sat, 18 Jun 2022 20:41:20 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E9%9A%90%E8%97%8F%E5%92%8C%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
+      <description>其实 transform:scale(0,0);也可以
+display:none; display 翻译成中文是显示、展览的意思；将 display 的属性改为 none 可以实现元素的隐藏，元素和盒子模型也不生成，被隐藏的元素不占位置，看不见摸不着，它会导致浏览器的重排和重绘。
+visibility:hidden; visibility 翻译成中文是能见、可见性的意思；hidden 翻译成中文的是隐藏、不易察觉的意思。将 visibility 的属性改成 hidden 可以实现元素的隐藏，和 display:none 的区别是它占位置，看不见但是摸得着，所以它只会导致浏览器重绘而不会重排。
+opacity:0; opacity 翻译成中文是透明度、不透明的意思；将 opacity 的属性改成 0 那就是透明度等于 0 看不见元素，但是这种方法也是只能隐藏看不见元素，和 visibility:hidden 一样，元素依然存在页面中。</description>
+    </item>
+    
     <item>
       <title>NodeList和HTMLCollection有什么区别</title>
       <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>

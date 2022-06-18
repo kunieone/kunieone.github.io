@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>想法:脚本自动给文章添加时间 | ∆STAREVAN</title>
+<title>脚本自动给markdown添加front_matter | ∆STAREVAN</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -95,7 +95,7 @@
       "item":"https://kunieone.github.io/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"想法:脚本自动给文章添加时间",
+      "name":"脚本自动给markdown添加front_matter",
       "item":"https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/"}]
 }
 </script>
@@ -110,9 +110,11 @@
         "@type": "WebPage",
         "@id": "https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/"
     },
-    "headline": "想法:脚本自动给文章添加时间 | ∆STAREVAN","datePublished": "2022-06-18T03:05:22+08:00",
-    "dateModified": "2022-06-18T16:34:51+08:00",
-    "wordCount":  9 ,
+    "headline": "脚本自动给markdown添加front_matter | ∆STAREVAN",
+    "image": "https://w.wallhaven.cc/full/m9/wallhaven-m9kyqy.png",
+    "datePublished": "2022-06-18T03:05:22+08:00",
+    "dateModified": "2022-06-18T21:10:27+08:00",
+    "wordCount":  178 ,
     "author": {
         "@type": "Person",
         "name": ["starevan"]
@@ -127,7 +129,7 @@
         },
     "description": "每次写文档的时间都要自动更新，十分烦人。"
 }
-</script><meta property="og:title" content="想法:脚本自动给文章添加时间 | ∆STAREVAN" />
+</script><meta property="og:title" content="脚本自动给markdown添加front_matter | ∆STAREVAN" />
 <meta property="og:type" content="article" />
 
 
@@ -157,7 +159,7 @@
 <meta property="article:published_time" content="2022-06-18T03:05:22&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-06-18T16:34:51&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-18T21:10:27&#43;08:00" />
 
 
 
@@ -166,13 +168,15 @@
 
 <meta property="article:tag" content="技术" />
 
-<meta property="article:tag" content="html" />
+<meta property="article:tag" content="ruby" />
+
+<meta property="article:tag" content="markdown" />
 
 
 
 
 
-<meta property="og:see_also" content="https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/" />
+<meta property="og:see_also" content="https://kunieone.github.io/posts/markdown/" />
 
 
 
@@ -258,7 +262,7 @@
       class=" bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
     >
       <article class="prose">
-  <h1 class="mb-4">想法:脚本自动给文章添加时间</h1>
+  <h1 class="mb-4">脚本自动给markdown添加front_matter</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -282,13 +286,88 @@
 
   
   
+    <img src="https://w.wallhaven.cc/full/m9/wallhaven-m9kyqy.png" class="w-full" alt="Featured Image">
+  
 
-  <h2 id="目前的想法-使用-node-给文档添加时间">目前的想法: 使用 node 给文档添加时间</h2>
-<h2 id="流程">流程</h2>
+  <h2 id="目前的想法-使用-ruby-给文档添加时间">目前的想法: 使用 ruby 给文档添加时间</h2>
+<h3 id="子模块">子模块</h3>
 <ol>
-<li>解析文件的创建时间和修改时间</li>
-<li>脚本解析 md 脚本，如果没有，添加一个。</li>
+<li>
+<p>遍历目录</p>
+</li>
+<li>
+<p>查找 front_matter，分几种情况：</p>
+<ol>
+<li>有合格的 date 和 lastmod 字段</li>
+<li>没有这两个时间字段</li>
+<li>有但是不完整</li>
 </ol>
+</li>
+<li>
+<p>针对一个 md 文件，获得该文件的创建时间和最后修改时间，，合理插入到 front_matter。</p>
+</li>
+</ol>
+<p>首先我们明确目标，提取文件的修改和创建时间，作为 YAML-Front-Matter 放到 md 文件的开头，并且需要格式正确。</p>
+<blockquote>
+<p>由于开发设备是 mac，mac 和 linux 一样不能从 ctime 等时间找到创建时间，但是 mac 有一个比较罕见的指令</p>
+</blockquote>
+<pre><code class="language-bash">GetFileInfo #{file_name}
+# 返回：
+# attributes: avbstclinmedz
+# created: 06/17/2022 06:12:18
+# modified: 06/17/2022 06:12:18
+
+</code></pre>
+<p>那么现在需要的就是把返回值取出。这里使用 ruby，直接调用 bash 脚本</p>
+<pre><code class="language-ruby">
+def get_time(file_name, mode)
+  fmt_t = `GetFileInfo #{file_name} | grep #{mode}`[-19...-1].split(/[\/:\s]/).map { |x| x.to_i }
+  Time.new(fmt_t[2], fmt_t[0], fmt_t[1], fmt_t[3], fmt_t[4], fmt_t[5]).strftime(&quot;%Y-%m-%dT%H:%M:%S+08:00&quot;)
+end
+</code></pre>
+<p>接下来是如何将两个时间插入到 md 里</p>
+<p>由于涉及到要把字符串追加到文件开头，这种操作难以实现，只能读文件获取字符串后修改字符串再重新写入所有的内容。</p>
+<pre><code class="language-ruby">require &quot;front_matter_parser&quot;
+require &quot;yaml&quot;
+require &quot;time&quot;
+require &quot;awesome_print&quot;
+
+def update(file)
+  ap &quot;开始: #{file}&quot;
+  fm = FrontMatterParser::Parser.parse_file(file).front_matter
+  no_f_p = fm.empty?
+  fm[&quot;lastmod&quot;] = get_time(file, &quot;modified&quot;)
+  fm[&quot;date&quot;] = get_time(file, &quot;created&quot;)
+  myfile = File.open(file)
+  strs = myfile.read()
+  print (file + &quot;长度:&quot; + strs.length.to_s + &quot;个字\s\s\n&quot;)
+
+  if (no_f_p)
+    File.write(file, fm.to_yaml + &quot;---\n\n&quot; + strs)
+  else
+    regex = /---\n(.|\n)*---\n/
+    File.write(file, strs.sub(regex, fm.to_yaml + &quot;---\n&quot;))
+  end
+end
+
+</code></pre>
+<p>这样写入的文件就是合格的带有时间的 md 了。</p>
+<p>最后一个问题： 递归遍历目录：</p>
+<p>其实就是一个树的遍历：</p>
+<pre><code class="language-ruby">def read_dir(path)
+  lss = `ls #{`cd #{path};pwd`.strip}`.split(&quot;\n&quot;).each { |e|
+    if File.directory? path + &quot;/&quot; + e
+      read_dir(path + &quot;/&quot; + e)
+    else
+      if e.match(/.md$/)
+        update path + &quot;/&quot; + e
+      end
+    end
+  }
+end
+
+</code></pre>
+<p>大功告成</p>
 
 </article>
 
@@ -298,7 +377,9 @@
     
     <a href="https://kunieone.github.io/tags/%E6%8A%80%E6%9C%AF/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#技术</a>
     
-    <a href="https://kunieone.github.io/tags/html/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#html</a>
+    <a href="https://kunieone.github.io/tags/ruby/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#ruby</a>
+    
+    <a href="https://kunieone.github.io/tags/markdown/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 me-2 hover:text-eureka">#markdown</a>
     
 </div>
       
@@ -403,8 +484,11 @@
 >
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#目前的想法-使用-node-给文档添加时间">目前的想法: 使用 node 给文档添加时间</a></li>
-    <li><a href="#流程">流程</a></li>
+    <li><a href="#目前的想法-使用-ruby-给文档添加时间">目前的想法: 使用 ruby 给文档添加时间</a>
+      <ul>
+        <li><a href="#子模块">子模块</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -425,7 +509,7 @@
       >
         <h3>相关</h3>
         
-          <a href="https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/" class="no-underline">NodeList和HTMLCollection有什么区别</a>
+          <a href="https://kunieone.github.io/posts/markdown/" class="no-underline">MARKDOWN写作指南</a>
           <br />
         
       </div>
