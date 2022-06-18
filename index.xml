@@ -1,441 +1,1189 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>∆STAREVAN</title>
-    <link>https://kunieone.github.io/</link>
-    <description>Recent content on ∆STAREVAN</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>@Starevan
+    <channel>
+        <title>∆STAREVAN</title>
+        <link>https://kunieone.github.io/</link>
+        <description>Recent content on ∆STAREVAN</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh</language>
+        <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Sat, 18 Jun 2022 03:28:40 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
-      <link>https://kunieone.github.io/posts/linux_time/</link>
-      <pubDate>Sat, 18 Jun 2022 03:28:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/linux_time/</guid>
-      <description>Linux 下文件的三个时间：ctime、mtime、atime 的区别
-modification time(mtime):内容修改时间
-这里的修改时间指的是文件的内容发生变化，而更新的时间。
-Eg:vi 后保存文件。
-status time(ctime):状态修改时间
-这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
-Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
-access time(atime):最后访问时间
-这里的访问时间是指文件被读取，而更新的时间。</description>
-    </item>
-    
-    <item>
-      <title>想法:脚本自动给文章添加时间</title>
-      <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
-      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
-    </item>
-    
-    <item>
-      <title>NodeList和HTMLCollection有什么区别</title>
-      <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Sat, 18 Jun 2022 03:01:49 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
-      <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
-    </item>
-    
-    <item>
-      <title>MARKDOWN写作指南</title>
-      <link>https://kunieone.github.io/posts/markdown/</link>
-      <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/markdown/</guid>
-      <description>Markup : - - - - Image with alt :
-Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
-Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
-Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
-Go To TOP</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-1/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-2/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-3/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-3/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-4/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-4/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</guid>
-      <description>页面路由 BASEURL = memorite.cn 主页路由 / 主页
-用户信息路由/user (该路由跳到 404/nouser)
-/user/me 我的账号主页预览,如果未登陆，显示注册登陆页面 /user/[uuid] 用户账号主页预览 404 页面 /404
-404/nouser 查询不到用户
-404/noarticle 查询不到文章
-404/nospecial 查询不到专栏
-文章页面 /article (该路由跳转到 404/noarticle)
-/article/[articleid] 文章浏览 专栏页面 /special专栏(该路由跳转到 404/nospecial)
-/special/[artid] 专栏浏览 浏览历史页面 /history 会查询用户是否登陆，如果没登陆，跳转注册登陆路由
-收藏夹 /favorites 浏览收藏夹
-/favorites/article 浏览收藏夹里的文章 /favorites/user 浏览收藏夹里的用户 /favorites/special 浏览收藏夹里的专栏 /favorites/[special|article|user]/[pageid] 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40&amp;hellip;如果过大，显示最后一页) </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</guid>
-      <description>Golang协程调度 go调度器的由来 单进程时代：
-单一执行，计算机一个任务一个任务处理 多进程操作系统：
-使用CPU调度器： 不同的时间片ABC轮流执行 多进程带来了新的问题： 时间片的切换成本（保存现场） 并且使得开发设计变得复杂（状态锁，同步等问题） 为了保证多任务，开了很多线程，高度消耗调度CPU并且消耗内存 进程占用 4GB 线程占用4M 操作系统分为 用户态和内核态
-如果我们让内核只看到一个线程，在线程里面开多个小线程（co-routine）协程
-1比N
-![image-20220607143714277](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143714277.png)
-M比N：
-![image-20220607143904604](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143904604.png)
-对于go语言，它把
-co-routine改成了goroutine，修改了内存（几KB）
-并且调度器处理很好
-GMP调度器</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</guid>
-      <description>Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
-为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）
-提示
-你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。
-Routing（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面
-@Controller(&amp;ldquo;cats&amp;rdquo;)，装饰器允许我们轻易地构建一组相关路由的集合，并且最小化重复的代码。
-提示
-你可以使用CLI nest g controller(co) cats来生成猫路由。</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</guid>
-      <description>NESTJS NESTJS 介绍 ​	Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。
-​	在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！
-​	Nest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由
-NESTJS 哲学 在近些年内，多亏了Node.js使得Javascript可以成为前后端应用开发的通用语言，这也导致了比如一些像Angular，React和Vue项目的兴起，它们极大的提升了开发者构建更快，可测试，可拓展的前端应用的效率。不过，尽管有很多为Node.js准备的很棒的库，指导和工具，单没有一个解决了“架构”层面上的这个核心问题。
-​	NEST提供了一个开箱即用的应用架构服务，允许了开发者和团队能够构建高可测试性，大规模，松耦合并且易维护的应用。该架构理念灵感来自Angular。</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</guid>
-      <description>作者：苏七摘文 链接：https://zhuanlan.zhihu.com/p/503913403 来源：知乎 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-动词一字部：
-抓，搞，上，下，出，想，谋
-动词二字部：
-分析，研究，了解，掌握，发现，提出，推进，推动，制定，出台，完善，建立，健全，加强，强化，增强，促进，加深，深化，扩大，落实，细化，突出，建设，营造，开展，发挥，发扬，创新，转变，发展，统一，提高，提升，保持，优化，召开，举行，贯彻，执行，树立，引导，规范，整顿，服务，协调，沟通，配合，合作，支持，加大，开拓，拓展，巩固，保障，保证，形成，指导
-名词：
-体系，机制，体制，系统，规划，战略，方针，政策，措施，要点，重点，焦点，难点，热点，亮点，矛盾，问题，建设，思想，认识，作风，整治，环境，秩序，作用，地方，基层，传统，运行，监测，监控，调控，监督，工程，计划，行动，创新，增长，方式，模式，转变，质量，水平，效益，会议，文件，精神，意识，服务，协调，沟通，力度，领域，空间，成绩，成就，进展，实效，基础，前提，关键，保障，动力，条件，环节，方法，思路，设想，途径，道路，主意，办法，力气，功夫，台阶，形势，情况，意见，建议，网络，指导，指南，目录，方案
-形容词一字部：
-多，宽，高，大，好，快，省，新
-形容词二字部：
-持续，快速，协调，健康，公平，公正，公开，透明，富强，民主，文明，和谐，祥和，优良，良好，合理，稳定，平衡，均衡，稳健，平稳，统一，现代
-副词一字部：
-狠，早，细，实，好，很，较，再，更
-副词二字部：
-加快，尽快，抓紧，尽早，整体，充分，继续，深入，自觉，主动，自主，密切，大力，全力，尽力，务必，务求，有效
-副词三字部：
-进一步
-后缀：
-化，型，性
-词组：
-统一思想，提高认识，认清形势，明确任务，加强领导，完善机制，交流经验，研究问题，团结协作，密切配合，真抓实干，开拓进取，突出重点，落实责任，各司其职，各负其责，集中精力，聚精会神，一心一意，心无旁骛，兢兢业业，精益求精，一抓到底，爱岗敬业，求真务实，胸怀全局，拓宽视野。
-“新”系列：
-新形势 新任务 新挑战 新机遇 新情况 新问题 新困难 新对策 新办法 新局面 新气象 刷新、革新、变新、创新、更新
-“者”系列：
-守护者 保护者 守望者 践行者 组织者 协调者 旁观者 教育者 监督者管理者 设计者 引导者 实施者 指导者 协助者 决策者 参与者
-“外号”系列：
-(个人) 先行官 火车头 老黄牛 活地图 辖区通 减压阀 助推器
-（集体） 大熔炉 主旋律 接力赛
-“性”系列：
-自觉性 时效性 复杂性 积极性 实效性 机制性 特殊性 主动性 有效性 体制性 多变性 创造性 坚定性 保障性 危险性 准确性 阶段性 流动性 盲目性 目的性 层次性 稳定性 实用性 预见性 启发性 全局性 科学性 前瞻性 警示性 局部性 局限性 针对性 苗头性 根本性 约束性 普遍性 倾向性 长期性 理论性 典型性 经常性 精确性 系统性 示范性 思想性 果敢性 完整性 必要性 知识性 坚韧性 多样性 重要性 趣味性 敏感性 服务性 先进性 随意性 警惕性 指导性 优越性 反复性 技术性 思想性 战略性 创新性 指导性 目标性 可操作性</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</guid>
-      <description>denizen 居住条件
-purport
-savour
-reassure
-intrusive
-hundrum
-tapeworm
-disfavour
-airstrip
-scowl
-expedient
-desegregate
-mime
-newsreel
-irritant
-purely
-ledge
-organ
-barrow
-starboard
-iodide
-demote
-conscript
-picket 罢工纠察
-canter
-gape
-susceptibility
-foil
-rugger
-enpower
-madden
-flax
-forthwith
-mortuary
-untold
-可怕的 gruesome
-ooze 渗出
-huff
-wicked
-newsreel
-innate
-rendition</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</guid>
-      <description>Arm是啥？ ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。 arm并不生产芯片，这是出知识产权的。
-RISC 精简指令集
-C语言 -1-&amp;gt; 汇编 -2-&amp;gt;01指令
-2:指令的格式怎么统一？ARM就是这个解决方案
-MOV R0, #1 这串指令 ，直接解析成机器码。
-arm做的事情就是对指令进行怎么翻译，采用的是流水线的技术。
-ARM公司的工作模式： ![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)
-OEM 代工生产公司，把产品制造出来。
-很多电子产品的应用模式都是这样的。
-ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。
-既可以工作在16位下，也可以工作在32位下。
-大量使用寄存器，执行速度快
-大多数数据操作在寄存器完成。
-ARM7
-ARM9
-ARM10E
-ARM11
-![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)
-虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间
-ARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。
-​	运行一条指令，平均执行1.9个时钟周期。
-ARM9为五级流水线技术（取指、译码、执行、缓冲/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。
-​	运行一条指令，平均执行1.5个时钟周期。
-ARM11为8级流水线。600Mhz时钟频率。
-![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)
-一条指令4字节长，三级流水线，PC的地址差八个字节
-ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？
-从偶数地址开始的连续两个字节（16位）构成一个半字。
-字：4个字节。
-![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)
-两个状态咋切换？ ![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)
-![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)
-![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</guid>
-      <description>2013 英一小作文 (2013) Write an e-mail of about 100 words to a foreign teacher in your college, inviting him/her to be a judge for the upcoming English speech contest.
-You should include the details you think necessary. You should write neatly on the ANSwer SHEET. Do not sign your own name at the end of the e-mail. Use &amp;ldquo;Li Ming&amp;rdquo; instead. Do not write the address. (10 points) 思路：按照公务邀请的方法来写。邀请一个老师参加英语演讲。 范文 1: Dear Mr, Wilson,
-​ I am writing on behalf of the Student&amp;rsquo; Union to invite you to be a judge for the upcoming English speech contest.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
-      <description>Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;. As a native Chinese student, let&amp;rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
-​ To start with, we should understand the definition of freedom of speech.</description>
-    </item>
-    
-    <item>
-      <title>经典句型</title>
-      <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
-      <description>可想而知&amp;hellip;
-It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
-我们绝对不能&amp;hellip;
-On no account can we &amp;hellip;
-那些什么的人&amp;hellip;
-Those who&amp;hellip;
-&amp;hellip;值得我们关注
-&amp;hellip;.., which is worthy of our attention
-该是&amp;hellip;的时候了
-It is time + 主语+ 过去式
-正如&amp;hellip;生动的描述了&amp;hellip;
-As is vividly depicted in the &amp;hellip;, &amp;hellip;
-充分理解寓意..
-To grasp the full implication
-毋庸置疑&amp;hellip;
-There is no denying that &amp;hellip;
-一个可笑的场景..
-A ridiculous situation&amp;hellip;
-认真做决定..
-To make careful decision
-无法理解&amp;hellip;
-Beyond one&amp;rsquo;s comprehension
-关注..的人寥寥无几
-Few people could pay attention to &amp;hellip;
-犯下严重的错误..
-Commit a terrible blunder&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>一些单词的高级表达</title>
-      <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
-      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-4/</link>
-      <pubDate>Fri, 17 Jun 2022 10:23:36 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-4/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
-      <pubDate>Fri, 17 Jun 2022 10:23:35 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-1/</link>
-      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-2/</link>
-      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://kunieone.github.io/homepage/</link>
-      <pubDate>Fri, 17 Jun 2022 09:42:34 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/homepage/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+        <lastBuildDate>Sat, 18 Jun 2022 03:28:40 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
+        <link>https://kunieone.github.io/posts/linux_time/</link>
+        <pubDate>Sat, 18 Jun 2022 03:28:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/linux_time/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Linux 下文件的三个时间：ctime、mtime、atime 的区别&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;modification time(mtime):内容修改时间&lt;/p&gt;
+&lt;p&gt;这里的修改时间指的是文件的内容发生变化，而更新的时间。&lt;/p&gt;
+&lt;p&gt;Eg:vi 后保存文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;status time(ctime):状态修改时间&lt;/p&gt;
+&lt;p&gt;这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;access time(atime):最后访问时间&lt;/p&gt;
+&lt;p&gt;这里的访问时间是指文件被读取，而更新的时间。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>想法:脚本自动给文章添加时间</title>
+        <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
+        <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
+        <description>&lt;h2 id=&#34;目前的想法-使用-node-给文档添加时间&#34;&gt;目前的想法: 使用 node 给文档添加时间&lt;/h2&gt;
+&lt;h2 id=&#34;流程&#34;&gt;流程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;解析文件的创建时间和修改时间&lt;/li&gt;
+&lt;li&gt;脚本解析 md 脚本，如果没有，添加一个。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>NodeList和HTMLCollection有什么区别</title>
+        <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
+        <pubDate>Sat, 18 Jun 2022 03:01:49 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
+        <description>&lt;p&gt;首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。&lt;/p&gt;
+&lt;p&gt;NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。
+HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。
+————————————————
+版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>MARKDOWN写作指南</title>
+        <link>https://kunieone.github.io/posts/markdown/</link>
+        <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/markdown/</guid>
+        <description>&lt;pre&gt;&lt;code&gt;Markup :  - - - -
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Image with alt :&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://via.placeholder.com/200x150&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;picture alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Foldable text:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Title 1&lt;/summary&gt;
+  &lt;p&gt;Content 1 Content 1 Content 1 Content 1 Content 1&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;Title 2&lt;/summary&gt;
+  &lt;p&gt;Content 2 Content 2 Content 2 Content 2 Content 2&lt;/p&gt;
+&lt;/details&gt;
+&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;details&amp;gt;
+           &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt;
+           &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt;
+         &amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Link to a specific part of the page:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#TOP&#34; &gt;Go To TOP&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : [text goes here](#section_name)
+          section_title&amp;lt;a name=&amp;quot;section_name&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hotkey:&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;⌘F&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;⇧⌘F&lt;/kbd&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;kbd&amp;gt;⌘F&amp;lt;/kbd&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hotkey list:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Symbol&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Option&lt;/td&gt;
+&lt;td&gt;⌥&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;⌃&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Command&lt;/td&gt;
+&lt;td&gt;⌘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shift&lt;/td&gt;
+&lt;td&gt;⇧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Caps Lock&lt;/td&gt;
+&lt;td&gt;⇪&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tab&lt;/td&gt;
+&lt;td&gt;⇥&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Esc&lt;/td&gt;
+&lt;td&gt;⎋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Power&lt;/td&gt;
+&lt;td&gt;⌽&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Return&lt;/td&gt;
+&lt;td&gt;↩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Delete&lt;/td&gt;
+&lt;td&gt;⌫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Up&lt;/td&gt;
+&lt;td&gt;↑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Down&lt;/td&gt;
+&lt;td&gt;↓&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Left&lt;/td&gt;
+&lt;td&gt;←&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Right&lt;/td&gt;
+&lt;td&gt;→&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Emoji:&lt;/p&gt;
+&lt;p&gt;❗ Use emoji icons to enhance text. 👍 Look up emoji codes at &lt;a class=&#34;link&#34; href=&#34;http://emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : Code appears between colons :EMOJICODE:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        <item>
+        <title>Chapter 1</title>
+        <link>https://kunieone.github.io/secret/svelte/chapter-1/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/chapter-1/</guid>
+        <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;proin-pretium-lorem-a-justo-euismod-condimentum&#34;&gt;Proin pretium lorem a justo euismod condimentum&lt;/h2&gt;
+&lt;p&gt;Donec tortor nunc, feugiat non porttitor tristique, dictum vitae nibh. Integer vel mollis ante. Cras sed elementum nulla, vel placerat lectus. Cras ligula diam, blandit sed vehicula eu, aliquet vel leo. Curabitur sagittis nunc vel nulla tempor sagittis. Phasellus elementum mi malesuada libero vehicula sodales eget id augue. Duis consequat egestas tortor, vitae volutpat nibh gravida ultricies. Morbi maximus sed felis posuere luctus. Cras ultrices condimentum purus, eget iaculis nulla. Cras vulputate est in justo sodales varius. Maecenas auctor velit vel urna sodales, et sodales enim maximus. Proin tempus, metus sit amet ultrices luctus, justo eros finibus nibh, a volutpat ipsum lectus in leo. Pellentesque at dictum metus.&lt;/p&gt;
+&lt;h3 id=&#34;vivamus-dapibus-nunc-ac-fringilla-pellentesque&#34;&gt;Vivamus dapibus nunc ac fringilla pellentesque&lt;/h3&gt;
+&lt;p&gt;Pellentesque porttitor a tortor et egestas. Phasellus aliquet mattis velit in elementum. Suspendisse viverra turpis in risus tincidunt, et malesuada elit eleifend. Sed eu elit arcu. Cras tincidunt mauris purus, vehicula aliquam elit tincidunt eget. Nunc at justo quis augue sagittis auctor sed eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non nibh mattis, tempus tortor sed, iaculis metus. Morbi quis leo dignissim, viverra massa sit amet, faucibus ex. In hac habitasse platea dictumst. Vivamus tristique sem ac tortor venenatis, vel auctor metus vulputate. Maecenas facilisis odio et enim euismod, et ullamcorper enim congue. Nullam ut dolor eget urna aliquet bibendum sit amet a odio. Aenean vitae diam vel metus imperdiet ullamcorper consectetur ac mauris. Maecenas sed lorem vitae nibh porta venenatis.&lt;/p&gt;
+&lt;h2 id=&#34;in-eu-nisl-ac-ante-finibus-accumsan-vitae-vitae-eros&#34;&gt;In eu nisl ac ante finibus accumsan vitae vitae eros&lt;/h2&gt;
+&lt;p&gt;Mauris odio nulla, porta in lacinia vel, faucibus quis turpis. Nunc congue faucibus nisi eget feugiat. Integer nec magna purus. Mauris at elit in risus mollis pretium. Morbi at elementum elit, eu condimentum quam. Maecenas maximus eget turpis ac tristique. Nunc scelerisque mi ex, eu pulvinar ante accumsan vitae.&lt;/p&gt;
+&lt;h2 id=&#34;aliquam-vitae-augue-egestas&#34;&gt;Aliquam vitae augue egestas&lt;/h2&gt;
+&lt;p&gt;Vivamus eget orci ac magna efficitur tincidunt et non urna. Cras mattis molestie nibh, ac posuere lectus bibendum a. Praesent consectetur vulputate dolor eget porta. Fusce ultrices ipsum in tortor consectetur, finibus maximus odio aliquet. Nunc dui odio, fringilla eget quam sed, gravida pretium lorem. Curabitur felis libero, commodo eget pharetra eu, blandit eu lectus. Nunc laoreet nisi purus, in dignissim nibh elementum ut. Nunc sit amet elementum urna. Pellentesque auctor imperdiet lorem, ut egestas arcu. Donec sed magna nec neque molestie aliquet non nec lorem. Phasellus sed libero tortor.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 1</title>
+        <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</guid>
+        <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;
+&lt;h2 id=&#34;ut-aliquam-dui-convallis-purus-interdum&#34;&gt;Ut aliquam dui convallis purus interdum&lt;/h2&gt;
+&lt;p&gt;In nec aliquet nisi. Vestibulum varius dui eu ante tempor maximus. Pellentesque at ipsum libero. Sed non augue enim. Sed accumsan arcu sed aliquam maximus. Donec fringilla sem at cursus placerat. Nulla commodo enim nunc, at luctus libero facilisis ut. Quisque id leo at velit pharetra imperdiet vel et felis. Nunc eu tincidunt nulla. Nunc consectetur ligula ut hendrerit malesuada. Sed commodo aliquam elit, at dapibus tellus pellentesque non. Sed vel massa pulvinar, sollicitudin justo sit amet, porta lacus. Quisque eleifend placerat placerat. Phasellus nisl eros, consectetur sit amet mi eget, fringilla luctus purus.&lt;/p&gt;
+&lt;h3 id=&#34;morbi-eu-mi-convallis&#34;&gt;Morbi eu mi convallis&lt;/h3&gt;
+&lt;p&gt;Sed sed est nulla. Etiam fermentum sed lectus ac molestie. Vestibulum elementum lectus quis interdum semper. Nam id tempus nisl. Nullam in tempor sapien. Integer volutpat nibh vel libero ornare hendrerit. Vestibulum non condimentum nulla. Nulla vel finibus mi. Cras consequat ligula augue, ac vulputate est tincidunt eu. Maecenas nec nibh consequat, egestas nisl non, iaculis nunc. Maecenas eu dolor tortor. Cras in bibendum diam. Vivamus mattis ultricies diam, in dignissim ante scelerisque vel. In euismod dictum ligula, sed scelerisque ipsum volutpat at. Nam lacus elit, porttitor et orci quis, malesuada sagittis risus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-sit-amet-lorem-sit-amet&#34;&gt;Aenean sit amet lorem sit amet&lt;/h2&gt;
+&lt;p&gt;Sed eget erat faucibus, malesuada risus at, mollis est. Suspendisse et fringilla nisl, vel placerat ipsum. Proin ut est ornare, molestie ligula et, pretium orci. Aliquam id justo in eros vulputate volutpat. Vivamus sed tellus id quam laoreet fermentum nec ut dui. Ut neque nibh, facilisis dapibus tempor at, egestas non urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus, mauris id tempor dapibus, ligula velit pharetra justo, vel molestie sem mauris nec nulla. Suspendisse purus magna, pretium sodales pretium id, consectetur et arcu. Fusce commodo vel nibh quis efficitur. Duis feugiat felis ac mi semper, at sollicitudin tellus ullamcorper. Morbi eget efficitur dui. Nam erat diam, ultrices non mollis in, vestibulum ut lectus. Nunc at dui sed metus vestibulum fringilla. Curabitur vitae mauris vitae neque efficitur molestie eget at nisi. Morbi vel vehicula libero, nec tincidunt augue.&lt;/p&gt;
+&lt;h3 id=&#34;maecenas-faucibus-est-ac-orci-fermentum-cursus&#34;&gt;Maecenas faucibus est ac orci fermentum cursus&lt;/h3&gt;
+&lt;p&gt;Proin vestibulum pellentesque ipsum, non lobortis arcu volutpat at. Integer neque diam, luctus a turpis non, posuere elementum ex. Donec eget sagittis purus. Maecenas non laoreet quam. Quisque luctus porta pellentesque. Vestibulum auctor commodo tortor non imperdiet. Fusce sed tincidunt nunc. Aenean diam diam, mattis a enim nec, suscipit dignissim neque. Quisque at est quis tortor lobortis vehicula vitae vitae quam. Nam maximus rutrum felis, non feugiat nisl vestibulum quis.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-suscipit-tellus-at-nibh-tincidunt&#34;&gt;Suspendisse suscipit tellus at nibh tincidunt&lt;/h3&gt;
+&lt;p&gt;Nulla pellentesque, leo eget interdum interdum, sem felis consequat massa, id aliquet eros leo sit amet urna. Phasellus quis odio ut odio porttitor consequat quis a velit. Quisque purus velit, faucibus vel efficitur in, sagittis quis neque. Morbi pretium suscipit odio, vel tincidunt nunc dictum aliquam. Quisque non arcu at urna scelerisque semper ac et tortor. Aliquam a dapibus justo. Vestibulum tempus nunc eu condimentum ultrices. Aenean nec egestas nulla, ut congue libero. Aliquam ut mattis urna, in sollicitudin odio. Aenean ac tristique felis, a consequat erat. Aliquam luctus eros ut porttitor efficitur. Nam cursus elit id arcu semper, at sodales velit vulputate. Suspendisse potenti.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/secret/svelte/chapter-2/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/chapter-2/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/secret/svelte/chapter-3/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/chapter-3/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/secret/svelte/chapter-4/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/chapter-4/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</link>
+        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</guid>
+        <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;
+&lt;h2 id=&#34;vivamus-facilisis-risus-ac-eros-porttitor&#34;&gt;Vivamus facilisis risus ac eros porttitor&lt;/h2&gt;
+&lt;p&gt;Proin quis sapien porta, dictum magna eget, sodales erat. Nunc eu nisl at elit molestie placerat. Nulla nec massa non lectus malesuada vehicula. Suspendisse quis arcu elit. Praesent est ipsum, pharetra ac malesuada a, ultricies vel sem. Aenean arcu neque, bibendum a tincidunt eget, efficitur ac sapien. Vestibulum eu suscipit massa. Aenean non libero molestie, tristique purus eget, bibendum tellus. Donec id nisl laoreet elit sodales viverra nec et risus. Nullam tortor dolor, auctor convallis vulputate porta, egestas cursus lacus. Sed rhoncus ipsum accumsan magna cursus, sit amet fringilla sapien feugiat. Aliquam facilisis viverra risus, eget varius erat convallis quis.&lt;/p&gt;
+&lt;h2 id=&#34;integer-feugiat-orci-a-diam-cursus-tincidunt-id-a-urna&#34;&gt;Integer feugiat orci a diam cursus tincidunt id a urna&lt;/h2&gt;
+&lt;p&gt;Suspendisse tristique sem erat, vitae fringilla purus euismod vel. Nam magna dui, scelerisque at nibh et, faucibus dapibus nibh. Nulla facilisi. Quisque a diam sed mauris pretium volutpat. Nam nec mollis dolor, in ultrices arcu. Suspendisse ut placerat ex, dictum fringilla libero. Quisque mollis aliquet tellus in congue.&lt;/p&gt;
+&lt;h2 id=&#34;maecenas-eu-ipsum-at-lectus-commodo-eleifend-nec-vel-ante&#34;&gt;Maecenas eu ipsum at lectus commodo eleifend nec vel ante&lt;/h2&gt;
+&lt;p&gt;Nulla sit amet dolor sed elit semper accumsan. Nunc suscipit sapien eget nulla imperdiet gravida. Pellentesque dignissim metus eget felis tempor, at elementum ipsum vulputate. In pretium accumsan neque ut pulvinar. Donec rhoncus at elit id vulputate. Maecenas massa libero, porttitor et lacus eget, gravida auctor tellus. Cras lacus urna, hendrerit et tincidunt efficitur, rutrum id nisi. Nunc quis accumsan ex, eget rutrum sem. Vivamus vel dui eget leo luctus consectetur. Sed tellus elit, aliquet quis commodo in, fermentum sit amet ante. Curabitur nec ornare tortor. Sed et tempus mi. Pellentesque sollicitudin porttitor mi eget hendrerit. Maecenas lobortis turpis ut quam placerat pharetra.&lt;/p&gt;
+&lt;h2 id=&#34;maecenas-a-lorem-in-sem-feugiat-ultricies&#34;&gt;Maecenas a lorem in sem feugiat ultricies&lt;/h2&gt;
+&lt;p&gt;Donec tincidunt interdum magna quis dictum. Integer non sollicitudin justo, id volutpat leo. Donec quis enim porttitor, hendrerit nisi non, accumsan orci. Nulla consectetur porta mauris, et pharetra nunc efficitur eu. Pellentesque eu consectetur tellus. In ac nunc ac turpis fermentum tempor vel vel nisl. Aenean convallis turpis ac ipsum mollis, eget venenatis lacus eleifend. Vestibulum sapien mauris, rutrum sit amet mi ut, volutpat mollis nunc. Praesent lobortis, orci efficitur molestie tempor, metus ante dignissim felis, ut interdum elit leo vitae lectus. Curabitur ex nunc, ornare at mi eu, eleifend molestie lectus. Duis pretium sapien in mauris pulvinar, ut auctor turpis tempus. Maecenas gravida nec dolor vel interdum. Ut posuere aliquam arcu et congue. Morbi scelerisque, leo vel luctus facilisis, est erat ultrices mauris, eget facilisis nisl libero a ligula. Mauris sit amet hendrerit sem. Etiam imperdiet, dolor id fermentum finibus, arcu est malesuada dui, at hendrerit nisi nibh ut mi.&lt;/p&gt;
+&lt;h2 id=&#34;quisque-convallis-sem-sit-amet-magna-aliquam-interdum&#34;&gt;Quisque convallis sem sit amet magna aliquam interdum&lt;/h2&gt;
+&lt;p&gt;Vestibulum a odio vitae sapien tempor sollicitudin. In eu mi ex. Phasellus sollicitudin, augue vitae congue vestibulum, sem mi ullamcorper nibh, sagittis tincidunt ligula turpis vitae arcu. Phasellus orci felis, tristique id scelerisque eu, ornare vel mauris. Curabitur suscipit venenatis facilisis. Phasellus et est et purus posuere accumsan et ut quam. Donec in odio eu enim facilisis scelerisque. Sed eget condimentum elit, quis pretium ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet tortor ligula. Mauris lectus odio, cursus a diam a, ultricies posuere justo. Sed ultrices tempor mi, semper commodo quam lobortis at. Donec consectetur pretium nisl, eget dapibus nibh maximus scelerisque.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</guid>
+        <description>&lt;h3 id=&#34;页面路由&#34;&gt;&lt;strong&gt;页面路由&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;BASEURL = memorite.cn
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;主页路由&lt;/strong&gt; &lt;code&gt;/&lt;/code&gt; 主页&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;用户信息路由&lt;/strong&gt;&lt;code&gt;/user&lt;/code&gt; (该路由跳到 &lt;code&gt;404/nouser&lt;/code&gt;)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/user/me&lt;/code&gt; 我的账号主页预览,如果未登陆，显示注册登陆页面&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/user/[uuid]&lt;/code&gt; 用户账号主页预览&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;404 页面&lt;/strong&gt; /404&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;404/nouser&lt;/code&gt; 查询不到用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;404/noarticle&lt;/code&gt; 查询不到文章&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;404/nospecial&lt;/code&gt; 查询不到专栏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;文章页面&lt;/strong&gt; &lt;code&gt;/article&lt;/code&gt; (该路由跳转到 &lt;code&gt;404/noarticle&lt;/code&gt;)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/article/[articleid]&lt;/code&gt; 文章浏览&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;专栏页面&lt;/strong&gt; &lt;code&gt;/special&lt;/code&gt;专栏(该路由跳转到 &lt;code&gt;404/nospecial&lt;/code&gt;)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/special/[artid]&lt;/code&gt; 专栏浏览&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;浏览历史页面&lt;/strong&gt; &lt;code&gt;/history&lt;/code&gt; 会查询用户是否登陆，如果没登陆，跳转注册登陆路由&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;收藏夹&lt;/strong&gt; &lt;code&gt;/favorites&lt;/code&gt; 浏览收藏夹&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/favorites/article&lt;/code&gt; 浏览收藏夹里的文章&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/favorites/user&lt;/code&gt; 浏览收藏夹里的用户&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/favorites/special&lt;/code&gt; 浏览收藏夹里的专栏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/favorites/[special|article|user]/[pageid]&lt;/code&gt; 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40&amp;hellip;如果过大，显示最后一页)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!--
+
+### 1. 页面服务
+
+1. 404 页面
+   1. 查询不到用户
+   2. 查询不到文章
+   3. 查询不到专栏
+2. 博客页面
+   1. 查看博客
+   2. 查看收藏家
+3. 账号页面
+   1. 查看头像 --&gt;</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</guid>
+        <description>&lt;h1 id=&#34;golang协程调度&#34;&gt;Golang协程调度&lt;/h1&gt;
+&lt;h2 id=&#34;go调度器的由来&#34;&gt;go调度器的由来&lt;/h2&gt;
+&lt;p&gt;单进程时代：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单一执行，计算机一个任务一个任务处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;多进程操作系统：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用CPU调度器：
+&lt;ul&gt;
+&lt;li&gt;不同的时间片ABC轮流执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;多进程带来了新的问题：
+&lt;ul&gt;
+&lt;li&gt;时间片的切换成本（保存现场）&lt;/li&gt;
+&lt;li&gt;并且使得开发设计变得复杂（状态锁，同步等问题）&lt;/li&gt;
+&lt;li&gt;为了保证多任务，开了很多线程，&lt;strong&gt;高度消耗调度CPU&lt;/strong&gt;并且消耗内存
+&lt;ul&gt;
+&lt;li&gt;进程占用 4GB&lt;/li&gt;
+&lt;li&gt;线程占用4M&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;操作系统分为 &lt;strong&gt;用户态&lt;/strong&gt;和&lt;strong&gt;内核态&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果我们让内核只看到一个线程，在线程里面开多个小线程（co-routine）协程&lt;/p&gt;
+&lt;p&gt;1比N&lt;/p&gt;
+&lt;p&gt;![image-20220607143714277](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143714277.png)&lt;/p&gt;
+&lt;p&gt;M比N：&lt;/p&gt;
+&lt;p&gt;![image-20220607143904604](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143904604.png)&lt;/p&gt;
+&lt;p&gt;对于go语言，它把&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;co-routine改成了goroutine，修改了内存（几KB）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;并且调度器处理很好&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;GMP调度器&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</guid>
+        <description>&lt;h2 id=&#34;controller控制器负责处理即将到来的请求并且返回响应给客户端&#34;&gt;Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.nestjs.com/assets/Controllers_1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。&lt;/p&gt;
+&lt;p&gt;为了构建一个基本的controller，我们使用类与&lt;strong&gt;装饰器&lt;/strong&gt;。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示&lt;/p&gt;
+&lt;p&gt;你可以使用CRUD生成器&lt;code&gt;nest g resource [name]&lt;/code&gt;来快速构建内建的CRUD控制器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;routing路由&#34;&gt;Routing（路由）&lt;/h3&gt;
+&lt;p&gt;在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面&lt;/p&gt;
+&lt;p&gt;@Controller(&amp;ldquo;cats&amp;rdquo;)，装饰器允许我们轻易地构建一组相关路由的集合，并且最小化重复的代码。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提示&lt;/p&gt;
+&lt;p&gt;你可以使用CLI &lt;code&gt;nest g controller(co) cats&lt;/code&gt;来生成猫路由。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;h1 id=&#34;nestjs&#34;&gt;NESTJS&lt;/h1&gt;
+&lt;h2 id=&#34;nestjs-介绍&#34;&gt;NESTJS 介绍&lt;/h2&gt;
+&lt;p&gt;​		Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。&lt;/p&gt;
+&lt;p&gt;​		在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！&lt;/p&gt;
+&lt;p&gt;​		Nest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由&lt;/p&gt;
+&lt;h2 id=&#34;nestjs-哲学&#34;&gt;NESTJS 哲学&lt;/h2&gt;
+&lt;p&gt;在近些年内，多亏了Node.js使得Javascript可以成为前后端应用开发的通用语言，这也导致了比如一些像Angular，React和Vue项目的兴起，它们极大的提升了开发者构建更快，可测试，可拓展的前端应用的效率。不过，尽管有很多为Node.js准备的很棒的库，指导和工具，单没有一个解决了“架构”层面上的这个核心问题。&lt;/p&gt;
+&lt;p&gt;​	NEST提供了一个开箱即用的应用架构服务，允许了开发者和团队能够构建高可测试性，大规模，松耦合并且易维护的应用。该架构理念灵感来自Angular。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</guid>
+        <description>&lt;p&gt;作者：苏七摘文
+链接：https://zhuanlan.zhihu.com/p/503913403
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。&lt;/p&gt;
+&lt;p&gt;动词一字部：&lt;/p&gt;
+&lt;p&gt;抓，搞，上，下，出，想，谋&lt;/p&gt;
+&lt;p&gt;动词二字部：&lt;/p&gt;
+&lt;p&gt;分析，研究，了解，掌握，发现，提出，推进，推动，制定，出台，完善，建立，健全，加强，强化，增强，促进，加深，深化，扩大，落实，细化，突出，建设，营造，开展，发挥，发扬，创新，转变，发展，统一，提高，提升，保持，优化，召开，举行，贯彻，执行，树立，引导，规范，整顿，服务，协调，沟通，配合，合作，支持，加大，开拓，拓展，巩固，保障，保证，形成，指导&lt;/p&gt;
+&lt;p&gt;名词：&lt;/p&gt;
+&lt;p&gt;体系，机制，体制，系统，规划，战略，方针，政策，措施，要点，重点，焦点，难点，热点，亮点，矛盾，问题，建设，思想，认识，作风，整治，环境，秩序，作用，地方，基层，传统，运行，监测，监控，调控，监督，工程，计划，行动，创新，增长，方式，模式，转变，质量，水平，效益，会议，文件，精神，意识，服务，协调，沟通，力度，领域，空间，成绩，成就，进展，实效，基础，前提，关键，保障，动力，条件，环节，方法，思路，设想，途径，道路，主意，办法，力气，功夫，台阶，形势，情况，意见，建议，网络，指导，指南，目录，方案&lt;/p&gt;
+&lt;p&gt;形容词一字部：&lt;/p&gt;
+&lt;p&gt;多，宽，高，大，好，快，省，新&lt;/p&gt;
+&lt;p&gt;形容词二字部：&lt;/p&gt;
+&lt;p&gt;持续，快速，协调，健康，公平，公正，公开，透明，富强，民主，文明，和谐，祥和，优良，良好，合理，稳定，平衡，均衡，稳健，平稳，统一，现代&lt;/p&gt;
+&lt;p&gt;副词一字部：&lt;/p&gt;
+&lt;p&gt;狠，早，细，实，好，很，较，再，更&lt;/p&gt;
+&lt;p&gt;副词二字部：&lt;/p&gt;
+&lt;p&gt;加快，尽快，抓紧，尽早，整体，充分，继续，深入，自觉，主动，自主，密切，大力，全力，尽力，务必，务求，有效&lt;/p&gt;
+&lt;p&gt;副词三字部：&lt;/p&gt;
+&lt;p&gt;进一步&lt;/p&gt;
+&lt;p&gt;后缀：&lt;/p&gt;
+&lt;p&gt;化，型，性&lt;/p&gt;
+&lt;p&gt;词组：&lt;/p&gt;
+&lt;p&gt;统一思想，提高认识，认清形势，明确任务，加强领导，完善机制，交流经验，研究问题，团结协作，密切配合，真抓实干，开拓进取，突出重点，落实责任，各司其职，各负其责，集中精力，聚精会神，一心一意，心无旁骛，兢兢业业，精益求精，一抓到底，爱岗敬业，求真务实，胸怀全局，拓宽视野。&lt;/p&gt;
+&lt;p&gt;“新”系列：&lt;/p&gt;
+&lt;p&gt;新形势 新任务 新挑战 新机遇 新情况 新问题 新困难 新对策 新办法 新局面 新气象 刷新、革新、变新、创新、更新&lt;/p&gt;
+&lt;p&gt;“者”系列：&lt;/p&gt;
+&lt;p&gt;守护者 保护者 守望者 践行者 组织者 协调者 旁观者 教育者 监督者管理者 设计者 引导者 实施者 指导者 协助者 决策者 参与者&lt;/p&gt;
+&lt;p&gt;“外号”系列：&lt;/p&gt;
+&lt;p&gt;(个人) 先行官 火车头 老黄牛 活地图 辖区通 减压阀 助推器&lt;/p&gt;
+&lt;p&gt;（集体） 大熔炉 主旋律 接力赛&lt;/p&gt;
+&lt;p&gt;“性”系列：&lt;/p&gt;
+&lt;p&gt;自觉性 时效性 复杂性 积极性 实效性 机制性 特殊性 主动性 有效性 体制性 多变性 创造性 坚定性 保障性 危险性 准确性 阶段性 流动性 盲目性 目的性 层次性 稳定性 实用性 预见性 启发性 全局性 科学性 前瞻性 警示性 局部性 局限性 针对性 苗头性 根本性 约束性 普遍性 倾向性 长期性 理论性 典型性 经常性 精确性 系统性 示范性 思想性 果敢性 完整性 必要性 知识性 坚韧性 多样性 重要性 趣味性 敏感性 服务性 先进性 随意性 警惕性 指导性 优越性 反复性 技术性 思想性 战略性 创新性 指导性 目标性 可操作性&lt;/p&gt;
+&lt;p&gt;“感”系列：&lt;/p&gt;
+&lt;p&gt;使命感 责任感 危机感 紧迫感 荣誉感 成就感 自豪感 归属感 认同感 幸福感 满足感 忧郁感 孤独感 失落感&lt;/p&gt;
+&lt;p&gt;“化”系列：&lt;/p&gt;
+&lt;p&gt;信息化 科学化 数字化 标准化 集约化 精细化&lt;/p&gt;
+&lt;p&gt;“力”系列：&lt;/p&gt;
+&lt;p&gt;向心力 凝聚力 洞察力 执行力 推动力 战斗力 保障力 驾驭力 自控力 亲和力 号召力 感召力 保障力 执行力 原动力 驱动力 响应力 战斗力 凝聚力 执行力 控制力 领导力 推动力&lt;/p&gt;
+&lt;p&gt;“意识”系列：&lt;/p&gt;
+&lt;p&gt;全局意识 整体意识 奉献意识 谋划意识 机遇意识 任务意识 形象意识 责任意识 学习意识 创新意识 进取意识 危机意识 忧患意识&lt;/p&gt;
+&lt;p&gt;“三字经” ：&lt;/p&gt;
+&lt;p&gt;树标杆 当标兵 树形象 展风采 显特色 出实招 做实事 攻难点 查隐患 堵漏洞 正警风 聚警心 明职责 聚合力 建堡垒 强管控 强基础 求实效 求突破 求改进 求规范 谋长效 谋发展&lt;/p&gt;
+&lt;p&gt;“一” 系列：&lt;/p&gt;
+&lt;p&gt;一股绳 一盘棋 一颗钉 一班人 一条心 一股劲 一面旗 一座山 一堵墙 一支笔 一条枪 一块砖 一条龙 一把手&lt;/p&gt;
+&lt;p&gt;“一种” 系列：（这个类别稍微解释一下，可以用来起排比递进式小标题，如：“和”是一种境界；“和”是一种力量等）&lt;/p&gt;
+&lt;p&gt;一种境界 一种考验 一种标志 一种障碍&lt;/p&gt;
+&lt;p&gt;一种心境 一种挑战 一种品牌 一种歧视&lt;/p&gt;
+&lt;p&gt;一种艺术 一种磨练 一种榜样 一种恶习&lt;/p&gt;
+&lt;p&gt;一种态度 一种美德 一种勇气 一种打击&lt;/p&gt;
+&lt;p&gt;一种心态 一种品格 一种观念 一种误会&lt;/p&gt;
+&lt;p&gt;一种文化 一种财富 一种收获 一种曲解&lt;/p&gt;
+&lt;p&gt;一种科学 一种方法 一种快乐 一种折磨&lt;/p&gt;
+&lt;p&gt;一种生活 一种策略 一种追求 一种懦弱&lt;/p&gt;
+&lt;p&gt;一种力量 一种战术 一种鼓励 一种错误&lt;/p&gt;
+&lt;p&gt;一种习惯 一种感情 一种渠道 一种失误&lt;/p&gt;
+&lt;p&gt;一种享受 一种感动 一种反馈 一种无奈&lt;/p&gt;
+&lt;p&gt;一种选择 一种责任 一种解答 一种罪过&lt;/p&gt;
+&lt;p&gt;一种和谐 一种信任 一种原则 一种负担&lt;/p&gt;
+&lt;p&gt;一种气质 一种义务 一种情绪 一种矛盾&lt;/p&gt;
+&lt;p&gt;一种修养 一种尊重 一种成功 一种枷锁&lt;/p&gt;
+&lt;p&gt;一种压力 一种能力 一种本能 一种福气&lt;/p&gt;
+&lt;p&gt;一种动力 一种约束 一种爱好 一种美丽&lt;/p&gt;
+&lt;p&gt;一种进步 一种哲学 一种权利 一种过程&lt;/p&gt;
+&lt;p&gt;一种精神 一种缘分 一种尝试 一种智慧&lt;/p&gt;
+&lt;p&gt;一种幸福 一种偶然 一种实践 一种魄力&lt;/p&gt;
+&lt;p&gt;一种幸运 一种必然 一种精彩 一种自信&lt;/p&gt;
+&lt;p&gt;“小”系列：（多用于动态信息或经验汇报材料，特别适合基层单位，体现谦虚而有创新之意）&lt;/p&gt;
+&lt;p&gt;小辩论 小问答 小讲评 小讨论 小板报 小朗诵 小讲座 小创新 小改革&lt;/p&gt;
+&lt;p&gt;小突破 小提高 小态度 小窍门 小技巧 小圈子 小功夫 小发明&lt;/p&gt;
+&lt;p&gt;“观” 系列：&lt;/p&gt;
+&lt;p&gt;世界观 人生观 价值观 道德观 荣辱观 大局观 平衡观 统筹观 科学观 宗旨观 和谐观 政绩观 得失观&lt;/p&gt;
+&lt;p&gt;“型”系列：（后跟名词，如学习型党支部、节约型所队、复合型人才等）&lt;/p&gt;
+&lt;p&gt;学习型 服务型 实战型 创新型 务实型 节约型 高效型 全能型 复合型&lt;/p&gt;
+&lt;p&gt;“点”系列：&lt;/p&gt;
+&lt;p&gt;切入点 立足点 着力点 出发点 落脚点 制高点 突破点 主攻点 受力点 结合点 兴趣点 关键点 要点 重点 热点 难点 焦点 盲点 节点 拐点&lt;/p&gt;
+&lt;p&gt;“抓”系列：&lt;/p&gt;
+&lt;p&gt;抓苗头 抓数量 抓重点 抓安全 抓实效 抓关键 抓细节 抓风纪 抓形象 抓规范 抓经济 抓廉政 抓成效 抓稳定 抓发展 抓标准 抓质量 抓突破 抓建设 抓管理&lt;/p&gt;
+&lt;p&gt;“看”系列：&lt;/p&gt;
+&lt;p&gt;看起点 看高度 看认识 看水平 看效果 看成效 看发展 看业绩 看装备 看实力 看悟性 看规则 看潜力 看回头&lt;/p&gt;
+&lt;p&gt;“战”系列：&lt;/p&gt;
+&lt;p&gt;阵地战 信息战 攻心战 心理战 攻坚战 主动仗 翻身仗 硬仗&lt;/p&gt;
+&lt;p&gt;“会”系列：&lt;/p&gt;
+&lt;p&gt;座谈会 现场会 推进会 动员会 部署会 交流会&lt;/p&gt;
+&lt;p&gt;“多”系列：&lt;/p&gt;
+&lt;p&gt;多层次 多角度 多形式 多渠道 多功能&lt;/p&gt;
+&lt;p&gt;“高”系列：&lt;/p&gt;
+&lt;p&gt;高起点 高标准 高要求 高强度 高密度 高水平 高频率&lt;/p&gt;
+&lt;p&gt;“动”系列：&lt;/p&gt;
+&lt;p&gt;驱动 推动 拉动 促动 联动 理念驱动、规范推动、氛围拉动、协作促动&lt;/p&gt;
+&lt;p&gt;“送”系列：&lt;/p&gt;
+&lt;p&gt;送温暖 送法律 送服务 送爱心 送平安&lt;/p&gt;
+&lt;p&gt;“度”系列：&lt;/p&gt;
+&lt;p&gt;亲近度 支持度 理解度 满意度 认知度 认可度&lt;/p&gt;
+&lt;p&gt;“零”系列：&lt;/p&gt;
+&lt;p&gt;零干扰 零发案 零投诉 零积压 零差错 零懈怠 零违纪 零增长 零推脱&lt;/p&gt;
+&lt;p&gt;零距离&lt;/p&gt;
+&lt;p&gt;“安”系列：&lt;/p&gt;
+&lt;p&gt;安定 安全 安泰 安&lt;/p&gt;
+&lt;p&gt;“位”系列：&lt;/p&gt;
+&lt;p&gt;定位 站位 越位 错位 缺位 补位&lt;/p&gt;
+&lt;p&gt;“谈”系列：&lt;/p&gt;
+&lt;p&gt;约谈 访谈 恳谈 面谈 深谈 座谈&lt;/p&gt;
+&lt;p&gt;“心”系列：&lt;/p&gt;
+&lt;p&gt;放心 舒心 称心 安心 用心 操心 劳心 公心 私心潜心&lt;/p&gt;
+&lt;p&gt;“规”系列：&lt;/p&gt;
+&lt;p&gt;规模大 规格高 规定严 规范好&lt;/p&gt;
+&lt;p&gt;“铁”系列：&lt;/p&gt;
+&lt;p&gt;铁腕禁毒 铁面整治 铁心保障 铁律治警&lt;/p&gt;
+&lt;p&gt;“线”系列：&lt;/p&gt;
+&lt;p&gt;底线 红线 火线 高压线 边线 不越底线、不触红线、不碰高压线&lt;/p&gt;
+&lt;p&gt;“改”系列：&lt;/p&gt;
+&lt;p&gt;主动改 督促改 推动改 限期改 随时改&lt;/p&gt;
+&lt;p&gt;对号入座主动改、借助外力督促改、统筹兼顾推动改、明确标准随时改&lt;/p&gt;
+&lt;p&gt;“相”系列：&lt;/p&gt;
+&lt;p&gt;山水相依 地域相接 经济相通 人文相融&lt;/p&gt;
+&lt;p&gt;“招”系列：&lt;/p&gt;
+&lt;p&gt;实招、新招、狠招、绝招&lt;/p&gt;
+&lt;p&gt;“单字”系列：&lt;/p&gt;
+&lt;p&gt;多用于小标题，如：措施突出一个“实”字；管理抓住一个“严”字等&lt;/p&gt;
+&lt;p&gt;勤 巧 诚 细 实 全 小 活 灵 精 新 快 齐 稳 融 效 和 密 力 联 合 变 严&lt;/p&gt;
+&lt;p&gt;“题眼”系列：&lt;/p&gt;
+&lt;p&gt;统一思想 提高认识 明确目标 团结奋进 团结拼搏 克难而进 攻坚克难 积极参与 高度重视 认真组织 精心部署 总揽全局 协调各方 高举旗帜 服从大局 加强学习 提升能力 求真务实 提高效能 发扬民主 增进团结 抢抓机遇 开拓创新 坚定信心 转变作风 凝心聚力 同心同德 齐心协力 步调一致 解放思想 实事求是 锤炼作风 狠抓落实 敢于创新 迎难而上 紧扣重点 奋力推进 正视差距 准确把握 与时俱进 强化保障 加强领导 全力支持 恪尽职守 尽职尽责 勤勉工作 不负重托 不辱使命 认清形势 振奋精神 围绕中心 主动作为 锐意进取 扎实工作 全力以赴 吃透精神&lt;/p&gt;
+&lt;p&gt;把握精髓 未雨绸缪 突出重点 统筹兼顾 集中精力 乘势而上 大干快上 大力拓展 大力发展 努力改善 全力维护 扎实开展 全力保障 切实加强&lt;/p&gt;
+&lt;p&gt;“精神”系列：&lt;/p&gt;
+&lt;p&gt;奉献精神 创新精神 务实精神 求是精神 坚守精神 自律精神 开拓精神 执着精神 合作精神 开放精神 坚韧精神 吃苦精神 和合精神 诚信精神 实干精神 进取精神 拼搏精神 自强精神 法治精神 人文精神 团结精神 团队精神 无私精神 民主精神 谦虚精神 创业精神 奋斗精神 科学精神 攻坚精神 探索精神 求实精神 求真精神 协作精神 实践精神 钉子精神 傻子精神 蚂蝗精神&lt;/p&gt;
+&lt;p&gt;“大”系列：&lt;/p&gt;
+&lt;p&gt;大提高 大提升 大跃升 大跨跃 大起色 大动作 大发展 大步伐 大突破 大发展 大变化 大繁荣 大改善 大合作 大考验 大形势 大氛围 大开放 大旅游 大产业 大规划 大规模 大品牌 大提速 大环境 大建设 大投入 大增长 大调整 大推进 大融合 大碰撞 大交锋 大检验 大阅兵 大方向 大变革 大转变 大检阅 大集合 大洗牌 大决择 大决战 大贡献 大气魄 大手笔 大展览 大平台 大课题 大交通&lt;/p&gt;
+&lt;p&gt;“人”系列：&lt;/p&gt;
+&lt;p&gt;保护人 牵头人 带头人 领头人 知情人 调停人 内行人 贴心人 明白人，清白人 正派人&lt;/p&gt;
+&lt;p&gt;“上”系列：&lt;/p&gt;
+&lt;p&gt;贯彻上求快 准备上求全 安排上求细 动员上求深 学习上求精 讨论上求活 督导上求实 实践上求效&lt;/p&gt;
+&lt;p&gt;“不”系列：&lt;/p&gt;
+&lt;p&gt;不放松 不松懈 不松口 不动摇 不携带 不遗漏 不脱节 不越位 不捂盖 不留面 不多嘴 不多事 不务虚 不作秀 不流失 不丢失 不打响&lt;/p&gt;
+&lt;p&gt;“高”系列：&lt;/p&gt;
+&lt;p&gt;高起点 高标准 高要求 高强度 高密度 高水平 高频率 高效能 高同步 高负荷&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</guid>
+        <description>&lt;p&gt;denizen 居住条件&lt;/p&gt;
+&lt;p&gt;purport&lt;/p&gt;
+&lt;p&gt;savour&lt;/p&gt;
+&lt;p&gt;reassure&lt;/p&gt;
+&lt;p&gt;intrusive&lt;/p&gt;
+&lt;p&gt;hundrum&lt;/p&gt;
+&lt;p&gt;tapeworm&lt;/p&gt;
+&lt;p&gt;disfavour&lt;/p&gt;
+&lt;p&gt;airstrip&lt;/p&gt;
+&lt;p&gt;scowl&lt;/p&gt;
+&lt;p&gt;expedient&lt;/p&gt;
+&lt;p&gt;desegregate&lt;/p&gt;
+&lt;p&gt;mime&lt;/p&gt;
+&lt;p&gt;newsreel&lt;/p&gt;
+&lt;p&gt;irritant&lt;/p&gt;
+&lt;p&gt;purely&lt;/p&gt;
+&lt;p&gt;ledge&lt;/p&gt;
+&lt;p&gt;organ&lt;/p&gt;
+&lt;p&gt;barrow&lt;/p&gt;
+&lt;p&gt;starboard&lt;/p&gt;
+&lt;p&gt;iodide&lt;/p&gt;
+&lt;p&gt;demote&lt;/p&gt;
+&lt;p&gt;conscript&lt;/p&gt;
+&lt;p&gt;picket 罢工纠察&lt;/p&gt;
+&lt;p&gt;canter&lt;/p&gt;
+&lt;p&gt;gape&lt;/p&gt;
+&lt;p&gt;susceptibility&lt;/p&gt;
+&lt;p&gt;foil&lt;/p&gt;
+&lt;p&gt;rugger&lt;/p&gt;
+&lt;p&gt;enpower&lt;/p&gt;
+&lt;p&gt;madden&lt;/p&gt;
+&lt;p&gt;flax&lt;/p&gt;
+&lt;p&gt;forthwith&lt;/p&gt;
+&lt;p&gt;mortuary&lt;/p&gt;
+&lt;p&gt;untold&lt;/p&gt;
+&lt;p&gt;可怕的 gruesome&lt;/p&gt;
+&lt;p&gt;ooze 渗出&lt;/p&gt;
+&lt;p&gt;huff&lt;/p&gt;
+&lt;p&gt;wicked&lt;/p&gt;
+&lt;p&gt;newsreel&lt;/p&gt;
+&lt;p&gt;innate&lt;/p&gt;
+&lt;p&gt;rendition&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;h1 id=&#34;arm是啥&#34;&gt;Arm是啥？&lt;/h1&gt;
+&lt;h2 id=&#34;arm是一个公司是为精简指令集计算机微处理器提供解决方案的&#34;&gt;ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。&lt;/h2&gt;
+&lt;p&gt;arm并不生产芯片，这是出知识产权的。&lt;/p&gt;
+&lt;p&gt;RISC 精简指令集&lt;/p&gt;
+&lt;p&gt;C语言 -1-&amp;gt; 汇编 -2-&amp;gt;01指令&lt;/p&gt;
+&lt;p&gt;2:指令的格式怎么统一？ARM就是这个解决方案&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-assembly&#34;&gt;MOV R0, #1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这串指令 ，直接解析成机器码。&lt;/p&gt;
+&lt;p&gt;arm做的事情就是对指令进行&lt;strong&gt;怎么&lt;/strong&gt;翻译，采用的是流水线的技术。&lt;/p&gt;
+&lt;h2 id=&#34;arm公司的工作模式&#34;&gt;ARM公司的工作模式：&lt;/h2&gt;
+&lt;p&gt;![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)&lt;/p&gt;
+&lt;p&gt;OEM 代工生产公司，把产品制造出来。&lt;/p&gt;
+&lt;p&gt;很多电子产品的应用模式都是这样的。&lt;/p&gt;
+&lt;h2 id=&#34;arm的优势&#34;&gt;ARM的优势&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;既可以工作在16位下，也可以工作在32位下。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大量使用寄存器，执行速度快&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大多数数据操作在寄存器完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ARM7&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ARM9&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ARM10E&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ARM11&lt;/p&gt;
+&lt;p&gt;![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间&lt;/p&gt;
+&lt;h2 id=&#34;arm各版本&#34;&gt;ARM各版本&lt;/h2&gt;
+&lt;p&gt;ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。&lt;/p&gt;
+&lt;p&gt;​	运行一条指令，平均执行1.9个时钟周期。&lt;/p&gt;
+&lt;p&gt;ARM9为五级流水线技术（取指、译码、执行、&lt;strong&gt;缓冲/数据、回写&lt;/strong&gt;）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。&lt;/p&gt;
+&lt;p&gt;​	运行一条指令，平均执行1.5个时钟周期。&lt;/p&gt;
+&lt;p&gt;ARM11为8级流水线。600Mhz时钟频率。&lt;/p&gt;
+&lt;p&gt;![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)&lt;/p&gt;
+&lt;p&gt;一条指令4字节长，三级流水线，PC的地址差八个字节&lt;/p&gt;
+&lt;h2 id=&#34;arm微处理器的工作状态&#34;&gt;ARM微处理器的工作状态&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。&lt;/li&gt;
+&lt;li&gt;Thumb状态 这里是按照半字（2*8=16位）来读取指令。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;什么是字？ 半字？&lt;/p&gt;
+&lt;p&gt;从偶数地址开始的连续两个字节（16位）构成一个半字。&lt;/p&gt;
+&lt;p&gt;字：4个字节。&lt;/p&gt;
+&lt;p&gt;![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)&lt;/p&gt;
+&lt;h3 id=&#34;两个状态咋切换&#34;&gt;两个状态咋切换？&lt;/h3&gt;
+&lt;p&gt;![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)&lt;/p&gt;
+&lt;p&gt;![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)&lt;/p&gt;
+&lt;p&gt;![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</guid>
+        <description>&lt;h1 id=&#34;2013-英一小作文&#34;&gt;2013 英一小作文&lt;/h1&gt;
+&lt;p&gt;(2013) Write an e-mail of about 100 words to a foreign teacher in your college, &lt;strong&gt;inviting him/her to be a judge for the upcoming English speech contest.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You should include the details you think necessary.&lt;/li&gt;
+&lt;li&gt;You should write neatly on the ANSwer SHEET.&lt;/li&gt;
+&lt;li&gt;Do not sign your own name at the end of the e-mail. Use &amp;ldquo;Li Ming&amp;rdquo; instead.&lt;/li&gt;
+&lt;li&gt;Do not write the address. (10 points)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;思路按照公务邀请的方法来写邀请一个老师参加英语演讲&#34;&gt;思路：按照公务邀请的方法来写。邀请一个老师参加英语演讲。&lt;/h2&gt;
+&lt;h3 id=&#34;范文-1&#34;&gt;范文 1:&lt;/h3&gt;
+&lt;p&gt;Dear Mr, Wilson,&lt;/p&gt;
+&lt;p&gt;​ I am writing &lt;strong&gt;on behalf of&lt;/strong&gt; the Student&amp;rsquo; Union to invite you to be a judge for the upcoming English speech contest. It will be held in ROOM304, the North Building next Friday.&lt;/p&gt;
+&lt;p&gt;​ This contest &lt;strong&gt;aims at&lt;/strong&gt; improving our abilities in practical English. We know that you are admired by all the students. We would be grateful if you could be the judge for this contest. The participants are mainly the seniors and the theme is concerning the importance of environmental protection.&lt;/p&gt;
+&lt;p&gt;​ &lt;strong&gt;It&amp;rsquo;s our greatest pleasure that&lt;/strong&gt; you can present yourself in this great event. We are looking forward to a &lt;strong&gt;favorable&lt;/strong&gt; reply &lt;strong&gt;at your earliest convenience&lt;/strong&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
+        <description>&lt;h1 id=&#34;appropriate-freedom-of-speech&#34;&gt;&lt;strong&gt;Appropriate Freedom of Speech&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;​ America &lt;strong&gt;has long been&lt;/strong&gt; one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;. As a native Chinese student, let&amp;rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.&lt;/p&gt;
+&lt;p&gt;​ &lt;strong&gt;To start with&lt;/strong&gt;, we should understand the definition of freedom of speech. &lt;strong&gt;Generally speaking&lt;/strong&gt;, it&amp;rsquo;s the right that civilians can communicate e one&amp;rsquo;s opinions and ideas without worrying about the government&amp;rsquo;s censorship and retaliation. It originated with The First Amendment, the publication of which affect the whole world so much because it gave people the right of expressing their freedom of thinking. Human is not a rigid animal, which means many human activities require the spark of different ideas. That&amp;rsquo;s why there is a huge development in culture, technology even the military.&lt;/p&gt;
+&lt;p&gt;​ Freedom of speech can be subdivided into two parts, speech involving politics and freedom of speech that doesn&amp;rsquo;t involve politics. In my opinion, China and the United States are roughly at a level of freedom of expression that does not involve politics. As the country with the largest number of Internet users in the country, China has a high degree of development of Internet speech, and people&amp;rsquo;s thinking has blossomed, especially in recent years. We can discuss almost any speech on the Internet that is not involved in politics, and we will also receive &amp;ldquo;free&amp;rdquo; replies from netizens. Of course, there will be malice, which is also the embodiment of free speech.&lt;/p&gt;
+&lt;p&gt;​ But it is also beyond reproach to say that freedom of speech in China is incomplete. When it comes to speech that involves politics, we tend to be constrained by some &lt;em&gt;friendliness&lt;/em&gt;. This is often an unspoken rule that Chinese people are well versed in. In China, people who announce unpredictive remarks against the government tend to be dangerous and troublesome. Since the founding of China, we have been a staunch one-party dictatorship, and freedom of expression is likely to be used by renegades to subvert the regime. Since the reform and opening up, the government has given the people a great right to freedom of speech, which has made us very satisfied. As ordinary people, we understand that in a country with one party and government, if there is a high degree of freedom of speech, the people can freely attack the government, which is bound to cause social unrest and bring disadvantages to China&amp;rsquo;s economic development. This is also the difference that the Chinese and American people have been discussing for a long time.&lt;/p&gt;
+&lt;p&gt;​ Freedom of speech is surely a positive matter &lt;strong&gt;for the reason that it&lt;/strong&gt; can liberate, and free human beings from the shackles of thinking. &lt;strong&gt;But freedom without borders is not freedom.&lt;/strong&gt; If you go to a company and scold your boss on your first day on the job, what will be the consequences? This situation should be uniform throughout the world. The First Amendment protects your attacks on the government from being censored but doesn&amp;rsquo;t guarantee that your remarks to the boss won&amp;rsquo;t result in dismissal.&lt;/p&gt;
+&lt;p&gt;​ It is true that the West has liberalized people&amp;rsquo;s criticism of the government, but is the effect of this criticism significant? The West advocates freedom of speech in this way because their long-term partisan competitive relationship needs to be purified by freedom of speech, and freedom of speech is needed to invest in the fierce competition of their party and develop in competition. However, in today&amp;rsquo;s media, which is often controlled by a small number of giant capitals, we can also see how much malicious competition there is. Social unrest caused by the vicious competition of countless parties is something that China does not want to encounter. At the same time, to make the one-party dictatorship unshakable in China, we will also control the degree of people&amp;rsquo;s discussion of politics.&lt;/p&gt;
+&lt;p&gt;​ China&amp;rsquo;s inability to let go of free speech is also partly because of the lessons learned from the military crackdown on the student movement in the summer of the 1989 since the reform and opening up. After China attempted to liberalize free speech, the Communist Party did suffer from the dominant social unrest of the student movement. Students seek political openness, but for the Communist Party, it is a malicious act of challenging party and government power. Since the crackdown, the deepening of freedom of expression on the political front has also become more difficult.&lt;/p&gt;
+&lt;p&gt;As a result, we can see the benefits of free speech, but for every country I still think that appropriate freedom of speech is justified, and when the government reaches the point of restricting the minds of the people, it is worth the real protest. Obviously not yet.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>经典句型</title>
+        <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可想而知&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s &lt;strong&gt;conceivable&lt;/strong&gt;/obvious/apparent that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们绝对不能&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On no account can we &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;那些什么的人&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Those who&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;值得我们关注&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;.., which is worthy of our attention&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;该是&amp;hellip;的时候了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is time + 主语+ 过去式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正如&amp;hellip;生动的描述了&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As is &lt;strong&gt;vividly depicted&lt;/strong&gt; in the &amp;hellip;, &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;充分理解寓意..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To grasp the full &lt;strong&gt;implication&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;毋庸置疑&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no denying that &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个可笑的场景..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A ridiculous situation&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;认真做决定..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To make careful decision&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无法理解&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beyond one&amp;rsquo;s comprehension&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关注..的人寥寥无几&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Few people could pay attention to &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;犯下严重的错误..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Commit a terrible blunder&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以..为代价&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At the expense of &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;来自生活的方方面面.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From all &lt;strong&gt;spheres&lt;/strong&gt; of life&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;脱离低级趣味&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Above vular interest &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;令人担心的是..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is &lt;strong&gt;worrisome&lt;/strong&gt; that &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;鉴于此..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;In respense to&lt;/strong&gt; this &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正处于衰败阶段&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be &lt;strong&gt;on the decline&lt;/strong&gt; &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是一个好的例证&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be a good case in point &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;失去黄金机会&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To lose one&amp;rsquo;s golden opportunity&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;困难、挫折和绝望&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obstacles, discourages and impossibilities &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现在是号召人们结束..的时候了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s high time to call for an end to &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变得十分紧急&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To become desperately urgent &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;势必使得情况更加糟糕&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It will inevitably make the situation worse (that) &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;侧重..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To place a high value upon &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;过着有意义的生活..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To lead a meaningful and rewarding life &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;万能金句&#34;&gt;万能金句&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;随着..的流行程度/普及程度的快速增长，我们的生活质量也被显著改变.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With the rapidly growing popularity of &amp;hellip;, the quality of our lives has been considerably changed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最近,&amp;hellip;已经被带入广泛大众视野之中/成为关注的焦点.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Recently, sth/the problem of &amp;hellip; has been brought to popular attention/ has become the focus of public concern.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随着&amp;hellip;的发展，越来越多的人开始意识到.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With the development of &amp;hellip;, more and more people come to realize that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在..的眼中，&amp;hellip;看起来/意味着&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To sb&amp;rsquo;s mind/in sb&amp;rsquo;s eyes,sth. seems /means &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现在&amp;hellip;被广泛相信.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now it is widely believed that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;已经改变了我们社会的发展方式，但它光明的一面不应阻碍我们密切关注其黑暗的一面.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sth. has changed the way our society develops, but its bright side should not keep us from following closely its dark side.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果没有&amp;hellip;,我们的社会将会是怎样？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What would our society be like if ther were no &amp;hellip;?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在过去的几年中，&amp;hellip;经历了一个大繁荣时期/急速增长/下降.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the few years, there has been a boom/sharp growth/decline in &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在我们的生活中，在&amp;hellip;时经常会出现这样的情况.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In our life, there often appears &lt;strong&gt;such an occasion when&lt;/strong&gt; &amp;hellip;/on which..&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>一些单词的高级表达</title>
+        <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;词义&lt;/th&gt;
+&lt;th&gt;基础&lt;/th&gt;
+&lt;th&gt;升级&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;繁荣兴旺&lt;/td&gt;
+&lt;td&gt;boom&lt;/td&gt;
+&lt;td&gt;flourish;thrive;prosper&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;导致&lt;/td&gt;
+&lt;td&gt;cause&lt;/td&gt;
+&lt;td&gt;lead to; bring about;result in;spark off;conduce to;generate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;艰巨的&lt;/td&gt;
+&lt;td&gt;difficult&lt;/td&gt;
+&lt;td&gt;arduous;heavy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;掩盖&lt;/td&gt;
+&lt;td&gt;cover&lt;/td&gt;
+&lt;td&gt;mask;veil;conceal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;消除&lt;/td&gt;
+&lt;td&gt;clear&lt;/td&gt;
+&lt;td&gt;eliminate;remove;take away&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重要的&lt;/td&gt;
+&lt;td&gt;important&lt;/td&gt;
+&lt;td&gt;crucial;significant;vital&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;加强&lt;/td&gt;
+&lt;td&gt;heighten&lt;/td&gt;
+&lt;td&gt;enhance;reinforce;enforce;strengthen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;满足&lt;/td&gt;
+&lt;td&gt;meet&lt;/td&gt;
+&lt;td&gt;satisfy;suit;fill;fulfill;accommodate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;流行的&lt;/td&gt;
+&lt;td&gt;popular&lt;/td&gt;
+&lt;td&gt;prevailing;prevalent;widespread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有益的&lt;/td&gt;
+&lt;td&gt;useful&lt;/td&gt;
+&lt;td&gt;helpful;beneficial;advantageous&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/docs/svelte/chapter-4/</link>
+        <pubDate>Fri, 17 Jun 2022 10:23:36 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/chapter-4/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
+        <pubDate>Fri, 17 Jun 2022 10:23:35 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 1</title>
+        <link>https://kunieone.github.io/docs/svelte/chapter-1/</link>
+        <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/chapter-1/</guid>
+        <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;proin-pretium-lorem-a-justo-euismod-condimentum&#34;&gt;Proin pretium lorem a justo euismod condimentum&lt;/h2&gt;
+&lt;p&gt;Donec tortor nunc, feugiat non porttitor tristique, dictum vitae nibh. Integer vel mollis ante. Cras sed elementum nulla, vel placerat lectus. Cras ligula diam, blandit sed vehicula eu, aliquet vel leo. Curabitur sagittis nunc vel nulla tempor sagittis. Phasellus elementum mi malesuada libero vehicula sodales eget id augue. Duis consequat egestas tortor, vitae volutpat nibh gravida ultricies. Morbi maximus sed felis posuere luctus. Cras ultrices condimentum purus, eget iaculis nulla. Cras vulputate est in justo sodales varius. Maecenas auctor velit vel urna sodales, et sodales enim maximus. Proin tempus, metus sit amet ultrices luctus, justo eros finibus nibh, a volutpat ipsum lectus in leo. Pellentesque at dictum metus.&lt;/p&gt;
+&lt;h3 id=&#34;vivamus-dapibus-nunc-ac-fringilla-pellentesque&#34;&gt;Vivamus dapibus nunc ac fringilla pellentesque&lt;/h3&gt;
+&lt;p&gt;Pellentesque porttitor a tortor et egestas. Phasellus aliquet mattis velit in elementum. Suspendisse viverra turpis in risus tincidunt, et malesuada elit eleifend. Sed eu elit arcu. Cras tincidunt mauris purus, vehicula aliquam elit tincidunt eget. Nunc at justo quis augue sagittis auctor sed eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non nibh mattis, tempus tortor sed, iaculis metus. Morbi quis leo dignissim, viverra massa sit amet, faucibus ex. In hac habitasse platea dictumst. Vivamus tristique sem ac tortor venenatis, vel auctor metus vulputate. Maecenas facilisis odio et enim euismod, et ullamcorper enim congue. Nullam ut dolor eget urna aliquet bibendum sit amet a odio. Aenean vitae diam vel metus imperdiet ullamcorper consectetur ac mauris. Maecenas sed lorem vitae nibh porta venenatis.&lt;/p&gt;
+&lt;h2 id=&#34;in-eu-nisl-ac-ante-finibus-accumsan-vitae-vitae-eros&#34;&gt;In eu nisl ac ante finibus accumsan vitae vitae eros&lt;/h2&gt;
+&lt;p&gt;Mauris odio nulla, porta in lacinia vel, faucibus quis turpis. Nunc congue faucibus nisi eget feugiat. Integer nec magna purus. Mauris at elit in risus mollis pretium. Morbi at elementum elit, eu condimentum quam. Maecenas maximus eget turpis ac tristique. Nunc scelerisque mi ex, eu pulvinar ante accumsan vitae.&lt;/p&gt;
+&lt;h2 id=&#34;aliquam-vitae-augue-egestas&#34;&gt;Aliquam vitae augue egestas&lt;/h2&gt;
+&lt;p&gt;Vivamus eget orci ac magna efficitur tincidunt et non urna. Cras mattis molestie nibh, ac posuere lectus bibendum a. Praesent consectetur vulputate dolor eget porta. Fusce ultrices ipsum in tortor consectetur, finibus maximus odio aliquet. Nunc dui odio, fringilla eget quam sed, gravida pretium lorem. Curabitur felis libero, commodo eget pharetra eu, blandit eu lectus. Nunc laoreet nisi purus, in dignissim nibh elementum ut. Nunc sit amet elementum urna. Pellentesque auctor imperdiet lorem, ut egestas arcu. Donec sed magna nec neque molestie aliquet non nec lorem. Phasellus sed libero tortor.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 1</title>
+        <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</link>
+        <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</guid>
+        <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;
+&lt;h2 id=&#34;ut-aliquam-dui-convallis-purus-interdum&#34;&gt;Ut aliquam dui convallis purus interdum&lt;/h2&gt;
+&lt;p&gt;In nec aliquet nisi. Vestibulum varius dui eu ante tempor maximus. Pellentesque at ipsum libero. Sed non augue enim. Sed accumsan arcu sed aliquam maximus. Donec fringilla sem at cursus placerat. Nulla commodo enim nunc, at luctus libero facilisis ut. Quisque id leo at velit pharetra imperdiet vel et felis. Nunc eu tincidunt nulla. Nunc consectetur ligula ut hendrerit malesuada. Sed commodo aliquam elit, at dapibus tellus pellentesque non. Sed vel massa pulvinar, sollicitudin justo sit amet, porta lacus. Quisque eleifend placerat placerat. Phasellus nisl eros, consectetur sit amet mi eget, fringilla luctus purus.&lt;/p&gt;
+&lt;h3 id=&#34;morbi-eu-mi-convallis&#34;&gt;Morbi eu mi convallis&lt;/h3&gt;
+&lt;p&gt;Sed sed est nulla. Etiam fermentum sed lectus ac molestie. Vestibulum elementum lectus quis interdum semper. Nam id tempus nisl. Nullam in tempor sapien. Integer volutpat nibh vel libero ornare hendrerit. Vestibulum non condimentum nulla. Nulla vel finibus mi. Cras consequat ligula augue, ac vulputate est tincidunt eu. Maecenas nec nibh consequat, egestas nisl non, iaculis nunc. Maecenas eu dolor tortor. Cras in bibendum diam. Vivamus mattis ultricies diam, in dignissim ante scelerisque vel. In euismod dictum ligula, sed scelerisque ipsum volutpat at. Nam lacus elit, porttitor et orci quis, malesuada sagittis risus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-sit-amet-lorem-sit-amet&#34;&gt;Aenean sit amet lorem sit amet&lt;/h2&gt;
+&lt;p&gt;Sed eget erat faucibus, malesuada risus at, mollis est. Suspendisse et fringilla nisl, vel placerat ipsum. Proin ut est ornare, molestie ligula et, pretium orci. Aliquam id justo in eros vulputate volutpat. Vivamus sed tellus id quam laoreet fermentum nec ut dui. Ut neque nibh, facilisis dapibus tempor at, egestas non urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus, mauris id tempor dapibus, ligula velit pharetra justo, vel molestie sem mauris nec nulla. Suspendisse purus magna, pretium sodales pretium id, consectetur et arcu. Fusce commodo vel nibh quis efficitur. Duis feugiat felis ac mi semper, at sollicitudin tellus ullamcorper. Morbi eget efficitur dui. Nam erat diam, ultrices non mollis in, vestibulum ut lectus. Nunc at dui sed metus vestibulum fringilla. Curabitur vitae mauris vitae neque efficitur molestie eget at nisi. Morbi vel vehicula libero, nec tincidunt augue.&lt;/p&gt;
+&lt;h3 id=&#34;maecenas-faucibus-est-ac-orci-fermentum-cursus&#34;&gt;Maecenas faucibus est ac orci fermentum cursus&lt;/h3&gt;
+&lt;p&gt;Proin vestibulum pellentesque ipsum, non lobortis arcu volutpat at. Integer neque diam, luctus a turpis non, posuere elementum ex. Donec eget sagittis purus. Maecenas non laoreet quam. Quisque luctus porta pellentesque. Vestibulum auctor commodo tortor non imperdiet. Fusce sed tincidunt nunc. Aenean diam diam, mattis a enim nec, suscipit dignissim neque. Quisque at est quis tortor lobortis vehicula vitae vitae quam. Nam maximus rutrum felis, non feugiat nisl vestibulum quis.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-suscipit-tellus-at-nibh-tincidunt&#34;&gt;Suspendisse suscipit tellus at nibh tincidunt&lt;/h3&gt;
+&lt;p&gt;Nulla pellentesque, leo eget interdum interdum, sem felis consequat massa, id aliquet eros leo sit amet urna. Phasellus quis odio ut odio porttitor consequat quis a velit. Quisque purus velit, faucibus vel efficitur in, sagittis quis neque. Morbi pretium suscipit odio, vel tincidunt nunc dictum aliquam. Quisque non arcu at urna scelerisque semper ac et tortor. Aliquam a dapibus justo. Vestibulum tempus nunc eu condimentum ultrices. Aenean nec egestas nulla, ut congue libero. Aliquam ut mattis urna, in sollicitudin odio. Aenean ac tristique felis, a consequat erat. Aliquam luctus eros ut porttitor efficitur. Nam cursus elit id arcu semper, at sodales velit vulputate. Suspendisse potenti.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/docs/svelte/chapter-2/</link>
+        <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/chapter-2/</guid>
+        <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;
+&lt;h2 id=&#34;integer-nec-dolor-pharetra&#34;&gt;Integer nec dolor pharetra&lt;/h2&gt;
+&lt;p&gt;Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.&lt;/p&gt;
+&lt;h3 id=&#34;suspendisse-in-enim-ut-purus-ullamcorper-pellentesque&#34;&gt;Suspendisse in enim ut purus ullamcorper pellentesque&lt;/h3&gt;
+&lt;p&gt;Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.&lt;/p&gt;
+&lt;h2 id=&#34;aenean-consequat-ante-vel-interdum-fermentum&#34;&gt;Aenean consequat ante vel interdum fermentum&lt;/h2&gt;
+&lt;p&gt;Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.&lt;/p&gt;
+&lt;h3 id=&#34;integer-volutpat-tortor-ut-vulputate-venenatis&#34;&gt;Integer volutpat tortor ut vulputate venenatis&lt;/h3&gt;
+&lt;p&gt;Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.&lt;/p&gt;
+&lt;h3 id=&#34;vestibulum-fermentum-massa&#34;&gt;Vestibulum fermentum massa&lt;/h3&gt;
+&lt;p&gt;Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Chapter 2</title>
+        <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</link>
+        <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</guid>
+        <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;
+&lt;h2 id=&#34;vivamus-facilisis-risus-ac-eros-porttitor&#34;&gt;Vivamus facilisis risus ac eros porttitor&lt;/h2&gt;
+&lt;p&gt;Proin quis sapien porta, dictum magna eget, sodales erat. Nunc eu nisl at elit molestie placerat. Nulla nec massa non lectus malesuada vehicula. Suspendisse quis arcu elit. Praesent est ipsum, pharetra ac malesuada a, ultricies vel sem. Aenean arcu neque, bibendum a tincidunt eget, efficitur ac sapien. Vestibulum eu suscipit massa. Aenean non libero molestie, tristique purus eget, bibendum tellus. Donec id nisl laoreet elit sodales viverra nec et risus. Nullam tortor dolor, auctor convallis vulputate porta, egestas cursus lacus. Sed rhoncus ipsum accumsan magna cursus, sit amet fringilla sapien feugiat. Aliquam facilisis viverra risus, eget varius erat convallis quis.&lt;/p&gt;
+&lt;h2 id=&#34;integer-feugiat-orci-a-diam-cursus-tincidunt-id-a-urna&#34;&gt;Integer feugiat orci a diam cursus tincidunt id a urna&lt;/h2&gt;
+&lt;p&gt;Suspendisse tristique sem erat, vitae fringilla purus euismod vel. Nam magna dui, scelerisque at nibh et, faucibus dapibus nibh. Nulla facilisi. Quisque a diam sed mauris pretium volutpat. Nam nec mollis dolor, in ultrices arcu. Suspendisse ut placerat ex, dictum fringilla libero. Quisque mollis aliquet tellus in congue.&lt;/p&gt;
+&lt;h2 id=&#34;maecenas-eu-ipsum-at-lectus-commodo-eleifend-nec-vel-ante&#34;&gt;Maecenas eu ipsum at lectus commodo eleifend nec vel ante&lt;/h2&gt;
+&lt;p&gt;Nulla sit amet dolor sed elit semper accumsan. Nunc suscipit sapien eget nulla imperdiet gravida. Pellentesque dignissim metus eget felis tempor, at elementum ipsum vulputate. In pretium accumsan neque ut pulvinar. Donec rhoncus at elit id vulputate. Maecenas massa libero, porttitor et lacus eget, gravida auctor tellus. Cras lacus urna, hendrerit et tincidunt efficitur, rutrum id nisi. Nunc quis accumsan ex, eget rutrum sem. Vivamus vel dui eget leo luctus consectetur. Sed tellus elit, aliquet quis commodo in, fermentum sit amet ante. Curabitur nec ornare tortor. Sed et tempus mi. Pellentesque sollicitudin porttitor mi eget hendrerit. Maecenas lobortis turpis ut quam placerat pharetra.&lt;/p&gt;
+&lt;h2 id=&#34;maecenas-a-lorem-in-sem-feugiat-ultricies&#34;&gt;Maecenas a lorem in sem feugiat ultricies&lt;/h2&gt;
+&lt;p&gt;Donec tincidunt interdum magna quis dictum. Integer non sollicitudin justo, id volutpat leo. Donec quis enim porttitor, hendrerit nisi non, accumsan orci. Nulla consectetur porta mauris, et pharetra nunc efficitur eu. Pellentesque eu consectetur tellus. In ac nunc ac turpis fermentum tempor vel vel nisl. Aenean convallis turpis ac ipsum mollis, eget venenatis lacus eleifend. Vestibulum sapien mauris, rutrum sit amet mi ut, volutpat mollis nunc. Praesent lobortis, orci efficitur molestie tempor, metus ante dignissim felis, ut interdum elit leo vitae lectus. Curabitur ex nunc, ornare at mi eu, eleifend molestie lectus. Duis pretium sapien in mauris pulvinar, ut auctor turpis tempus. Maecenas gravida nec dolor vel interdum. Ut posuere aliquam arcu et congue. Morbi scelerisque, leo vel luctus facilisis, est erat ultrices mauris, eget facilisis nisl libero a ligula. Mauris sit amet hendrerit sem. Etiam imperdiet, dolor id fermentum finibus, arcu est malesuada dui, at hendrerit nisi nibh ut mi.&lt;/p&gt;
+&lt;h2 id=&#34;quisque-convallis-sem-sit-amet-magna-aliquam-interdum&#34;&gt;Quisque convallis sem sit amet magna aliquam interdum&lt;/h2&gt;
+&lt;p&gt;Vestibulum a odio vitae sapien tempor sollicitudin. In eu mi ex. Phasellus sollicitudin, augue vitae congue vestibulum, sem mi ullamcorper nibh, sagittis tincidunt ligula turpis vitae arcu. Phasellus orci felis, tristique id scelerisque eu, ornare vel mauris. Curabitur suscipit venenatis facilisis. Phasellus et est et purus posuere accumsan et ut quam. Donec in odio eu enim facilisis scelerisque. Sed eget condimentum elit, quis pretium ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet tortor ligula. Mauris lectus odio, cursus a diam a, ultricies posuere justo. Sed ultrices tempor mi, semper commodo quam lobortis at. Donec consectetur pretium nisl, eget dapibus nibh maximus scelerisque.&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://kunieone.github.io/homepage/</link>
+        <pubDate>Fri, 17 Jun 2022 09:42:34 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/homepage/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>

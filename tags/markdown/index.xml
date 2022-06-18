@@ -1,27 +1,135 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>markdown on ∆STAREVAN</title>
-    <link>https://kunieone.github.io/tags/markdown/</link>
-    <description>Recent content in markdown on ∆STAREVAN</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>@Starevan
+    <channel>
+        <title>markdown on ∆STAREVAN</title>
+        <link>https://kunieone.github.io/tags/markdown/</link>
+        <description>Recent content in markdown on ∆STAREVAN</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh</language>
+        <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 22:13:39 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MARKDOWN写作指南</title>
-      <link>https://kunieone.github.io/posts/markdown/</link>
-      <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/markdown/</guid>
-      <description>Markup : - - - - Image with alt :
-Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
-Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
-Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
-Go To TOP</description>
-    </item>
-    
-  </channel>
+        <lastBuildDate>Fri, 17 Jun 2022 22:13:39 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>MARKDOWN写作指南</title>
+        <link>https://kunieone.github.io/posts/markdown/</link>
+        <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/markdown/</guid>
+        <description>&lt;pre&gt;&lt;code&gt;Markup :  - - - -
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Image with alt :&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://via.placeholder.com/200x150&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;picture alt&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Foldable text:&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Title 1&lt;/summary&gt;
+  &lt;p&gt;Content 1 Content 1 Content 1 Content 1 Content 1&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+  &lt;summary&gt;Title 2&lt;/summary&gt;
+  &lt;p&gt;Content 2 Content 2 Content 2 Content 2 Content 2&lt;/p&gt;
+&lt;/details&gt;
+&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;details&amp;gt;
+           &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt;
+           &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt;
+         &amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Link to a specific part of the page:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#TOP&#34; &gt;Go To TOP&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : [text goes here](#section_name)
+          section_title&amp;lt;a name=&amp;quot;section_name&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hotkey:&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;⌘F&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;⇧⌘F&lt;/kbd&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;kbd&amp;gt;⌘F&amp;lt;/kbd&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hotkey list:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Symbol&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Option&lt;/td&gt;
+&lt;td&gt;⌥&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;⌃&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Command&lt;/td&gt;
+&lt;td&gt;⌘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shift&lt;/td&gt;
+&lt;td&gt;⇧&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Caps Lock&lt;/td&gt;
+&lt;td&gt;⇪&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tab&lt;/td&gt;
+&lt;td&gt;⇥&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Esc&lt;/td&gt;
+&lt;td&gt;⎋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Power&lt;/td&gt;
+&lt;td&gt;⌽&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Return&lt;/td&gt;
+&lt;td&gt;↩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Delete&lt;/td&gt;
+&lt;td&gt;⌫&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Up&lt;/td&gt;
+&lt;td&gt;↑&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Down&lt;/td&gt;
+&lt;td&gt;↓&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Left&lt;/td&gt;
+&lt;td&gt;←&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Right&lt;/td&gt;
+&lt;td&gt;→&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Emoji:&lt;/p&gt;
+&lt;p&gt;❗ Use emoji icons to enhance text. 👍 Look up emoji codes at &lt;a class=&#34;link&#34; href=&#34;http://emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Markup : Code appears between colons :EMOJICODE:
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

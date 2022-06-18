@@ -1,398 +1,199 @@
 <!DOCTYPE html>
-<html
-  lang="zh"
-  dir="ltr"
-  
-><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="zh" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Chapter 2 of example doc'><title>Chapter 2</title>
 
+<link rel='canonical' href='https://kunieone.github.io/docs/svelte/chapter-3/'>
 
-<title>Chapter 2 | svelte开发记录 | ∆STAREVAN</title>
+<link rel="stylesheet" href="/scss/style.scss"><meta property='og:title' content='Chapter 2'>
+<meta property='og:description' content='Chapter 2 of example doc'>
+<meta property='og:url' content='https://kunieone.github.io/docs/svelte/chapter-3/'>
+<meta property='og:site_name' content='∆STAREVAN'>
+<meta property='og:type' content='article'><meta property='article:section' content='Docs' /><meta property='article:published_time' content='2022-06-17T10:23:35&#43;08:00'/><meta property='article:modified_time' content='2022-06-18T15:39:42&#43;08:00'/>
+<meta name="twitter:title" content="Chapter 2">
+<meta name="twitter:description" content="Chapter 2 of example doc">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-<meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
-<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
-  as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
-   media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
-   crossorigin></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
-     crossorigin></script>
-<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
-
-
-<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
-  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true }
-      ],
-    });
-  });
-</script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
-  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
-
-
-<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
-
-<meta name="description"
-  content="Chapter 2 of example doc">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1 ,
-      "name":"文档",
-      "item":"https://kunieone.github.io/docs/"},{
-      "@type": "ListItem",
-      "position": 2 ,
-      "name":"svelte开发记录",
-      "item":"https://kunieone.github.io/docs/svelte/"},{
-      "@type": "ListItem",
-      "position": 3 ,
-      "name":"Chapter 2",
-      "item":"https://kunieone.github.io/docs/svelte/chapter-3/"}]
-}
-</script>
-
-
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/svelte/chapter-3/"
-    },
-    "headline": "Chapter 2 | svelte开发记录 | ∆STAREVAN","datePublished": "2022-06-17T10:23:35+08:00",
-    "dateModified": "2022-06-18T15:38:54+08:00",
-    "wordCount":  532 ,
-    "publisher": {
-        "@type": "Person",
-        "name": "Zhao StarEvan",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://kunieone.github.io/images/icon.png"
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
         }
-        },
-    "description": "Chapter 2 of example doc"
-}
-</script><meta property="og:title" content="Chapter 2 | svelte开发记录 | ∆STAREVAN" />
-<meta property="og:type" content="article" />
-
-
-<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
-
-
-<meta property="og:url" content="https://kunieone.github.io/docs/svelte/chapter-3/" />
-
-
-
-<meta property="og:description" content="Chapter 2 of example doc" />
-
-
-
-<meta property="og:locale" content="zh" />
-
-
-
-
-<meta property="og:site_name" content="∆STAREVAN" />
-
-
-
-
-
-
-<meta property="article:published_time" content="2022-06-17T10:23:35&#43;08:00" />
-
-
-<meta property="article:modified_time" content="2022-06-18T15:38:54&#43;08:00" />
-
-
-
-<meta property="article:section" content="docs" />
-
-
-
-
-
-  <body class="flex min-h-screen flex-col">
-    <header
-      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
-    >
-      <div class="mx-auto w-full max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    }
+    })();
 </script>
-<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
-    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
-        <i class="fas fa-bars"></i>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
     </button>
 
-    <div id="target"
-        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
-            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
-            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
-            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
-            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
-        </div>
-
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
-
-</nav>
-<script>
-    
-    let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
-        document.addEventListener('DOMContentLoaded', () => {
-            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
-        })
-    } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'sun')
-        element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-    });
-</script>
-</div>
-    </header>
-    <main class="grow pt-16">
-        <div class="pl-scrollbar">
-          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-
-
-<div class="lg:pt-12">
-    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
-        <div class="md:w-1/4 lg:w-1/5 border-e">
-            <div class="sticky top-16 pt-6">
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
                 
-
-
-
-
-
-
-
-
-
-
-<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
-    <span class="font-semibold">目录</span>
-    <i class='fas fa-caret-right ms-1'></i>
-</div>
-
-<div id="sidebar-toc"
-    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
-    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
-        <a class=" hover:text-eureka"
-            href="https://kunieone.github.io/docs/svelte/">svelte开发记录</a>
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">∆STAREVAN</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
         
         
         
 
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>文章</span>
+            </a>
+        </li>
+        
+        
 
+        <li >
+            <a href='/docs/' >
+                
+                
+                
+                <span>文档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/series/' >
+                
+                
+                
+                <span>系列</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/docs/svelte/chapter-3/">Chapter 2</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Chapter 2 of example doc
+        </h3>
+        
     </div>
-    
-<ul class="ps-6">
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-4/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" text-eureka  hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-3/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-1/">Chapter 1</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-2/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class=" pb-2 ">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/">Nested Chapter</a>
-        </div>
-        
-        
-<ul class="ps-6">
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/">Chapter 1</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-</ul>
 
+    
+    <footer class="article-time">
         
-    </li>
-    
-    
-</ul>
-
-</div>
-
-
-
-
-
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 17, 2022</time>
             </div>
+        
 
-        </div>
-        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
-            <div class="flex">
-                <div class="w-full lg:w-3/4 px-6">
-                    <article class="prose">
-  <h1 class="mb-4">Chapter 2</h1>
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
 
-  <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-17</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
-  </div>
 
-  
 
-  
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
 </div>
+</header>
 
-
-  
-  
-
-  <p>This is chapter 2 of example doc.</p>
+    <section class="article-content">
+    
+    
+    <p>This is chapter 2 of example doc.</p>
 <h2 id="integer-nec-dolor-pharetra">Integer nec dolor pharetra</h2>
 <p>Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.</p>
 <h3 id="suspendisse-in-enim-ut-purus-ullamcorper-pellentesque">Suspendisse in enim ut purus ullamcorper pellentesque</h3>
@@ -403,116 +204,151 @@
 <p>Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.</p>
 <h3 id="vestibulum-fermentum-massa">Vestibulum fermentum massa</h3>
 <p>Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.</p>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Jun 18, 2022 15:39 CST
+        </span>
+    </section></footer>
+
+
+    
 </article>
 
-                    
-                    
-                    
+    
 
-                    
+    
 
+     
+    
+        
+    
 
-
-                    
-  <div
-    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
-  >
-    <div>
-      
-        <span class="text-primary-text block font-bold"
-          >上一页</span
-        >
-        <a href="https://kunieone.github.io/docs/svelte/chapter-4/" class="block">Chapter 2</a>
-      
-    </div>
-    <div class="mt-4 md:mt-0 md:text-right">
-      
-        <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/svelte/chapter-1/" class="block">Chapter 1</a>
-      
-    </div>
-  </div>
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 ∆STAREVAN
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
 
 
-                    
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+    
+    <div class="pswp__bg"></div>
 
+    
+    <div class="pswp__scroll-wrap">
 
-                </div>
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
                 
-                <div class="hidden lg:block lg:w-1/4">
-                    
-                    <div
-  class="
-    bg-secondary-bg
-   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
->
-  <h3>本页内容</h3>
-</div>
-<div
-  class="sticky-toc 
-    border-s
-   hidden px-6 pb-6 lg:block"
->
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#integer-nec-dolor-pharetra">Integer nec dolor pharetra</a>
-      <ul>
-        <li><a href="#suspendisse-in-enim-ut-purus-ullamcorper-pellentesque">Suspendisse in enim ut purus ullamcorper pellentesque</a></li>
-      </ul>
-    </li>
-    <li><a href="#aenean-consequat-ante-vel-interdum-fermentum">Aenean consequat ante vel interdum fermentum</a>
-      <ul>
-        <li><a href="#integer-volutpat-tortor-ut-vulputate-venenatis">Integer volutpat tortor ut vulputate venenatis</a></li>
-        <li><a href="#vestibulum-fermentum-massa">Vestibulum fermentum massa</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-</div>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    enableStickyToc();
-  });
-</script>
 
-                    
-                </div>
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
                 
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
             </div>
 
         </div>
 
-
     </div>
-</div>
 
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        hljs.highlightAll();
-        changeSidebarHeight();
-        switchDocToc();
-    })
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
 </script>
 
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-      
-    </main>
-    <footer class="pl-scrollbar">
-      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">@Starevan
- &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</div></div>
-    </footer>
-  </body>
+    </body>
 </html>

@@ -1,712 +1,536 @@
 <!DOCTYPE html>
-<html
-  lang="zh"
-  dir="ltr"
-  
-><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="zh" dir="ltr">
+    <head>
+	<meta name="generator" content="Hugo 0.102.0-DEV" /><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><title>∆STAREVAN</title>
 
+<link rel='canonical' href='https://kunieone.github.io/'>
 
-<title>∆STAREVAN</title>
+<link rel="stylesheet" href="/scss/style.scss"><meta property='og:title' content='∆STAREVAN'>
+<meta property='og:description' content=''>
+<meta property='og:url' content='https://kunieone.github.io/'>
+<meta property='og:site_name' content='∆STAREVAN'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2022-06-18T15:39:44&#43;08:00 '/>
+<meta name="twitter:title" content="∆STAREVAN">
+<meta name="twitter:description" content=""><link rel="alternate" type="application/rss&#43;xml" href="https://kunieone.github.io/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-<meta name="generator" content="Hugo Eureka 0.9.3" />
-<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
-<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
-  as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
-   media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
-   crossorigin></script>
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
-     crossorigin></script>
-<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
-
-
-<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
-  onload="this.media='all';this.onload=null" crossorigin>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
-  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    renderMathInElement(document.body, {
-      delimiters: [
-        { left: "$$", right: "$$", display: true },
-        { left: "$", right: "$", display: false },
-        { left: "\\(", right: "\\)", display: false },
-        { left: "\\[", right: "\\]", display: true }
-      ],
-    });
-  });
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
-  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
-
-
-<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
-
-<meta name="description"
-  content="Wish a better life for every developer.">
-
-
-
-<meta property="og:title" content="∆STAREVAN" />
-<meta property="og:type" content="website" />
-
-
-<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
-
-
-<meta property="og:url" content="https://kunieone.github.io/" />
-
-
-
-
-
-<meta property="og:description" content="Wish a better life for every developer." />
-
-
-
-
-
-<meta property="og:locale" content="zh" />
-
-
-
-
-<meta property="og:site_name" content="∆STAREVAN" />
-
-
-
-
-
-
-<meta property="og:updated_time" content="2022-06-18T03:28:40&#43;08:00" />
-
-
-
-<meta property="article:section" content="" />
-
-
-<link rel="alternate" type="application/rss+xml" href="https://kunieone.github.io/index.xml" title="∆STAREVAN" />
-
-
-  <body class="flex min-h-screen flex-col">
-    <header
-      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
-    >
-      <div class="mx-auto w-full max-w-screen-xl"><script>
-    let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
-    }
-</script>
-<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
-    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
-    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
-        <i class="fas fa-bars"></i>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
     </button>
 
-    <div id="target"
-        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
-        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
-            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文档</a>
-            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
-            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
-            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">∆STAREVAN</a></h1>
+            <h2 class="site-description"></h2>
         </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
 
-        <div class="flex">
-            <div class="relative pt-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
-                </div>
-                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='lightDarkOptions'>
-                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
-                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
-                </div>
+        <li >
+            <a href='/posts/' >
+                
+                
+                
+                <span>文章</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/docs/' >
+                
+                
+                
+                <span>文档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/series/' >
+                
+                
+                
+                <span>系列</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    
+    
+    
+    
+
+    <section class="article-list">
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/linux_time/">Linux 下文件的三个时间：ctime、mtime、atime 的区别</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 18, 2022</time>
             </div>
-        </div>
-    </div>
-
-    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
-    </div>
-
-</nav>
-<script>
-    
-    let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
-        document.addEventListener('DOMContentLoaded', () => {
-            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
-        })
-    } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'sun')
-        element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        getcolorscheme();
-        switchBurger();
-    });
-</script>
-</div>
-    </header>
-    <main class="grow pt-16">
-  
-  
-  
-    
-      
-  
-
-  
-
-  
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-    
-  
-
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-
-    
-    
-    
-    
-    
-  
-
-
-  <div
-    class="pl-scrollbar bg-primary-bg"
-    
-  >
-    <div class="mx-auto max-w-screen-xl">
-      <div
-        id="me"
-        class="lg:w-2/3 mx-auto px-6 md:px-8 xl:px-12 py-12"
-      >
-        
-  
-
-  
-    
-      
-      <div class="mb-12 flex flex-col items-center justify-center md:flex-row">
-  
-  
-    <div class="md:ms-0 md:me-8 md:pe-8 md:border-e mx-auto w-48 flex-none">
-      <img src="https://kunieone.github.io/images/icon.png" class="rounded-full" alt="Avatar" />
-    </div>
-  
-  <div class="mt-4 w-full grow md:mt-0">
-    <h1 class="py-4 text-3xl">Star_evan</h1>
-    <div class="w-3/12 border-b xl:w-2/12"></div>
-
-    <div class="flex items-center pt-4">
-      
-        <i class="fas fa-user"></i>
-      
-      <div class="flex flex-wrap">
-        
-          <span class="ps-4">学生/业余开发者</span>
         
 
         
-          <a href="https://www.stanford.edu/" class="ps-4">不知名大学</a>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
         
-      </div>
-    </div>
-
-    
-      <div class="py-8 text-lg leading-normal">
-        我坐在九千个日落里，望向白鸟衔玫瑰飞去。
-      </div>
-    
-  </div>
-  <div class="md:ms-8 flex items-end justify-center md:flex-col">
-    
-    
-      
-      
-      
-      
-      
-      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
-        <a href="mailto:zstarcc@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    
-      
-      
-      
-      
-      
-      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
-        <a href="https://example.com/"><i class="fab fa-twitter"></i></a>
-      </div>
-    
-      
-      
-      
-      
-      
-      <div class="mx-2 mb-2 mt-4 md:mx-0 md:mt-2">
-        <a href="https://github.com/kunieone"><i class="fab fa-github"></i></a>
-      </div>
-    
-  </div>
-</div>
-<div class="prose">
-  
-</div>
-
-      
-    
-  
-
-      </div>
-    </div>
-  </div>
-
-    
-
-    
-  
-    
-      
-  
-
-  
-
-  
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-    
-  
-
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-
-    
-    
-    
-    
-    
-  
-
-
-  <div
-    class="pl-scrollbar bg-primary-bg"
-    
-  >
-    <div class="mx-auto max-w-screen-xl">
-      <div
-        id="recent"
-        class="w-full mx-auto px-6 md:px-8 xl:px-12 py-12"
-      >
-        
-  
-
-  
-    
-      
-      
-  <h2 class=" font-bold text-3xl my-4">最近</h2>
-
-
-  
-  <div class="pb-2 text-right hover:text-eureka">
-    
-  <a href="https://kunieone.github.io/posts/" class="font-semibold">阅读更多</a>
-  <i class='fas fa-caret-right ms-1'></i>
-
-  </div>
-  
-  <div class="masonry grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-  
-  <div class="item">
-    <div class="grid-content">
-      <div
-  class="bg-secondary-bg dark:border-tertiary-bg overflow-hidden rounded border transition duration-200 ease-in-out hover:shadow-lg"
->
-  
-  
-  <div class="prose px-6 pt-6 pb-4">
-    <a href="https://kunieone.github.io/posts/linux_time/" class="no-underline">
-      <h3 class="mt-0">Linux 下文件的三个时间：ctime、mtime、atime 的区别</h3>
-    </a>
-    
-      Linux 下文件的三个时间：ctime、mtime、atime 的区别
-modification time(mtime):内容修改时间
-这里的修改时间指的是文件的内容发生变化，而更新的时间。
-Eg:vi 后保存文件。
-status time(ctime):状态修改时间
-这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
-Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
-access time(atime):最后访问时间
-这里的访问时间是指文件被读取，而更新的时间。
-    
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-18</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  </div>
-</div>
-
-    </div>
-  </div>
-  
-  <div class="item">
-    <div class="grid-content">
-      <div
-  class="bg-secondary-bg dark:border-tertiary-bg overflow-hidden rounded border transition duration-200 ease-in-out hover:shadow-lg"
->
-  
-  
-  <div class="prose px-6 pt-6 pb-4">
-    <a href="https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/" class="no-underline">
-      <h3 class="mt-0">想法:脚本自动给文章添加时间</h3>
-    </a>
-    
-      每次写文档的时间都要自动更新，十分烦人。
-    
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-18</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  </div>
-</div>
-
-    </div>
-  </div>
-  
-  <div class="item">
-    <div class="grid-content">
-      <div
-  class="bg-secondary-bg dark:border-tertiary-bg overflow-hidden rounded border transition duration-200 ease-in-out hover:shadow-lg"
->
-  
-  
-  <div class="prose px-6 pt-6 pb-4">
-    <a href="https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/" class="no-underline">
-      <h3 class="mt-0">NodeList和HTMLCollection有什么区别</h3>
-    </a>
-    
-      首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212
-    
-    <div
-  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
->
-  <div class="me-6 my-2">
-    <i class="fas fa-calendar me-1"></i>
-    <span
-      >2022-06-18</span
-    >
-  </div>
-  <div class="me-6 my-2">
-    <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
-  </div>
-
-  
-
-  
-</div>
-
-  </div>
-</div>
-
-    </div>
-  </div>
-  
-
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    enableMasonry()
-  })
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    
-  
-
-      </div>
-    </div>
-  </div>
-
-    
-
-    
-  
-    
-      
-  
-
-  
-
-  
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-  
-
-  
-  
-
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-
-    
-    
-    
-    
-    
-  
-
-
-  <div
-    class="pl-scrollbar bg-tertiary-bg"
-    
-  >
-    <div class="mx-auto max-w-screen-xl">
-      <div
-        id="dev_stacks"
-        class="lg:w-2/3 mx-auto px-6 md:px-8 xl:px-12 py-12"
-      >
-        
-  
-
-  
-    
-      
-      <div class="mb-12 flex flex-col items-center justify-center md:flex-row">
-  
-  
-  <div class="mt-4 w-full grow md:mt-0">
-    <h1 class="py-4 text-3xl">我会什么</h1>
-    <div class="w-3/12 border-b xl:w-2/12"></div>
-
-    <div class="flex items-center pt-4">
-      
-      <div class="flex flex-wrap">
-        
-
-        
-      </div>
-    </div>
-
-    
-  </div>
-  <div class="md:ms-8 flex items-end justify-center md:flex-col">
-    
-    
-  </div>
-</div>
-<div class="prose">
-  <h2 id="1-前端技术栈">1. 前端技术栈</h2>
-<ul>
-<li>js/html/css</li>
-<li>less</li>
-<li>react
-<ul>
-<li>react native</li>
-</ul>
-</li>
-<li>vue</li>
-<li>svelte</li>
-<li>typescript</li>
-</ul>
-<h2 id="2-后端技术">2. 后端技术</h2>
-<ul>
-<li>
-<p>golang</p>
-<ul>
-<li>iris 框架</li>
-</ul>
-</li>
-</ul>
-<h2 id="3-全栈技术栈">3. 全栈技术栈</h2>
-<ul>
-<li>node.js
-<ul>
-<li>koa.js (熟练)</li>
-<li>express.js</li>
-<li>nestjs (使用过)</li>
-<li>next.js (使用过)</li>
-<li>sveltekit (弃坑)</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-前沿技术">4. 前沿技术</h2>
-<ul>
-<li>区块链开发
-<ul>
-<li>solidity 以太坊平台智能合约开发</li>
-<li>truffle.js , web3.js</li>
-</ul>
-</li>
-</ul>
-
-</div>
-
-      
-    
-  
-
-      </div>
-    </div>
-  </div>
-
-    
-
-    
-  
-    </main>
-    <footer class="pl-scrollbar">
-      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
-    <p class="text-sm text-tertiary-text">@Starevan
- &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
-</div></div>
     </footer>
-  </body>
+    
+
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/">想法:脚本自动给文章添加时间</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            每次写文档的时间都要自动更新，十分烦人。
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 18, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/">NodeList和HTMLCollection有什么区别</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 18, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/markdown/">MARKDOWN写作指南</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 17, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E8%8B%B1%E8%AF%AD/" >
+                英语
+            </a>
+        
+            <a href="/categories/%E5%AD%A6%E4%B9%A0/" >
+                学习
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/">经典句型</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 17, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E8%8B%B1%E8%AF%AD/" >
+                英语
+            </a>
+        
+            <a href="/categories/%E5%AD%A6%E4%B9%A0/" >
+                学习
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/">一些单词的高级表达</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jun 17, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+</article>
+        
+    </section>
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 ∆STAREVAN
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
 </html>

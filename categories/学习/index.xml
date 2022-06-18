@@ -1,56 +1,311 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>学习 on ∆STAREVAN</title>
-    <link>https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
-    <description>Recent content in 学习 on ∆STAREVAN</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>@Starevan
+    <channel>
+        <title>学习 on ∆STAREVAN</title>
+        <link>https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/</link>
+        <description>Recent content in 学习 on ∆STAREVAN</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh</language>
+        <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Fri, 17 Jun 2022 11:03:40 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>经典句型</title>
-      <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
-      <description>可想而知&amp;hellip;
-It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
-我们绝对不能&amp;hellip;
-On no account can we &amp;hellip;
-那些什么的人&amp;hellip;
-Those who&amp;hellip;
-&amp;hellip;值得我们关注
-&amp;hellip;.., which is worthy of our attention
-该是&amp;hellip;的时候了
-It is time + 主语+ 过去式
-正如&amp;hellip;生动的描述了&amp;hellip;
-As is vividly depicted in the &amp;hellip;, &amp;hellip;
-充分理解寓意..
-To grasp the full implication
-毋庸置疑&amp;hellip;
-There is no denying that &amp;hellip;
-一个可笑的场景..
-A ridiculous situation&amp;hellip;
-认真做决定..
-To make careful decision
-无法理解&amp;hellip;
-Beyond one&amp;rsquo;s comprehension
-关注..的人寥寥无几
-Few people could pay attention to &amp;hellip;
-犯下严重的错误..
-Commit a terrible blunder&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>一些单词的高级表达</title>
-      <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
-      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
-      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
-    </item>
-    
-  </channel>
+        <lastBuildDate>Fri, 17 Jun 2022 11:03:40 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>经典句型</title>
+        <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可想而知&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s &lt;strong&gt;conceivable&lt;/strong&gt;/obvious/apparent that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们绝对不能&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On no account can we &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;那些什么的人&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Those who&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;值得我们关注&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;.., which is worthy of our attention&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;该是&amp;hellip;的时候了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is time + 主语+ 过去式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正如&amp;hellip;生动的描述了&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As is &lt;strong&gt;vividly depicted&lt;/strong&gt; in the &amp;hellip;, &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;充分理解寓意..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To grasp the full &lt;strong&gt;implication&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;毋庸置疑&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no denying that &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个可笑的场景..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A ridiculous situation&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;认真做决定..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To make careful decision&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;无法理解&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Beyond one&amp;rsquo;s comprehension&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关注..的人寥寥无几&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Few people could pay attention to &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;犯下严重的错误..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Commit a terrible blunder&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;以..为代价&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At the expense of &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;来自生活的方方面面.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From all &lt;strong&gt;spheres&lt;/strong&gt; of life&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;脱离低级趣味&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Above vular interest &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;令人担心的是..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is &lt;strong&gt;worrisome&lt;/strong&gt; that &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;鉴于此..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;In respense to&lt;/strong&gt; this &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正处于衰败阶段&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be &lt;strong&gt;on the decline&lt;/strong&gt; &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是一个好的例证&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To be a good case in point &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;失去黄金机会&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To lose one&amp;rsquo;s golden opportunity&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;困难、挫折和绝望&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obstacles, discourages and impossibilities &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现在是号召人们结束..的时候了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s high time to call for an end to &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变得十分紧急&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To become desperately urgent &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;势必使得情况更加糟糕&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It will inevitably make the situation worse (that) &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;侧重..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To place a high value upon &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;过着有意义的生活..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To lead a meaningful and rewarding life &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;万能金句&#34;&gt;万能金句&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;随着..的流行程度/普及程度的快速增长，我们的生活质量也被显著改变.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With the rapidly growing popularity of &amp;hellip;, the quality of our lives has been considerably changed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最近,&amp;hellip;已经被带入广泛大众视野之中/成为关注的焦点.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Recently, sth/the problem of &amp;hellip; has been brought to popular attention/ has become the focus of public concern.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随着&amp;hellip;的发展，越来越多的人开始意识到.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With the development of &amp;hellip;, more and more people come to realize that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在..的眼中，&amp;hellip;看起来/意味着&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To sb&amp;rsquo;s mind/in sb&amp;rsquo;s eyes,sth. seems /means &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;现在&amp;hellip;被广泛相信.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now it is widely believed that&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;hellip;已经改变了我们社会的发展方式，但它光明的一面不应阻碍我们密切关注其黑暗的一面.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sth. has changed the way our society develops, but its bright side should not keep us from following closely its dark side.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果没有&amp;hellip;,我们的社会将会是怎样？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What would our society be like if ther were no &amp;hellip;?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在过去的几年中，&amp;hellip;经历了一个大繁荣时期/急速增长/下降.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the few years, there has been a boom/sharp growth/decline in &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在我们的生活中，在&amp;hellip;时经常会出现这样的情况.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In our life, there often appears &lt;strong&gt;such an occasion when&lt;/strong&gt; &amp;hellip;/on which..&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>一些单词的高级表达</title>
+        <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
+        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+        
+        <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
+        <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;词义&lt;/th&gt;
+&lt;th&gt;基础&lt;/th&gt;
+&lt;th&gt;升级&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;繁荣兴旺&lt;/td&gt;
+&lt;td&gt;boom&lt;/td&gt;
+&lt;td&gt;flourish;thrive;prosper&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;导致&lt;/td&gt;
+&lt;td&gt;cause&lt;/td&gt;
+&lt;td&gt;lead to; bring about;result in;spark off;conduce to;generate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;艰巨的&lt;/td&gt;
+&lt;td&gt;difficult&lt;/td&gt;
+&lt;td&gt;arduous;heavy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;掩盖&lt;/td&gt;
+&lt;td&gt;cover&lt;/td&gt;
+&lt;td&gt;mask;veil;conceal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;消除&lt;/td&gt;
+&lt;td&gt;clear&lt;/td&gt;
+&lt;td&gt;eliminate;remove;take away&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;重要的&lt;/td&gt;
+&lt;td&gt;important&lt;/td&gt;
+&lt;td&gt;crucial;significant;vital&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;加强&lt;/td&gt;
+&lt;td&gt;heighten&lt;/td&gt;
+&lt;td&gt;enhance;reinforce;enforce;strengthen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;满足&lt;/td&gt;
+&lt;td&gt;meet&lt;/td&gt;
+&lt;td&gt;satisfy;suit;fill;fulfill;accommodate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;流行的&lt;/td&gt;
+&lt;td&gt;popular&lt;/td&gt;
+&lt;td&gt;prevailing;prevalent;widespread&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;有益的&lt;/td&gt;
+&lt;td&gt;useful&lt;/td&gt;
+&lt;td&gt;helpful;beneficial;advantageous&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>
