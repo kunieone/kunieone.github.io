@@ -42,7 +42,7 @@ access time(atime):最后访问时间
       
       <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
       <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.</description>
     </item>
     
     <item>
@@ -53,10 +53,7 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
       <guid>https://kunieone.github.io/posts/markdown/</guid>
       <description>Markup : - - - - Image with alt :
 Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
-Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
-Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
-Go To TOP</description>
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1</description>
     </item>
     
     <item>
@@ -125,11 +122,7 @@ Go To TOP</description>
 404/nouser 查询不到用户
 404/noarticle 查询不到文章
 404/nospecial 查询不到专栏
-文章页面 /article (该路由跳转到 404/noarticle)
-/article/[articleid] 文章浏览 专栏页面 /special专栏(该路由跳转到 404/nospecial)
-/special/[artid] 专栏浏览 浏览历史页面 /history 会查询用户是否登陆，如果没登陆，跳转注册登陆路由
-收藏夹 /favorites 浏览收藏夹
-/favorites/article 浏览收藏夹里的文章 /favorites/user 浏览收藏夹里的用户 /favorites/special 浏览收藏夹里的专栏 /favorites/[special|article|user]/[pageid] 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40&amp;hellip;如果过大，显示最后一页) </description>
+文章页面 /article (该路由跳转到 404/noarticle)</description>
     </item>
     
     <item>
@@ -147,9 +140,7 @@ Go To TOP</description>
 M比N：
 ![image-20220607143904604](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143904604.png)
 对于go语言，它把
-co-routine改成了goroutine，修改了内存（几KB）
-并且调度器处理很好
-GMP调度器</description>
+co-routine改成了goroutine，修改了内存（几KB）</description>
     </item>
     
     <item>
@@ -208,15 +199,7 @@ NESTJS 哲学 在近些年内，多亏了Node.js使得Javascript可以成为前�
 化，型，性
 词组：
 统一思想，提高认识，认清形势，明确任务，加强领导，完善机制，交流经验，研究问题，团结协作，密切配合，真抓实干，开拓进取，突出重点，落实责任，各司其职，各负其责，集中精力，聚精会神，一心一意，心无旁骛，兢兢业业，精益求精，一抓到底，爱岗敬业，求真务实，胸怀全局，拓宽视野。
-“新”系列：
-新形势 新任务 新挑战 新机遇 新情况 新问题 新困难 新对策 新办法 新局面 新气象 刷新、革新、变新、创新、更新
-“者”系列：
-守护者 保护者 守望者 践行者 组织者 协调者 旁观者 教育者 监督者管理者 设计者 引导者 实施者 指导者 协助者 决策者 参与者
-“外号”系列：
-(个人) 先行官 火车头 老黄牛 活地图 辖区通 减压阀 助推器
-（集体） 大熔炉 主旋律 接力赛
-“性”系列：
-自觉性 时效性 复杂性 积极性 实效性 机制性 特殊性 主动性 有效性 体制性 多变性 创造性 坚定性 保障性 危险性 准确性 阶段性 流动性 盲目性 目的性 层次性 稳定性 实用性 预见性 启发性 全局性 科学性 前瞻性 警示性 局部性 局限性 针对性 苗头性 根本性 约束性 普遍性 倾向性 长期性 理论性 典型性 经常性 精确性 系统性 示范性 思想性 果敢性 完整性 必要性 知识性 坚韧性 多样性 重要性 趣味性 敏感性 服务性 先进性 随意性 警惕性 指导性 优越性 反复性 技术性 思想性 战略性 创新性 指导性 目标性 可操作性</description>
+“新”系列：</description>
     </item>
     
     <item>
@@ -248,25 +231,7 @@ starboard
 iodide
 demote
 conscript
-picket 罢工纠察
-canter
-gape
-susceptibility
-foil
-rugger
-enpower
-madden
-flax
-forthwith
-mortuary
-untold
-可怕的 gruesome
-ooze 渗出
-huff
-wicked
-newsreel
-innate
-rendition</description>
+picket 罢工纠察</description>
     </item>
     
     <item>
@@ -284,30 +249,7 @@ arm做的事情就是对指令进行怎么翻译，采用的是流水线的技�
 ARM公司的工作模式： ![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)
 OEM 代工生产公司，把产品制造出来。
 很多电子产品的应用模式都是这样的。
-ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。
-既可以工作在16位下，也可以工作在32位下。
-大量使用寄存器，执行速度快
-大多数数据操作在寄存器完成。
-ARM7
-ARM9
-ARM10E
-ARM11
-![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)
-虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间
-ARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。
-​	运行一条指令，平均执行1.9个时钟周期。
-ARM9为五级流水线技术（取指、译码、执行、缓冲/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。
-​	运行一条指令，平均执行1.5个时钟周期。
-ARM11为8级流水线。600Mhz时钟频率。
-![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)
-一条指令4字节长，三级流水线，PC的地址差八个字节
-ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？
-从偶数地址开始的连续两个字节（16位）构成一个半字。
-字：4个字节。
-![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)
-两个状态咋切换？ ![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)
-![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)
-![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)</description>
+ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。</description>
     </item>
     
     <item>
@@ -316,9 +258,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
       <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</guid>
-      <description>2013 英一小作文 (2013) Write an e-mail of about 100 words to a foreign teacher in your college, inviting him/her to be a judge for the upcoming English speech contest.
-You should include the details you think necessary. You should write neatly on the ANSwer SHEET. Do not sign your own name at the end of the e-mail. Use &amp;ldquo;Li Ming&amp;rdquo; instead. Do not write the address. (10 points) 思路：按照公务邀请的方法来写。邀请一个老师参加英语演讲。 范文 1: Dear Mr, Wilson,
-​ I am writing on behalf of the Student&amp;rsquo; Union to invite you to be a judge for the upcoming English speech contest.</description>
+      <description>2013 英一小作文 (2013) Write an e-mail of about 100 words to a foreign teacher in your college, inviting him/her to be a judge for the upcoming English speech contest.</description>
     </item>
     
     <item>
@@ -327,8 +267,7 @@ You should include the details you think necessary. You should write neatly on t
       <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
-      <description>Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;. As a native Chinese student, let&amp;rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
-​ To start with, we should understand the definition of freedom of speech.</description>
+      <description>Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -346,23 +285,7 @@ Those who&amp;hellip;
 &amp;hellip;值得我们关注
 &amp;hellip;.., which is worthy of our attention
 该是&amp;hellip;的时候了
-It is time + 主语+ 过去式
-正如&amp;hellip;生动的描述了&amp;hellip;
-As is vividly depicted in the &amp;hellip;, &amp;hellip;
-充分理解寓意..
-To grasp the full implication
-毋庸置疑&amp;hellip;
-There is no denying that &amp;hellip;
-一个可笑的场景..
-A ridiculous situation&amp;hellip;
-认真做决定..
-To make careful decision
-无法理解&amp;hellip;
-Beyond one&amp;rsquo;s comprehension
-关注..的人寥寥无几
-Few people could pay attention to &amp;hellip;
-犯下严重的错误..
-Commit a terrible blunder&amp;hellip;</description>
+It is time + 主语+ 过去式</description>
     </item>
     
     <item>

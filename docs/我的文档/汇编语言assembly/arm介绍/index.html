@@ -84,30 +84,7 @@ arm做的事情就是对指令进行怎么翻译，采用的是流水线的技�
 ARM公司的工作模式： ![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)
 OEM 代工生产公司，把产品制造出来。
 很多电子产品的应用模式都是这样的。
-ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。
-既可以工作在16位下，也可以工作在32位下。
-大量使用寄存器，执行速度快
-大多数数据操作在寄存器完成。
-ARM7
-ARM9
-ARM10E
-ARM11
-![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)
-虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间
-ARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。
-​	运行一条指令，平均执行1.9个时钟周期。
-ARM9为五级流水线技术（取指、译码、执行、缓冲/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。
-​	运行一条指令，平均执行1.5个时钟周期。
-ARM11为8级流水线。600Mhz时钟频率。
-![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)
-一条指令4字节长，三级流水线，PC的地址差八个字节
-ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？
-从偶数地址开始的连续两个字节（16位）构成一个半字。
-字：4个字节。
-![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)
-两个状态咋切换？ ![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)
-![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)
-![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)">
+ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -135,7 +112,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
         "@id": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/"
     },
     "headline": "∆STAREVAN","datePublished": "2022-06-17T11:03:40+08:00",
-    "dateModified": "2022-06-18T15:54:44+08:00",
+    "dateModified": "2022-06-18T16:06:24+08:00",
     "wordCount":  65 ,
     "publisher": {
         "@type": "Person",
@@ -145,7 +122,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "Arm是啥？ ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。 arm并不生产芯片，这是出知识产权的。\nRISC 精简指令集\nC语言 -1-\u0026gt; 汇编 -2-\u0026gt;01指令\n2:指令的格式怎么统一？ARM就是这个解决方案\nMOV R0, #1 这串指令 ，直接解析成机器码。\narm做的事情就是对指令进行怎么翻译，采用的是流水线的技术。\nARM公司的工作模式： ![image-20220525131045628](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525131045628.png)\nOEM 代工生产公司，把产品制造出来。\n很多电子产品的应用模式都是这样的。\nARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8\/16位器件。\n既可以工作在16位下，也可以工作在32位下。\n大量使用寄存器，执行速度快\n大多数数据操作在寄存器完成。\nARM7\nARM9\nARM10E\nARM11\n![image-20220525132133577](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525132133577.png)\n虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间\nARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。\n​\t运行一条指令，平均执行1.9个时钟周期。\nARM9为五级流水线技术（取指、译码、执行、缓冲\/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。\n​\t运行一条指令，平均执行1.5个时钟周期。\nARM11为8级流水线。600Mhz时钟频率。\n![image-20220525133125217](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525133125217.png)\n一条指令4字节长，三级流水线，PC的地址差八个字节\nARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？\n从偶数地址开始的连续两个字节（16位）构成一个半字。\n字：4个字节。\n![image-20220525133951372](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525133951372.png)\n两个状态咋切换？ ![image-20220525134051303](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525134051303.png)\n![image-20220525134208860](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525134208860.png)\n![image-20220525134219885](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525134219885.png)"
+    "description": "Arm是啥？ ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。 arm并不生产芯片，这是出知识产权的。\nRISC 精简指令集\nC语言 -1-\u0026gt; 汇编 -2-\u0026gt;01指令\n2:指令的格式怎么统一？ARM就是这个解决方案\nMOV R0, #1 这串指令 ，直接解析成机器码。\narm做的事情就是对指令进行怎么翻译，采用的是流水线的技术。\nARM公司的工作模式： ![image-20220525131045628](\/Users\/jiangxinghuai\/Library\/Application Support\/typora-user-images\/image-20220525131045628.png)\nOEM 代工生产公司，把产品制造出来。\n很多电子产品的应用模式都是这样的。\nARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8\/16位器件。"
 }
 </script><meta property="og:title" content="∆STAREVAN" />
 <meta property="og:type" content="article" />
@@ -168,30 +145,7 @@ arm做的事情就是对指令进行怎么翻译，采用的是流水线的技�
 ARM公司的工作模式： ![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)
 OEM 代工生产公司，把产品制造出来。
 很多电子产品的应用模式都是这样的。
-ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。
-既可以工作在16位下，也可以工作在32位下。
-大量使用寄存器，执行速度快
-大多数数据操作在寄存器完成。
-ARM7
-ARM9
-ARM10E
-ARM11
-![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)
-虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间
-ARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。
-​	运行一条指令，平均执行1.9个时钟周期。
-ARM9为五级流水线技术（取指、译码、执行、缓冲/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。
-​	运行一条指令，平均执行1.5个时钟周期。
-ARM11为8级流水线。600Mhz时钟频率。
-![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)
-一条指令4字节长，三级流水线，PC的地址差八个字节
-ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？
-从偶数地址开始的连续两个字节（16位）构成一个半字。
-字：4个字节。
-![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)
-两个状态咋切换？ ![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)
-![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)
-![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)" />
+ARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。" />
 
 
 
@@ -211,7 +165,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
 <meta property="article:published_time" content="2022-06-17T11:03:40&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-06-18T15:54:44&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-18T16:06:24&#43;08:00" />
 
 
 
@@ -347,7 +301,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022-06-17</span
+      >Fri, 17 Jun 2022 11:03:40 CST</span
     >
   </div>
   <div class="me-6 my-2">

@@ -42,7 +42,7 @@ access time(atime):最后访问时间
       
       <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
       <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.</description>
     </item>
     
     <item>
@@ -53,10 +53,7 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
       <guid>https://kunieone.github.io/posts/markdown/</guid>
       <description>Markup : - - - - Image with alt :
 Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
-Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
-Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
-Go To TOP</description>
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1</description>
     </item>
     
     <item>
@@ -74,23 +71,7 @@ Those who&amp;hellip;
 &amp;hellip;值得我们关注
 &amp;hellip;.., which is worthy of our attention
 该是&amp;hellip;的时候了
-It is time + 主语+ 过去式
-正如&amp;hellip;生动的描述了&amp;hellip;
-As is vividly depicted in the &amp;hellip;, &amp;hellip;
-充分理解寓意..
-To grasp the full implication
-毋庸置疑&amp;hellip;
-There is no denying that &amp;hellip;
-一个可笑的场景..
-A ridiculous situation&amp;hellip;
-认真做决定..
-To make careful decision
-无法理解&amp;hellip;
-Beyond one&amp;rsquo;s comprehension
-关注..的人寥寥无几
-Few people could pay attention to &amp;hellip;
-犯下严重的错误..
-Commit a terrible blunder&amp;hellip;</description>
+It is time + 主语+ 过去式</description>
     </item>
     
     <item>

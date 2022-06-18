@@ -17,10 +17,7 @@
       <guid>https://kunieone.github.io/posts/markdown/</guid>
       <description>Markup : - - - - Image with alt :
 Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
-Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
-Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
-Go To TOP</description>
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1</description>
     </item>
     
   </channel>
