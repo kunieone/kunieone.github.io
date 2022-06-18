@@ -1,528 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>star_evan on ∆STAREVAN</title>
-        <link>https://kunieone.github.io/authors/starevan/</link>
-        <description>Recent content in star_evan on ∆STAREVAN</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh</language>
-        <copyright>@Starevan
+  <channel>
+    <title>star_evan on ∆STAREVAN</title>
+    <link>https://kunieone.github.io/authors/starevan/</link>
+    <description>Recent content in star_evan on ∆STAREVAN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>@Starevan
 </copyright>
-        <lastBuildDate>Fri, 17 Jun 2022 09:36:15 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/authors/starevan/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
-        <link>https://kunieone.github.io/posts/linux_time/</link>
-        <pubDate>Sat, 18 Jun 2022 03:28:40 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/linux_time/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;Linux 下文件的三个时间：ctime、mtime、atime 的区别&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;modification time(mtime):内容修改时间&lt;/p&gt;
-&lt;p&gt;这里的修改时间指的是文件的内容发生变化，而更新的时间。&lt;/p&gt;
-&lt;p&gt;Eg:vi 后保存文件。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;status time(ctime):状态修改时间&lt;/p&gt;
-&lt;p&gt;这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;access time(atime):最后访问时间&lt;/p&gt;
-&lt;p&gt;这里的访问时间是指文件被读取，而更新的时间。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        </item>
-        <item>
-        <title>想法:脚本自动给文章添加时间</title>
-        <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
-        <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
-        <description>&lt;h2 id=&#34;目前的想法-使用-node-给文档添加时间&#34;&gt;目前的想法: 使用 node 给文档添加时间&lt;/h2&gt;
-&lt;h2 id=&#34;流程&#34;&gt;流程&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;解析文件的创建时间和修改时间&lt;/li&gt;
-&lt;li&gt;脚本解析 md 脚本，如果没有，添加一个。&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        </item>
-        <item>
-        <title>NodeList和HTMLCollection有什么区别</title>
-        <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
-        <pubDate>Sat, 18 Jun 2022 03:01:49 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
-        <description>&lt;p&gt;首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。&lt;/p&gt;
-&lt;p&gt;NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。
-HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。
-————————————————
-版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>MARKDOWN写作指南</title>
-        <link>https://kunieone.github.io/posts/markdown/</link>
-        <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/markdown/</guid>
-        <description>&lt;pre&gt;&lt;code&gt;Markup :  - - - -
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Image with alt :&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://via.placeholder.com/200x150&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;picture alt&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Foldable text:&lt;/p&gt;
-&lt;details&gt;
-  &lt;summary&gt;Title 1&lt;/summary&gt;
-  &lt;p&gt;Content 1 Content 1 Content 1 Content 1 Content 1&lt;/p&gt;
-&lt;/details&gt;
-&lt;details&gt;
-  &lt;summary&gt;Title 2&lt;/summary&gt;
-  &lt;p&gt;Content 2 Content 2 Content 2 Content 2 Content 2&lt;/p&gt;
-&lt;/details&gt;
-&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;details&amp;gt;
-           &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt;
-           &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt;
-         &amp;lt;/details&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt;
-&amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Link to a specific part of the page:&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#TOP&#34; &gt;Go To TOP&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Markup : [text goes here](#section_name)
-          section_title&amp;lt;a name=&amp;quot;section_name&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hotkey:&lt;/p&gt;
-&lt;p&gt;&lt;kbd&gt;⌘F&lt;/kbd&gt;&lt;/p&gt;
-&lt;p&gt;&lt;kbd&gt;⇧⌘F&lt;/kbd&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Markup : &amp;lt;kbd&amp;gt;⌘F&amp;lt;/kbd&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hotkey list:&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Key&lt;/th&gt;
-&lt;th&gt;Symbol&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Option&lt;/td&gt;
-&lt;td&gt;⌥&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Control&lt;/td&gt;
-&lt;td&gt;⌃&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Command&lt;/td&gt;
-&lt;td&gt;⌘&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Shift&lt;/td&gt;
-&lt;td&gt;⇧&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Caps Lock&lt;/td&gt;
-&lt;td&gt;⇪&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Tab&lt;/td&gt;
-&lt;td&gt;⇥&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Esc&lt;/td&gt;
-&lt;td&gt;⎋&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Power&lt;/td&gt;
-&lt;td&gt;⌽&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Return&lt;/td&gt;
-&lt;td&gt;↩&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Delete&lt;/td&gt;
-&lt;td&gt;⌫&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Up&lt;/td&gt;
-&lt;td&gt;↑&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Down&lt;/td&gt;
-&lt;td&gt;↓&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Left&lt;/td&gt;
-&lt;td&gt;←&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Right&lt;/td&gt;
-&lt;td&gt;→&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Emoji:&lt;/p&gt;
-&lt;p&gt;❗ Use emoji icons to enhance text. 👍 Look up emoji codes at &lt;a class=&#34;link&#34; href=&#34;http://emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;emoji-cheat-sheet.com&lt;/a&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Markup : Code appears between colons :EMOJICODE:
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        </item>
-        <item>
-        <title>svelte开发记录</title>
-        <link>https://kunieone.github.io/secret/svelte/</link>
-        <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/secret/svelte/</guid>
-        <description>&lt;p&gt;This is the root of example doc.&lt;/p&gt;
-&lt;h2 id=&#34;duis-vel-leo-nec-mi-convallis-sodales&#34;&gt;Duis vel leo nec mi convallis sodales&lt;/h2&gt;
-&lt;p&gt;Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh. Donec et dui consequat ipsum ultrices tristique vitae vitae est.&lt;/p&gt;
-&lt;h2 id=&#34;sed-efficitur-ante-a-tortor-euismod&#34;&gt;Sed efficitur ante a tortor euismod&lt;/h2&gt;
-&lt;p&gt;In ornare ultricies sapien in tincidunt. Integer malesuada tellus sed nibh dictum facilisis non sit amet nibh. Vestibulum sed tincidunt ante, nec tincidunt lectus. Pellentesque id dolor ipsum. Sed efficitur tristique mauris eu tristique. Aliquam nec volutpat dolor. Praesent vitae feugiat nibh. Curabitur mollis placerat sem, ut eleifend mi. Sed sed nisl elit. Pellentesque eget elit nec arcu imperdiet imperdiet. Aliquam dictum arcu ac pharetra rutrum.&lt;/p&gt;
-&lt;h3 id=&#34;cras-ac-diam-efficitur&#34;&gt;Cras ac diam efficitur&lt;/h3&gt;
-&lt;p&gt;Donec iaculis bibendum suscipit. Ut egestas ligula vel orci posuere scelerisque. Nam vel elementum nibh, congue tempus sapien. Aliquam luctus ante sit amet urna vehicula hendrerit. Morbi at ante nisl. Sed euismod vel dolor in iaculis. Aliquam lacinia lorem sit amet vestibulum finibus. Nulla facilisi. Vivamus lacinia consectetur hendrerit. Integer commodo a nibh nec rhoncus. Nulla non aliquet erat. Cras vel orci a urna malesuada viverra vel quis nisi. Donec pharetra laoreet ante, vulputate volutpat ante consequat eget. Donec efficitur consequat nisi vitae volutpat. Vestibulum volutpat, odio nec sodales cursus, ligula nulla pellentesque erat, ut iaculis magna lorem non purus. Curabitur efficitur tortor et elit sodales, in lobortis risus feugiat.&lt;/p&gt;
-&lt;h3 id=&#34;cras-hendrerit-nibh-non-pulvinar-consectetur&#34;&gt;Cras hendrerit nibh non pulvinar consectetur&lt;/h3&gt;
-&lt;p&gt;Donec justo diam, auctor et rhoncus a, feugiat in felis. Etiam lectus est, tincidunt iaculis mi et, feugiat rutrum tellus. Ut sit amet tellus vitae nisi faucibus pulvinar non a augue. Etiam auctor porttitor mi, vitae posuere lacus pretium ac. Pellentesque sed ante magna. Proin tempor faucibus risus, vitae tincidunt arcu ultrices egestas. Aenean rutrum purus vel vulputate lobortis. Aenean auctor ipsum quam, eu molestie magna ultricies quis. Phasellus vitae diam erat. Nam at facilisis massa. Nam vulputate nec quam vel iaculis. Maecenas mauris felis, semper vel ultricies eu, interdum condimentum lacus. Mauris quis tincidunt erat, quis efficitur dolor.&lt;/p&gt;
-&lt;h2 id=&#34;quisque-vehicula-tellus-eget-nunc-molestie&#34;&gt;Quisque vehicula tellus eget nunc molestie&lt;/h2&gt;
-&lt;p&gt;Phasellus ligula tortor, sodales ac ipsum vel, lobortis lacinia eros. Maecenas et viverra enim, sit amet bibendum risus. Duis a est pulvinar, suscipit diam id, sagittis lectus. Sed vulputate est sed ipsum faucibus tempus. Morbi non varius nibh. Vestibulum vel tincidunt neque. Vestibulum pellentesque sed metus eu gravida. Donec rhoncus, quam in dictum bibendum, diam libero pretium lacus, vitae suscipit diam neque eget arcu. Pellentesque id hendrerit lorem. Curabitur fermentum purus orci, nec ullamcorper dolor consequat at. Suspendisse lectus dolor, efficitur non mollis eget, suscipit ut nisl. Quisque id ex metus. Sed lobortis venenatis lacinia. Sed at lorem leo.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>经典句型</title>
-        <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
-        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
-        <description>&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;可想而知&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s &lt;strong&gt;conceivable&lt;/strong&gt;/obvious/apparent that&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;我们绝对不能&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;On no account can we &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;那些什么的人&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Those who&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;hellip;值得我们关注&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;hellip;.., which is worthy of our attention&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;该是&amp;hellip;的时候了&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is time + 主语+ 过去式&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;正如&amp;hellip;生动的描述了&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;As is &lt;strong&gt;vividly depicted&lt;/strong&gt; in the &amp;hellip;, &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;充分理解寓意..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To grasp the full &lt;strong&gt;implication&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;毋庸置疑&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;There is no denying that &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;一个可笑的场景..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A ridiculous situation&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;认真做决定..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To make careful decision&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;无法理解&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Beyond one&amp;rsquo;s comprehension&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;关注..的人寥寥无几&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Few people could pay attention to &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;犯下严重的错误..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Commit a terrible blunder&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;以..为代价&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;At the expense of &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;来自生活的方方面面.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;From all &lt;strong&gt;spheres&lt;/strong&gt; of life&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;脱离低级趣味&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Above vular interest &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;令人担心的是..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It is &lt;strong&gt;worrisome&lt;/strong&gt; that &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;鉴于此..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;In respense to&lt;/strong&gt; this &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;正处于衰败阶段&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To be &lt;strong&gt;on the decline&lt;/strong&gt; &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;是一个好的例证&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To be a good case in point &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;失去黄金机会&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To lose one&amp;rsquo;s golden opportunity&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;困难、挫折和绝望&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Obstacles, discourages and impossibilities &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;现在是号召人们结束..的时候了&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s high time to call for an end to &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;变得十分紧急&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To become desperately urgent &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;势必使得情况更加糟糕&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It will inevitably make the situation worse (that) &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;侧重..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To place a high value upon &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;过着有意义的生活..&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To lead a meaningful and rewarding life &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;万能金句&#34;&gt;万能金句&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;随着..的流行程度/普及程度的快速增长，我们的生活质量也被显著改变.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;With the rapidly growing popularity of &amp;hellip;, the quality of our lives has been considerably changed.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;最近,&amp;hellip;已经被带入广泛大众视野之中/成为关注的焦点.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Recently, sth/the problem of &amp;hellip; has been brought to popular attention/ has become the focus of public concern.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;随着&amp;hellip;的发展，越来越多的人开始意识到.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;With the development of &amp;hellip;, more and more people come to realize that&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在..的眼中，&amp;hellip;看起来/意味着&amp;hellip;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To sb&amp;rsquo;s mind/in sb&amp;rsquo;s eyes,sth. seems /means &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;现在&amp;hellip;被广泛相信.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Now it is widely believed that&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&amp;hellip;已经改变了我们社会的发展方式，但它光明的一面不应阻碍我们密切关注其黑暗的一面.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Sth. has changed the way our society develops, but its bright side should not keep us from following closely its dark side.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果没有&amp;hellip;,我们的社会将会是怎样？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What would our society be like if ther were no &amp;hellip;?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在过去的几年中，&amp;hellip;经历了一个大繁荣时期/急速增长/下降.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In the few years, there has been a boom/sharp growth/decline in &amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在我们的生活中，在&amp;hellip;时经常会出现这样的情况.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In our life, there often appears &lt;strong&gt;such an occasion when&lt;/strong&gt; &amp;hellip;/on which..&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        </item>
-        <item>
-        <title>一些单词的高级表达</title>
-        <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
-        <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
-        <description>&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;词义&lt;/th&gt;
-&lt;th&gt;基础&lt;/th&gt;
-&lt;th&gt;升级&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;繁荣兴旺&lt;/td&gt;
-&lt;td&gt;boom&lt;/td&gt;
-&lt;td&gt;flourish;thrive;prosper&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;导致&lt;/td&gt;
-&lt;td&gt;cause&lt;/td&gt;
-&lt;td&gt;lead to; bring about;result in;spark off;conduce to;generate&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;艰巨的&lt;/td&gt;
-&lt;td&gt;difficult&lt;/td&gt;
-&lt;td&gt;arduous;heavy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;掩盖&lt;/td&gt;
-&lt;td&gt;cover&lt;/td&gt;
-&lt;td&gt;mask;veil;conceal&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;消除&lt;/td&gt;
-&lt;td&gt;clear&lt;/td&gt;
-&lt;td&gt;eliminate;remove;take away&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;重要的&lt;/td&gt;
-&lt;td&gt;important&lt;/td&gt;
-&lt;td&gt;crucial;significant;vital&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;加强&lt;/td&gt;
-&lt;td&gt;heighten&lt;/td&gt;
-&lt;td&gt;enhance;reinforce;enforce;strengthen&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;满足&lt;/td&gt;
-&lt;td&gt;meet&lt;/td&gt;
-&lt;td&gt;satisfy;suit;fill;fulfill;accommodate&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;流行的&lt;/td&gt;
-&lt;td&gt;popular&lt;/td&gt;
-&lt;td&gt;prevailing;prevalent;widespread&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;有益的&lt;/td&gt;
-&lt;td&gt;useful&lt;/td&gt;
-&lt;td&gt;helpful;beneficial;advantageous&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        </item>
-        <item>
-        <title>svelte开发记录</title>
-        <link>https://kunieone.github.io/docs/svelte/</link>
-        <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
-        
-        <guid>https://kunieone.github.io/docs/svelte/</guid>
-        <description>&lt;p&gt;This is the root of example doc.&lt;/p&gt;
-&lt;h2 id=&#34;duis-vel-leo-nec-mi-convallis-sodales&#34;&gt;Duis vel leo nec mi convallis sodales&lt;/h2&gt;
-&lt;p&gt;Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh. Donec et dui consequat ipsum ultrices tristique vitae vitae est.&lt;/p&gt;
-&lt;h2 id=&#34;sed-efficitur-ante-a-tortor-euismod&#34;&gt;Sed efficitur ante a tortor euismod&lt;/h2&gt;
-&lt;p&gt;In ornare ultricies sapien in tincidunt. Integer malesuada tellus sed nibh dictum facilisis non sit amet nibh. Vestibulum sed tincidunt ante, nec tincidunt lectus. Pellentesque id dolor ipsum. Sed efficitur tristique mauris eu tristique. Aliquam nec volutpat dolor. Praesent vitae feugiat nibh. Curabitur mollis placerat sem, ut eleifend mi. Sed sed nisl elit. Pellentesque eget elit nec arcu imperdiet imperdiet. Aliquam dictum arcu ac pharetra rutrum.&lt;/p&gt;
-&lt;h3 id=&#34;cras-ac-diam-efficitur&#34;&gt;Cras ac diam efficitur&lt;/h3&gt;
-&lt;p&gt;Donec iaculis bibendum suscipit. Ut egestas ligula vel orci posuere scelerisque. Nam vel elementum nibh, congue tempus sapien. Aliquam luctus ante sit amet urna vehicula hendrerit. Morbi at ante nisl. Sed euismod vel dolor in iaculis. Aliquam lacinia lorem sit amet vestibulum finibus. Nulla facilisi. Vivamus lacinia consectetur hendrerit. Integer commodo a nibh nec rhoncus. Nulla non aliquet erat. Cras vel orci a urna malesuada viverra vel quis nisi. Donec pharetra laoreet ante, vulputate volutpat ante consequat eget. Donec efficitur consequat nisi vitae volutpat. Vestibulum volutpat, odio nec sodales cursus, ligula nulla pellentesque erat, ut iaculis magna lorem non purus. Curabitur efficitur tortor et elit sodales, in lobortis risus feugiat.&lt;/p&gt;
-&lt;h3 id=&#34;cras-hendrerit-nibh-non-pulvinar-consectetur&#34;&gt;Cras hendrerit nibh non pulvinar consectetur&lt;/h3&gt;
-&lt;p&gt;Donec justo diam, auctor et rhoncus a, feugiat in felis. Etiam lectus est, tincidunt iaculis mi et, feugiat rutrum tellus. Ut sit amet tellus vitae nisi faucibus pulvinar non a augue. Etiam auctor porttitor mi, vitae posuere lacus pretium ac. Pellentesque sed ante magna. Proin tempor faucibus risus, vitae tincidunt arcu ultrices egestas. Aenean rutrum purus vel vulputate lobortis. Aenean auctor ipsum quam, eu molestie magna ultricies quis. Phasellus vitae diam erat. Nam at facilisis massa. Nam vulputate nec quam vel iaculis. Maecenas mauris felis, semper vel ultricies eu, interdum condimentum lacus. Mauris quis tincidunt erat, quis efficitur dolor.&lt;/p&gt;
-&lt;h2 id=&#34;quisque-vehicula-tellus-eget-nunc-molestie&#34;&gt;Quisque vehicula tellus eget nunc molestie&lt;/h2&gt;
-&lt;p&gt;Phasellus ligula tortor, sodales ac ipsum vel, lobortis lacinia eros. Maecenas et viverra enim, sit amet bibendum risus. Duis a est pulvinar, suscipit diam id, sagittis lectus. Sed vulputate est sed ipsum faucibus tempus. Morbi non varius nibh. Vestibulum vel tincidunt neque. Vestibulum pellentesque sed metus eu gravida. Donec rhoncus, quam in dictum bibendum, diam libero pretium lacus, vitae suscipit diam neque eget arcu. Pellentesque id hendrerit lorem. Curabitur fermentum purus orci, nec ullamcorper dolor consequat at. Suspendisse lectus dolor, efficitur non mollis eget, suscipit ut nisl. Quisque id ex metus. Sed lobortis venenatis lacinia. Sed at lorem leo.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
+    <lastBuildDate>Fri, 17 Jun 2022 09:36:15 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/authors/starevan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
+      <link>https://kunieone.github.io/posts/linux_time/</link>
+      <pubDate>Sat, 18 Jun 2022 03:28:40 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/linux_time/</guid>
+      <description>Linux 下文件的三个时间：ctime、mtime、atime 的区别
+modification time(mtime):内容修改时间
+这里的修改时间指的是文件的内容发生变化，而更新的时间。
+Eg:vi 后保存文件。
+status time(ctime):状态修改时间
+这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
+Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
+access time(atime):最后访问时间
+这里的访问时间是指文件被读取，而更新的时间。</description>
+    </item>
+    
+    <item>
+      <title>想法:脚本自动给文章添加时间</title>
+      <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
+      <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
+    </item>
+    
+    <item>
+      <title>NodeList和HTMLCollection有什么区别</title>
+      <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sat, 18 Jun 2022 03:01:49 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
+      <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
+    </item>
+    
+    <item>
+      <title>MARKDOWN写作指南</title>
+      <link>https://kunieone.github.io/posts/markdown/</link>
+      <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/markdown/</guid>
+      <description>Markup : - - - - Image with alt :
+Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
+Title 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Title 2 Content 2 Content 2 Content 2 Content 2 Content 2
+Markup : &amp;lt;details&amp;gt; &amp;lt;summary&amp;gt;Title 1&amp;lt;/summary&amp;gt; &amp;lt;p&amp;gt;Content 1 Content 1 Content 1 Content 1 Content 1&amp;lt;/p&amp;gt; &amp;lt;/details&amp;gt; &amp;lt;h3&amp;gt;HTML&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;Some HTML code here&amp;lt;/p&amp;gt; Link to a specific part of the page:
+Go To TOP</description>
+    </item>
+    
+    <item>
+      <title>svelte开发记录</title>
+      <link>https://kunieone.github.io/secret/svelte/</link>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/</guid>
+      <description>This is the root of example doc.
+Duis vel leo nec mi convallis sodales Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh.</description>
+    </item>
+    
+    <item>
+      <title>经典句型</title>
+      <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
+      <description>可想而知&amp;hellip;
+It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
+我们绝对不能&amp;hellip;
+On no account can we &amp;hellip;
+那些什么的人&amp;hellip;
+Those who&amp;hellip;
+&amp;hellip;值得我们关注
+&amp;hellip;.., which is worthy of our attention
+该是&amp;hellip;的时候了
+It is time + 主语+ 过去式
+正如&amp;hellip;生动的描述了&amp;hellip;
+As is vividly depicted in the &amp;hellip;, &amp;hellip;
+充分理解寓意..
+To grasp the full implication
+毋庸置疑&amp;hellip;
+There is no denying that &amp;hellip;
+一个可笑的场景..
+A ridiculous situation&amp;hellip;
+认真做决定..
+To make careful decision
+无法理解&amp;hellip;
+Beyond one&amp;rsquo;s comprehension
+关注..的人寥寥无几
+Few people could pay attention to &amp;hellip;
+犯下严重的错误..
+Commit a terrible blunder&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>一些单词的高级表达</title>
+      <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
+      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
+    </item>
+    
+    <item>
+      <title>svelte开发记录</title>
+      <link>https://kunieone.github.io/docs/svelte/</link>
+      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/</guid>
+      <description>This is the root of example doc.
+Duis vel leo nec mi convallis sodales Sed efficitur nibh sed euismod dictum. Donec posuere, nisl a egestas dignissim, risus magna placerat tortor, quis tincidunt ipsum erat at nunc. Cras consectetur ex eget tortor fermentum mattis. Nullam sodales sed purus eget ornare. Vestibulum aliquam cursus odio vitae placerat. Etiam vel pharetra diam. Morbi molestie varius tincidunt. Morbi molestie tortor vitae metus venenatis, ut fermentum nisl luctus. Aenean at condimentum lorem, rhoncus dapibus nibh.</description>
+    </item>
+    
+  </channel>
 </rss>
