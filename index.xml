@@ -8,11 +8,11 @@
     <language>zh</language>
     <copyright>@Starevan
 </copyright>
-    <lastBuildDate>Sat, 18 Jun 2022 06:23:08 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 03:28:40 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux 下文件的三个时间：ctime、mtime、atime 的区别</title>
       <link>https://kunieone.github.io/posts/linux_time/</link>
-      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
+      <pubDate>Sat, 18 Jun 2022 03:28:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/linux_time/</guid>
       <description>Linux 下文件的三个时间：ctime、mtime、atime 的区别
@@ -27,65 +27,22 @@ access time(atime):最后访问时间
     </item>
     
     <item>
-      <title>NodeList和HTMLCollection有什么区别</title>
-      <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
-      <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
-    </item>
-    
-    <item>
-      <title>经典句型</title>
-      <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
-      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
-      <description>可想而知&amp;hellip;
-It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
-我们绝对不能&amp;hellip;
-On no account can we &amp;hellip;
-那些什么的人&amp;hellip;
-Those who&amp;hellip;
-&amp;hellip;值得我们关注
-&amp;hellip;.., which is worthy of our attention
-该是&amp;hellip;的时候了
-It is time + 主语+ 过去式
-正如&amp;hellip;生动的描述了&amp;hellip;
-As is vividly depicted in the &amp;hellip;, &amp;hellip;
-充分理解寓意..
-To grasp the full implication
-毋庸置疑&amp;hellip;
-There is no denying that &amp;hellip;
-一个可笑的场景..
-A ridiculous situation&amp;hellip;
-认真做决定..
-To make careful decision
-无法理解&amp;hellip;
-Beyond one&amp;rsquo;s comprehension
-关注..的人寥寥无几
-Few people could pay attention to &amp;hellip;
-犯下严重的错误..
-Commit a terrible blunder&amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>想法:脚本自动给文章添加时间</title>
       <link>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
+      <pubDate>Sat, 18 Jun 2022 03:05:22 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
       <description>目前的想法: 使用 node 给文档添加时间 流程 解析文件的创建时间和修改时间 脚本解析 md 脚本，如果没有，添加一个。 </description>
     </item>
     
     <item>
-      <title>一些单词的高级表达</title>
-      <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
-      <pubDate>Sat, 18 Jun 2022 06:23:08 +0800</pubDate>
+      <title>NodeList和HTMLCollection有什么区别</title>
+      <link>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sat, 18 Jun 2022 03:01:49 +0800</pubDate>
       
-      <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
-      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
+      <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
+      <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.getElementByClassName()等方法返回的是动态（live）的 HTMLCollection 集合。 ———————————————— 版权声明：本文为 CSDN 博主「卡卡的笔录」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/m0_38102188/article/details/86299212</description>
     </item>
     
     <item>
@@ -103,6 +60,33 @@ Go To TOP</description>
     </item>
     
     <item>
+      <title>Chapter 1</title>
+      <link>https://kunieone.github.io/secret/svelte/chapter-1/</link>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/chapter-1/</guid>
+      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 1</title>
+      <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</link>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</guid>
+      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/secret/svelte/chapter-2/</link>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/secret/svelte/chapter-2/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Chapter 2</title>
       <link>https://kunieone.github.io/secret/svelte/chapter-3/</link>
       <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
@@ -113,89 +97,8 @@ Go To TOP</description>
     
     <item>
       <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
-      <pubDate>Fri, 17 Jun 2022 10:23:35 +0800</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 1</title>
-      <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-1/</guid>
-      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/chapter-4/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/chapter-4/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
-      <link>https://kunieone.github.io/secret/svelte/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/secret/svelte/chapter-2/</guid>
-      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Chapter 2</title>
       <link>https://kunieone.github.io/secret/svelte/chapter-4/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
       
       <guid>https://kunieone.github.io/secret/svelte/chapter-4/</guid>
       <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
@@ -204,7 +107,7 @@ Go To TOP</description>
     <item>
       <title>Chapter 2</title>
       <link>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</link>
-      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 12:41:03 +0800</pubDate>
       
       <guid>https://kunieone.github.io/secret/svelte/nested-chapter/chapter-2/</guid>
       <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
@@ -213,29 +116,26 @@ Go To TOP</description>
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/</guid>
-      <description>Easystack Development Document 时间: 2022/5/19 修改时间:现在
-Backend API 账号服务 /user 服务 Method ROUTES Query BODY? RESPONSE 注册 POST /register/ null username:string
-email:string
-hashpwd:string
-secondpwd:string
-nickname?:string `status:200 登录 POST /login/ null username:string
-email:string
-hashpwd:string
-secondpwd:string
-nickname?:string `status:200 修改密码 POST /change/pwd null username:stringnewpwd:string
-securitycode:string
-`status:200 查看 uid GET /getuid/ username:string null `status:200 修改昵称 GET /change/nickname newname:string null `status:200|400,
-msg:&amp;ldquo;修改成功&amp;rdquo;|&amp;ldquo;请检查格式!&amp;rdquo; 个人信息服务 /user/me 服务 方法 路由 查询参数 请求体 返回 修改签名 GET /change/slogan newslogan:string null status:200|400
-msg:修改成功! 修改昵称 GET /change/name newname:string null status:200|400</description>
+      <description>页面路由 BASEURL = memorite.cn 主页路由 / 主页
+用户信息路由/user (该路由跳到 404/nouser)
+/user/me 我的账号主页预览,如果未登陆，显示注册登陆页面 /user/[uuid] 用户账号主页预览 404 页面 /404
+404/nouser 查询不到用户
+404/noarticle 查询不到文章
+404/nospecial 查询不到专栏
+文章页面 /article (该路由跳转到 404/noarticle)
+/article/[articleid] 文章浏览 专栏页面 /special专栏(该路由跳转到 404/nospecial)
+/special/[artid] 专栏浏览 浏览历史页面 /history 会查询用户是否登陆，如果没登陆，跳转注册登陆路由
+收藏夹 /favorites 浏览收藏夹
+/favorites/article 浏览收藏夹里的文章 /favorites/user 浏览收藏夹里的用户 /favorites/special 浏览收藏夹里的专栏 /favorites/[special|article|user]/[pageid] 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40&amp;hellip;如果过大，显示最后一页) </description>
     </item>
     
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/</guid>
       <description>Golang协程调度 go调度器的由来 单进程时代：
@@ -255,7 +155,7 @@ GMP调度器</description>
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/</guid>
       <description>Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
@@ -271,7 +171,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/</guid>
       <description>NESTJS NESTJS 介绍 ​	Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。
@@ -284,7 +184,7 @@ NESTJS 哲学 在近些年内，多亏了Node.js使得Javascript可以成为前�
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/</guid>
       <description>作者：苏七摘文 链接：https://zhuanlan.zhihu.com/p/503913403 来源：知乎 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
@@ -322,7 +222,7 @@ NESTJS 哲学 在近些年内，多亏了Node.js使得Javascript可以成为前�
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/</guid>
       <description>denizen 居住条件
@@ -372,7 +272,7 @@ rendition</description>
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/</guid>
       <description>Arm是啥？ ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。 arm并不生产芯片，这是出知识产权的。
@@ -413,7 +313,7 @@ ARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</guid>
       <description>2013 英一小作文 (2013) Write an e-mail of about 100 words to a foreign teacher in your college, inviting him/her to be a judge for the upcoming English speech contest.
@@ -424,17 +324,114 @@ You should include the details you think necessary. You should write neatly on t
     <item>
       <title></title>
       <link>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
       
       <guid>https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
-      <description>Appropriate Freedom of Speech ​	America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;. As a native Chinese student, let&amp;rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
-​	To start with, we should understand the definition of freedom of speech.</description>
+      <description>Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &amp;ldquo;lack of freedom of speech&amp;rdquo;. As a native Chinese student, let&amp;rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
+​ To start with, we should understand the definition of freedom of speech.</description>
+    </item>
+    
+    <item>
+      <title>经典句型</title>
+      <link>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</link>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E7%BB%8F%E5%85%B8%E5%8F%A5%E5%9E%8B/</guid>
+      <description>可想而知&amp;hellip;
+It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
+我们绝对不能&amp;hellip;
+On no account can we &amp;hellip;
+那些什么的人&amp;hellip;
+Those who&amp;hellip;
+&amp;hellip;值得我们关注
+&amp;hellip;.., which is worthy of our attention
+该是&amp;hellip;的时候了
+It is time + 主语+ 过去式
+正如&amp;hellip;生动的描述了&amp;hellip;
+As is vividly depicted in the &amp;hellip;, &amp;hellip;
+充分理解寓意..
+To grasp the full implication
+毋庸置疑&amp;hellip;
+There is no denying that &amp;hellip;
+一个可笑的场景..
+A ridiculous situation&amp;hellip;
+认真做决定..
+To make careful decision
+无法理解&amp;hellip;
+Beyond one&amp;rsquo;s comprehension
+关注..的人寥寥无几
+Few people could pay attention to &amp;hellip;
+犯下严重的错误..
+Commit a terrible blunder&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>一些单词的高级表达</title>
+      <link>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</link>
+      <pubDate>Fri, 17 Jun 2022 11:03:40 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E4%B8%80%E4%BA%9B%E5%8D%95%E8%AF%8D%E7%9A%84%E9%AB%98%E7%BA%A7%E8%A1%A8%E8%BE%BE/</guid>
+      <description> 词义 基础 升级 繁荣兴旺 boom flourish;thrive;prosper 导致 cause lead to; bring about;result in;spark off;conduce to;generate 艰巨的 difficult arduous;heavy 掩盖 cover mask;veil;conceal 消除 clear eliminate;remove;take away 重要的 important crucial;significant;vital 加强 heighten enhance;reinforce;enforce;strengthen 满足 meet satisfy;suit;fill;fulfill;accommodate 流行的 popular prevailing;prevalent;widespread 有益的 useful helpful;beneficial;advantageous </description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/docs/svelte/chapter-4/</link>
+      <pubDate>Fri, 17 Jun 2022 10:23:36 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/chapter-4/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/docs/svelte/chapter-3/</link>
+      <pubDate>Fri, 17 Jun 2022 10:23:35 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/chapter-3/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 1</title>
+      <link>https://kunieone.github.io/docs/svelte/chapter-1/</link>
+      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/chapter-1/</guid>
+      <description>&lt;p&gt;This is chapter 1 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 1</title>
+      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</link>
+      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/</guid>
+      <description>&lt;p&gt;This is chapter 1 of nested chapter.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/docs/svelte/chapter-2/</link>
+      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/chapter-2/</guid>
+      <description>&lt;p&gt;This is chapter 2 of example doc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2</title>
+      <link>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</link>
+      <pubDate>Fri, 17 Jun 2022 10:12:13 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/</guid>
+      <description>&lt;p&gt;This is chapter 2 of nested chapter.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title></title>
       <link>https://kunieone.github.io/homepage/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 Jun 2022 09:42:34 +0800</pubDate>
       
       <guid>https://kunieone.github.io/homepage/</guid>
       <description></description>

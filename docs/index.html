@@ -87,63 +87,63 @@
     "itemListElement":[{
             "@type":"ListItem",
             "position":  1 ,
-            "name": "svelte开发记录",
-            "description": "最近发现svelte比较火，这是一个新兴的框架，所以试一试。",
-            "url": "https://kunieone.github.io/docs/svelte/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
             "name": "",
-            "description": "Easystack Development Document 时间: 2022/5/19 修改时间:现在\nBackend API 账号服务 /user 服务 Method ROUTES Query BODY? RESPONSE 注册 POST /register/ null username:string\nemail:string\nhashpwd:string\nsecondpwd:string\nnickname?:string `status:200 登录 POST /login/ null username:string\nemail:string\nhashpwd:string\nsecondpwd:string\nnickname?:string `status:200 修改密码 POST /change/pwd null username:stringnewpwd:string\nsecuritycode:string\n`status:200 查看 uid GET /getuid/ username:string null `status:200 修改昵称 GET /change/nickname newname:string null `status:200|400,\nmsg:\u0026ldquo;修改成功\u0026rdquo;|\u0026ldquo;请检查格式!\u0026rdquo; 个人信息服务 /user/me 服务 方法 路由 查询参数 请求体 返回 修改签名 GET /change/slogan newslogan:string null status:200|400\nmsg:修改成功! 修改昵称 GET /change/name newname:string null status:200|400",
+            "description": "页面路由 BASEURL = memorite.cn 主页路由 / 主页\n用户信息路由/user (该路由跳到 404/nouser)\n/user/me 我的账号主页预览,如果未登陆，显示注册登陆页面 /user/[uuid] 用户账号主页预览 404 页面 /404\n404/nouser 查询不到用户\n404/noarticle 查询不到文章\n404/nospecial 查询不到专栏\n文章页面 /article (该路由跳转到 404/noarticle)\n/article/[articleid] 文章浏览 专栏页面 /special专栏(该路由跳转到 404/nospecial)\n/special/[artid] 专栏浏览 浏览历史页面 /history 会查询用户是否登陆，如果没登陆，跳转注册登陆路由\n收藏夹 /favorites 浏览收藏夹\n/favorites/article 浏览收藏夹里的文章 /favorites/user 浏览收藏夹里的用户 /favorites/special 浏览收藏夹里的专栏 /favorites/[special|article|user]/[pageid] 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40\u0026hellip;如果过大，显示最后一页) ",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/"
         },{
             "@type":"ListItem",
-            "position":  3 ,
+            "position":  2 ,
             "name": "",
             "description": "Golang协程调度 go调度器的由来 单进程时代：\n单一执行，计算机一个任务一个任务处理 多进程操作系统：\n使用CPU调度器： 不同的时间片ABC轮流执行 多进程带来了新的问题： 时间片的切换成本（保存现场） 并且使得开发设计变得复杂（状态锁，同步等问题） 为了保证多任务，开了很多线程，高度消耗调度CPU并且消耗内存 进程占用 4GB 线程占用4M 操作系统分为 用户态和内核态\n如果我们让内核只看到一个线程，在线程里面开多个小线程（co-routine）协程\n1比N\n![image-20220607143714277](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143714277.png)\nM比N：\n![image-20220607143904604](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220607143904604.png)\n对于go语言，它把\nco-routine改成了goroutine，修改了内存（几KB）\n并且调度器处理很好\nGMP调度器",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/"
         },{
             "@type":"ListItem",
-            "position":  4 ,
+            "position":  3 ,
             "name": "",
             "description": "Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。\n为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）\n提示\n你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。\nRouting（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面\n@Controller(\u0026ldquo;cats\u0026rdquo;)，装饰器允许我们轻易地构建一组相关路由的集合，并且最小化重复的代码。\n提示\n你可以使用CLI nest g controller(co) cats来生成猫路由。",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"
         },{
             "@type":"ListItem",
-            "position":  5 ,
+            "position":  4 ,
             "name": "",
             "description": "NESTJS NESTJS 介绍 ​\tNestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。\n​\t在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！\n​\tNest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由\nNESTJS 哲学 在近些年内，多亏了Node.js使得Javascript可以成为前后端应用开发的通用语言，这也导致了比如一些像Angular，React和Vue项目的兴起，它们极大的提升了开发者构建更快，可测试，可拓展的前端应用的效率。不过，尽管有很多为Node.js准备的很棒的库，指导和工具，单没有一个解决了“架构”层面上的这个核心问题。\n​\tNEST提供了一个开箱即用的应用架构服务，允许了开发者和团队能够构建高可测试性，大规模，松耦合并且易维护的应用。该架构理念灵感来自Angular。",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/"
         },{
             "@type":"ListItem",
-            "position":  6 ,
+            "position":  5 ,
             "name": "",
             "description": "作者：苏七摘文 链接：https://zhuanlan.zhihu.com/p/503913403 来源：知乎 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。\n动词一字部：\n抓，搞，上，下，出，想，谋\n动词二字部：\n分析，研究，了解，掌握，发现，提出，推进，推动，制定，出台，完善，建立，健全，加强，强化，增强，促进，加深，深化，扩大，落实，细化，突出，建设，营造，开展，发挥，发扬，创新，转变，发展，统一，提高，提升，保持，优化，召开，举行，贯彻，执行，树立，引导，规范，整顿，服务，协调，沟通，配合，合作，支持，加大，开拓，拓展，巩固，保障，保证，形成，指导\n名词：\n体系，机制，体制，系统，规划，战略，方针，政策，措施，要点，重点，焦点，难点，热点，亮点，矛盾，问题，建设，思想，认识，作风，整治，环境，秩序，作用，地方，基层，传统，运行，监测，监控，调控，监督，工程，计划，行动，创新，增长，方式，模式，转变，质量，水平，效益，会议，文件，精神，意识，服务，协调，沟通，力度，领域，空间，成绩，成就，进展，实效，基础，前提，关键，保障，动力，条件，环节，方法，思路，设想，途径，道路，主意，办法，力气，功夫，台阶，形势，情况，意见，建议，网络，指导，指南，目录，方案\n形容词一字部：\n多，宽，高，大，好，快，省，新\n形容词二字部：\n持续，快速，协调，健康，公平，公正，公开，透明，富强，民主，文明，和谐，祥和，优良，良好，合理，稳定，平衡，均衡，稳健，平稳，统一，现代\n副词一字部：\n狠，早，细，实，好，很，较，再，更\n副词二字部：\n加快，尽快，抓紧，尽早，整体，充分，继续，深入，自觉，主动，自主，密切，大力，全力，尽力，务必，务求，有效\n副词三字部：\n进一步\n后缀：\n化，型，性\n词组：\n统一思想，提高认识，认清形势，明确任务，加强领导，完善机制，交流经验，研究问题，团结协作，密切配合，真抓实干，开拓进取，突出重点，落实责任，各司其职，各负其责，集中精力，聚精会神，一心一意，心无旁骛，兢兢业业，精益求精，一抓到底，爱岗敬业，求真务实，胸怀全局，拓宽视野。\n“新”系列：\n新形势 新任务 新挑战 新机遇 新情况 新问题 新困难 新对策 新办法 新局面 新气象 刷新、革新、变新、创新、更新\n“者”系列：\n守护者 保护者 守望者 践行者 组织者 协调者 旁观者 教育者 监督者管理者 设计者 引导者 实施者 指导者 协助者 决策者 参与者\n“外号”系列：\n(个人) 先行官 火车头 老黄牛 活地图 辖区通 减压阀 助推器\n（集体） 大熔炉 主旋律 接力赛\n“性”系列：\n自觉性 时效性 复杂性 积极性 实效性 机制性 特殊性 主动性 有效性 体制性 多变性 创造性 坚定性 保障性 危险性 准确性 阶段性 流动性 盲目性 目的性 层次性 稳定性 实用性 预见性 启发性 全局性 科学性 前瞻性 警示性 局部性 局限性 针对性 苗头性 根本性 约束性 普遍性 倾向性 长期性 理论性 典型性 经常性 精确性 系统性 示范性 思想性 果敢性 完整性 必要性 知识性 坚韧性 多样性 重要性 趣味性 敏感性 服务性 先进性 随意性 警惕性 指导性 优越性 反复性 技术性 思想性 战略性 创新性 指导性 目标性 可操作性",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/"
         },{
             "@type":"ListItem",
-            "position":  7 ,
+            "position":  6 ,
             "name": "",
             "description": "denizen 居住条件\npurport\nsavour\nreassure\nintrusive\nhundrum\ntapeworm\ndisfavour\nairstrip\nscowl\nexpedient\ndesegregate\nmime\nnewsreel\nirritant\npurely\nledge\norgan\nbarrow\nstarboard\niodide\ndemote\nconscript\npicket 罢工纠察\ncanter\ngape\nsusceptibility\nfoil\nrugger\nenpower\nmadden\nflax\nforthwith\nmortuary\nuntold\n可怕的 gruesome\nooze 渗出\nhuff\nwicked\nnewsreel\ninnate\nrendition",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E5%8D%95%E8%AF%8D/"
         },{
             "@type":"ListItem",
-            "position":  8 ,
+            "position":  7 ,
             "name": "",
             "description": "Arm是啥？ ARM是一个公司，是为精简指令集计算机微处理器提供解决方案的。 arm并不生产芯片，这是出知识产权的。\nRISC 精简指令集\nC语言 -1-\u0026gt; 汇编 -2-\u0026gt;01指令\n2:指令的格式怎么统一？ARM就是这个解决方案\nMOV R0, #1 这串指令 ，直接解析成机器码。\narm做的事情就是对指令进行怎么翻译，采用的是流水线的技术。\nARM公司的工作模式： ![image-20220525131045628](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525131045628.png)\nOEM 代工生产公司，把产品制造出来。\n很多电子产品的应用模式都是这样的。\nARM的优势 微处理器支持Thumb双指令集，可以兼容 ARM8/16位器件。\n既可以工作在16位下，也可以工作在32位下。\n大量使用寄存器，执行速度快\n大多数数据操作在寄存器完成。\nARM7\nARM9\nARM10E\nARM11\n![image-20220525132133577](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525132133577.png)\n虚拟内存管理（随着需求增大，必须使用更大的内存）把一部分内存地址扩到磁盘上，增大空间\nARM各版本 ARM7采用的是冯诺伊曼结构，数据存储器和程序存储器重合。速度相对局限。通过一条总线分时进行。取指令和取操作数不能并行。三级流水线结构（取指、译码、执行）时钟：66mhz。\n​\t运行一条指令，平均执行1.9个时钟周期。\nARM9为五级流水线技术（取指、译码、执行、缓冲/数据、回写）时钟频率：120Mhz-200Mhz。ARM9采用的是哈佛结构，程序存储器和数据存储器分开，带宽加大。同时大多数DSP都采用此结构。\n​\t运行一条指令，平均执行1.5个时钟周期。\nARM11为8级流水线。600Mhz时钟频率。\n![image-20220525133125217](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133125217.png)\n一条指令4字节长，三级流水线，PC的地址差八个字节\nARM微处理器的工作状态 ARM状态 都是32（4*8=32位（4字节））位指令 处理器以执行字（32位）方式的ARM指令。 Thumb状态 这里是按照半字（2*8=16位）来读取指令。 什么是字？ 半字？\n从偶数地址开始的连续两个字节（16位）构成一个半字。\n字：4个字节。\n![image-20220525133951372](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525133951372.png)\n两个状态咋切换？ ![image-20220525134051303](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134051303.png)\n![image-20220525134208860](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134208860.png)\n![image-20220525134219885](/Users/jiangxinghuai/Library/Application Support/typora-user-images/image-20220525134219885.png)",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80assembly/arm%E4%BB%8B%E7%BB%8D/"
         },{
             "@type":"ListItem",
-            "position":  9 ,
+            "position":  8 ,
             "name": "",
             "description": "2013 英一小作文 (2013) Write an e-mail of about 100 words to a foreign teacher in your college, inviting him/her to be a judge for the upcoming English speech contest.\nYou should include the details you think necessary. You should write neatly on the ANSwer SHEET. Do not sign your own name at the end of the e-mail. Use \u0026ldquo;Li Ming\u0026rdquo; instead. Do not write the address. (10 points) 思路：按照公务邀请的方法来写。邀请一个老师参加英语演讲。 范文 1: Dear Mr, Wilson,\n​ I am writing on behalf of the Student\u0026rsquo; Union to invite you to be a judge for the upcoming English speech contest.",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/"
         },{
             "@type":"ListItem",
-            "position":  10 ,
+            "position":  9 ,
             "name": "",
-            "description": "Appropriate Freedom of Speech ​\tAmerica has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its \u0026ldquo;lack of freedom of speech\u0026rdquo;. As a native Chinese student, let\u0026rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.\n​\tTo start with, we should understand the definition of freedom of speech.",
+            "description": "Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its \u0026ldquo;lack of freedom of speech\u0026rdquo;. As a native Chinese student, let\u0026rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.\n​ To start with, we should understand the definition of freedom of speech.",
             "url": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/"
+        },{
+            "@type":"ListItem",
+            "position":  10 ,
+            "name": "svelte开发记录",
+            "description": "最近发现svelte比较火，这是一个新兴的框架，所以试一试。",
+            "url": "https://kunieone.github.io/docs/svelte/"
         }
     ]
 }
@@ -275,82 +275,21 @@
   
   <div class="w-full ">
     <div class="prose">
-  <a href="https://kunieone.github.io/docs/svelte/" class="no-underline">
-    <h3 class="mt-0">svelte开发记录</h3>
-  </a>
-  
-    最近发现svelte比较火，这是一个新兴的框架，所以试一试。
-  
-
-  
-    <div class="mx-6">
-      
-        <a href="https://kunieone.github.io/docs/svelte/chapter-3/" class="no-underline">
-          <h4>Chapter 2</h4>
-        </a>
-        
-          Chapter 2 of example doc
-        
-      
-        
-          <div class="-mx-4 my-4 border-t"></div>
-        <a href="https://kunieone.github.io/docs/svelte/chapter-1/" class="no-underline">
-          <h4>Chapter 1</h4>
-        </a>
-        
-          Chapter 1 of example doc
-        
-      
-        
-          <div class="-mx-4 my-4 border-t"></div>
-        <a href="https://kunieone.github.io/docs/svelte/chapter-2/" class="no-underline">
-          <h4>Chapter 2</h4>
-        </a>
-        
-          Chapter 2 of example doc
-        
-      
-      <a href="https://kunieone.github.io/docs/svelte/" class="no-underline">
-        <h4>
-          阅读更多
-          <i
-            class="fas fa-caret-right ms-1"
-          ></i>
-        </h4>
-      </a>
-    </div>
-  
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="prose">
   <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/" class="no-underline">
     <h3 class="mt-0"></h3>
   </a>
   
-    Easystack Development Document 时间: 2022/5/19 修改时间:现在
-Backend API 账号服务 /user 服务 Method ROUTES Query BODY? RESPONSE 注册 POST /register/ null username:string
-email:string
-hashpwd:string
-secondpwd:string
-nickname?:string `status:200 登录 POST /login/ null username:string
-email:string
-hashpwd:string
-secondpwd:string
-nickname?:string `status:200 修改密码 POST /change/pwd null username:stringnewpwd:string
-securitycode:string
-`status:200 查看 uid GET /getuid/ username:string null `status:200 修改昵称 GET /change/nickname newname:string null `status:200|400,
-msg:“修改成功”|“请检查格式!” 个人信息服务 /user/me 服务 方法 路由 查询参数 请求体 返回 修改签名 GET /change/slogan newslogan:string null status:200|400
-msg:修改成功! 修改昵称 GET /change/name newname:string null status:200|400
+    页面路由 BASEURL = memorite.cn 主页路由 / 主页
+用户信息路由/user (该路由跳到 404/nouser)
+/user/me 我的账号主页预览,如果未登陆，显示注册登陆页面 /user/[uuid] 用户账号主页预览 404 页面 /404
+404/nouser 查询不到用户
+404/noarticle 查询不到文章
+404/nospecial 查询不到专栏
+文章页面 /article (该路由跳转到 404/noarticle)
+/article/[articleid] 文章浏览 专栏页面 /special专栏(该路由跳转到 404/nospecial)
+/special/[artid] 专栏浏览 浏览历史页面 /history 会查询用户是否登陆，如果没登陆，跳转注册登陆路由
+收藏夹 /favorites 浏览收藏夹
+/favorites/article 浏览收藏夹里的文章 /favorites/user 浏览收藏夹里的用户 /favorites/special 浏览收藏夹里的专栏 /favorites/[special|article|user]/[pageid] 浏览收藏夹里的内容，分页(如果是 1,显示 120 的内容，2 显示 21..40…如果过大，显示最后一页) 
   
 
   
@@ -740,14 +679,72 @@ You should include the details you think necessary. You should write neatly on t
     <h3 class="mt-0"></h3>
   </a>
   
-    Appropriate Freedom of Speech ​	America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its “lack of freedom of speech”. As a native Chinese student, let’s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
-​	To start with, we should understand the definition of freedom of speech.
+    Appropriate Freedom of Speech ​ America has long been one of the most free speech nations. Instead, China is the target of criticism from the Western media for its “lack of freedom of speech”. As a native Chinese student, let’s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.
+​ To start with, we should understand the definition of freedom of speech.
   
 
   
     <div class="mx-6">
       
       <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/" class="no-underline">
+        <h4>
+          阅读更多
+          <i
+            class="fas fa-caret-right ms-1"
+          ></i>
+        </h4>
+      </a>
+    </div>
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://kunieone.github.io/docs/svelte/" class="no-underline">
+    <h3 class="mt-0">svelte开发记录</h3>
+  </a>
+  
+    最近发现svelte比较火，这是一个新兴的框架，所以试一试。
+  
+
+  
+    <div class="mx-6">
+      
+        <a href="https://kunieone.github.io/docs/svelte/chapter-4/" class="no-underline">
+          <h4>Chapter 2</h4>
+        </a>
+        
+          Chapter 2 of example doc
+        
+      
+        
+          <div class="-mx-4 my-4 border-t"></div>
+        <a href="https://kunieone.github.io/docs/svelte/chapter-3/" class="no-underline">
+          <h4>Chapter 2</h4>
+        </a>
+        
+          Chapter 2 of example doc
+        
+      
+        
+          <div class="-mx-4 my-4 border-t"></div>
+        <a href="https://kunieone.github.io/docs/svelte/chapter-1/" class="no-underline">
+          <h4>Chapter 1</h4>
+        </a>
+        
+          Chapter 1 of example doc
+        
+      
+      <a href="https://kunieone.github.io/docs/svelte/" class="no-underline">
         <h4>
           阅读更多
           <i
