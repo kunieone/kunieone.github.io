@@ -22,8 +22,7 @@ Eg:vi 后保存文件。
 status time(ctime):状态修改时间
 这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
 Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
-access time(atime):最后访问时间
-这里的访问时间是指文件被读取，而更新的时间。</description>
+access time(atime):最后访问时间 这里的访问时间是指文件被读取，而更新的时间。</description>
     </item>
     
   </channel>
