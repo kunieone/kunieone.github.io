@@ -24,14 +24,7 @@
 生产力决定生产关系
 经济基础决定上层建筑
 人民群众是社会历史的主体
-它让我意识到我有着什么样的三观
-次之的是经济生活，它让我看到这个社会运行的客观规律
-“天下熙熙，皆为利来 天下攘攘，皆为利往”这句话绝对不是在批判什么社会功利，而是在表达一种个人的力量在人文科学规律面前的无力
-而同时又有看到这种规律、掌握这种因果武器的惊喜！
-天地不仁，以万物为刍狗。世界不会按照你的意愿运行。
-如果你够聪明，自然能够从中挑出于你而言甚为有用的东西。
-毕竟文化生活本身就告诉了你要取其精华，去其糟粕 批判继承，融会贯通
-作者：杀人书与多兰剑 链接：https://www.zhihu.com/question/55093710/answer/142934656</description>
+它让我意识到我有着什么样的三观</description>
     </item>
     
     <item>
@@ -53,7 +46,7 @@ Pivotal 公司的 Matt Stine 于 2013 年首次提出云原生（CloudNative）�
       <guid>https://kunieone.github.io/posts/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9A%84%E4%B8%80%E9%81%93%E9%A2%98-%E5%88%87%E5%BF%8C%E7%9C%BC%E9%AB%98%E6%89%8B%E4%BD%8E/</guid>
       <description>越看越气，比赛时后眼睛花了，总是发现自己随机数函数是个错的，其实看错了代码块。 这是一道按要求生成 json 的题，不多说，主要是几个简单的正则表达式
 /{{integer\(([0-9]+),\s*([0-9]+)\)}}/; /{{repeat\(([0-9]+),\s*([0-9]+)\)}}/; /{{repeat\(([0-9]+)\)}}/; 之后的就简单了:
-const rand = (min, max) =&amp;gt; parseInt(Math.random() * (max - min + 1)) + min; // 随机数 const parse = (obj) =&amp;gt; { let keys = Object.</description>
+const rand = (min, max) =&amp;gt; parseInt(Math.</description>
     </item>
     
     <item>
@@ -64,11 +57,7 @@ const rand = (min, max) =&amp;gt; parseInt(Math.random() * (max - min + 1)) + mi
       <guid>https://kunieone.github.io/posts/%E9%9A%90%E8%97%8F%E5%92%8C%E4%B8%8D%E6%98%BE%E7%A4%BA/</guid>
       <description>其实 transform:scale(0,0);也可以
 display:none;
-display 翻译成中文是显示、展览的意思；将 display 的属性改为 none 可以实现元素的隐藏，元素和盒子模型也不生成，被隐藏的元素不占位置，看不见摸不着，它会导致浏览器的重排和重绘。
-visibility:hidden;
-visibility 翻译成中文是能见、可见性的意思；hidden 翻译成中文的是隐藏、不易察觉的意思。将 visibility 的属性改成 hidden 可以实现元素的隐藏，和 display:none 的区别是它占位置，看不见但是摸得着，所以它只会导致浏览器重绘而不会重排。
-opacity:0;
-opacity 翻译成中文是透明度、不透明的意思；将 opacity 的属性改成 0 那就是透明度等于 0 看不见元素，但是这种方法也是只能隐藏看不见元素，和 visibility:hidden 一样，元素依然存在页面中。</description>
+display 翻译成中文是显示、展览的意思；将 display 的属性改为 none 可以实现元素的隐藏，元素和盒子模型也不生成，被隐藏的元素不占位置，看不见摸不着，它会导致浏览器的重排和重绘。</description>
     </item>
     
     <item>
@@ -81,10 +70,7 @@ opacity 翻译成中文是透明度、不透明的意思；将 opacity 的属性
 modification time(mtime):内容修改时间
 这里的修改时间指的是文件的内容发生变化，而更新的时间。
 Eg:vi 后保存文件。
-status time(ctime):状态修改时间
-这里的修改时间指的是文件的属性或者权限发生变化，而更新的时间。
-Eg:通过 chmod、chown 命令修改一次文件属性，这个时间就会更新。
-access time(atime):最后访问时间 这里的访问时间是指文件被读取，而更新的时间。</description>
+status time(ctime):状态修改时间</description>
     </item>
     
     <item>
@@ -95,9 +81,7 @@ access time(atime):最后访问时间 这里的访问时间是指文件被读取
       <guid>https://kunieone.github.io/posts/%E6%83%B3%E6%B3%95%E8%84%9A%E6%9C%AC%E8%87%AA%E5%8A%A8%E7%BB%99%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%97%B6%E9%97%B4/</guid>
       <description>目前的想法: 使用 ruby 给文档添加时间 子模块 遍历目录
 查找 front_matter，分几种情况：
-有合格的 date 和 lastmod 字段 没有这两个时间字段 有但是不完整 针对一个 md 文件，获得该文件的创建时间和最后修改时间，，合理插入到 front_matter。
-首先我们明确目标，提取文件的修改和创建时间，作为 YAML-Front-Matter 放到 md 文件的开头，并且需要格式正确。
-由于开发设备是 mac，mac 和 linux 一样不能从 ctime 等时间找到创建时间，但是 mac 有一个比较罕见的指令</description>
+有合格的 date 和 lastmod 字段 没有这两个时间字段 有但是不完整 针对一个 md 文件，获得该文件的创建时间和最后修改时间，，合理插入到 front_matter。</description>
     </item>
     
     <item>
@@ -107,7 +91,7 @@ access time(atime):最后访问时间 这里的访问时间是指文件被读取
       
       <guid>https://kunieone.github.io/posts/nodelist%E5%92%8Chtmlcollection%E5%8C%BA%E5%88%AB/</guid>
       <description>首先 NodeList 和 HTMLCollection 都是 DOM 节点的集合。
-NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.childNodes 和 document.querySelectorAll()返回，不同的是 node.ChildNodes 返回的是动态（live）的 NodeList，而 document.querySelectorAll()返回的是静态(static)的 NodeList。 HTMLCollection 包含的节点类型是 Element，且通过 document.</description>
+NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/DocumentFragment 等，我们知道 nodeType 的种类有 12 种。NodeList 由 Node.</description>
     </item>
     
     <item>
@@ -116,9 +100,7 @@ NodeList 中包含的节点类型可能是 Element/Text/Comment/Document/Documen
       <pubDate>Fri, 17 Jun 2022 22:13:39 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/markdown/</guid>
-      <description>Markup : - - - - Image with alt :
-Markup : ![picture alt](http://via.placeholder.com/200x150 &amp;quot;Title is optional&amp;quot;) Foldable text:
-Title 1 Content 1 Content 1 Content 1 Content 1 Content 1</description>
+      <description>Markup : - - - - Image with alt :</description>
     </item>
     
     <item>
@@ -130,13 +112,7 @@ Title 1 Content 1 Content 1 Content 1 Content 1 Content 1</description>
       <description>可想而知&amp;hellip;
 It&amp;rsquo;s conceivable/obvious/apparent that&amp;hellip;
 我们绝对不能&amp;hellip;
-On no account can we &amp;hellip;
-那些什么的人&amp;hellip;
-Those who&amp;hellip;
-&amp;hellip;值得我们关注
-&amp;hellip;.., which is worthy of our attention
-该是&amp;hellip;的时候了
-It is time + 主语+ 过去式</description>
+On no account can we &amp;hellip;</description>
     </item>
     
     <item>
