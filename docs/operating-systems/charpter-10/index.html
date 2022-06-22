@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>∆STAREVAN</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-123-45');
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="深入理解操作系统 第十章 第十章的主要内容是：信号量和管程
+信号量 信号量的抽象数据类型
+一个整形(sem),具有两个原子操作 P(): sem减一,如果sem&lt;0,等待,否则继续 V(): sem加一,如果sem≤0,唤醒一个等待的P 信号量是整数">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"文档",
+      "item":"https://kunieone.github.io/docs/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"",
+      "item":"https://kunieone.github.io/docs/operating-systems/charpter-10/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kunieone.github.io/docs/operating-systems/charpter-10/"
+    },
+    "headline": "∆STAREVAN","wordCount":  644 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Zhao StarEvan",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://kunieone.github.io/images/icon.png"
+        }
+        },
+    "description": "深入理解操作系统 第十章 第十章的主要内容是：信号量和管程\n信号量 信号量的抽象数据类型\n一个整形(sem),具有两个原子操作 P(): sem减一,如果sem\u0026lt;0,等待,否则继续 V(): sem加一,如果sem≤0,唤醒一个等待的P 信号量是整数"
+}
+</script><meta property="og:title" content="∆STAREVAN" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/charpter-10/" />
+
+
+
+
+<meta property="og:description" content="深入理解操作系统 第十章 第十章的主要内容是：信号量和管程
+信号量 信号量的抽象数据类型
+一个整形(sem),具有两个原子操作 P(): sem减一,如果sem&lt;0,等待,否则继续 V(): sem加一,如果sem≤0,唤醒一个等待的P 信号量是整数" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="∆STAREVAN" />
+
+
+
+
+
+
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
+            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
+            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-e">
+            <div class="sticky top-16 pt-6">
+                
+
+
+
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">目录</span>
+    <i class='fas fa-caret-right ms-1'></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class="text-eureka hover:text-eureka"
+            href="https://kunieone.github.io/docs/operating-systems/charpter-10/"></a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="ps-6">
+    
+</ul>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    <article class="prose">
+  <h1 class="mb-4"></h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >0001/01-01 00:00:00</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>4分钟阅读时长</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <h1 id="深入理解操作系统-第十章">深入理解操作系统 第十章</h1>
+<blockquote>
+<p>第十章的主要内容是：信号量和管程</p>
+</blockquote>
+<h2 id="信号量">信号量</h2>
+<p>信号量的抽象数据类型</p>
+<ul>
+<li>一个整形(sem),具有两个原子操作</li>
+<li>P(): sem减一,如果sem&lt;0,等待,否则继续</li>
+<li>V(): sem加一,如果sem≤0,唤醒一个等待的P</li>
+</ul>
+<p>信号量是整数</p>
+<p>信号量是被保护的变量</p>
+<ul>
+<li>初始化完成后,唯一改变一个信号量的值的办法是通过P()和V()</li>
+<li>操作必须是原子</li>
+</ul>
+<p>P()能够阻塞,V()不会阻塞</p>
+<p>我们假定信号量是公平的</p>
+<ul>
+<li>没有线程被阻塞在P()仍然堵塞如果V()被无限频繁调用(在同一个信号量)</li>
+<li>在实践中,FIFO经常被使用</li>
+</ul>
+<p>两个类型信号量</p>
+<ul>
+<li>二进制信号量: 可以是0或1</li>
+<li>计数信号量: 可以取任何非负数</li>
+<li>两者相互表现(给定一个可以实现另一个)</li>
+</ul>
+<p>信号量可以用在2个方面</p>
+<ul>
+<li>互斥</li>
+<li>条件同步(调度约束——一个线程等待另一个线程的事情发生)</li>
+</ul>
+<h2 id="信号量使用">信号量使用</h2>
+<ol>
+<li>
+<p>用二进制信号量实现的互斥</p>
+<pre><code class="language-cpp">mutex = new Semaphore(1);
+
+mutex-&gt;P();
+...
+mutex-&gt;V();
+</code></pre>
+</li>
+<li>
+<p>用二进制信号量实现的调度约束</p>
+<pre><code class="language-cpp">condition = new Semaphore(0);
+
+//Thread A
+...
+condition-&gt;P(); //等待线程B某一些指令完成之后再继续运行,在此阻塞
+...
+
+//Thread B
+...
+condition-&gt;V(); //信号量增加唤醒线程A
+...
+</code></pre>
+</li>
+<li>
+<p>一个线程等待另一个线程处理事情</p>
+<p>比如生产东西或消费东西(生产者消费者模式),互斥(锁机制)是不够的</p>
+<p>有界缓冲区的生产者-消费者问题</p>
+<ul>
+<li>一个或者多个生产者产生数据将数据放在一个缓冲区里</li>
+<li>单个消费者每次从缓冲区取出数据</li>
+<li>在任何一个时间只有一个生产者或消费者可以访问该缓冲区</li>
+</ul>
+<p>正确性要求</p>
+<ul>
+<li>在任何一个时间只能有一个线程操作缓冲区(互斥)</li>
+<li>当缓冲区为空时,消费者必须等待生产者(调度,同步约束)</li>
+<li>当缓存区满,生产者必须等待消费者(调度,同步约束)</li>
+</ul>
+<p>每个约束用一个单独的信号量</p>
+<ul>
+<li>二进制信号量互斥</li>
+<li>一般信号量 fullBuffers</li>
+<li>一般信号了 emptyBuffers</li>
+</ul>
+<pre><code class="language-cpp">class BoundedBuffer{
+		mutex = new Semaphore(1);
+		fullBuffers = new Semaphore(0);   //说明缓冲区初始为空
+ 		emptyBuffers = new Semaphore(n);  //同时可以有n个生产者来生产
+};
+
+BoundedBuffer::Deposit(c){
+		emptyBuffers-&gt;P();
+		mutex-&gt;P();
+		Add c to the buffer;
+		mutex-&gt;V();
+		fullBuffers-&gt;V();
+}
+
+BoundedBuffer::Remove(c){
+		fullBuffers-&gt;P();
+		mutex-&gt;P();
+		Remove c from buffer;
+		mutex-&gt;V();
+		emptyBuffers-&gt;V();
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="信号量实现">信号量实现</h2>
+<p>使用硬件原语</p>
+<ul>
+<li>禁用中断</li>
+<li>原子指令</li>
+</ul>
+<p>类似锁</p>
+<ul>
+<li>禁用中断</li>
+</ul>
+<pre><code class="language-cpp">class Semaphore{
+		int sem;
+		WaitQueue q;
+};
+
+Semaphore::P(){
+		--sem;
+		if(sem &lt; 0){
+				Add this thread t to q;
+				block(p);
+		}
+};
+
+Semaphore::V(){
+		++sem;
+		if(sem &lt;= 0){
+				Remove a thread t from q;
+				wakeup(t);
+		}
+}
+</code></pre>
+<p>信号量的双用途</p>
+<ul>
+<li>互斥和条件同步</li>
+<li>但等待条件是独立的互斥</li>
+</ul>
+<p>读,开发代码比较困难</p>
+<ul>
+<li>程序员必须非常精通信号量</li>
+</ul>
+<p>容易出错</p>
+<ul>
+<li>使用的信号量已经被另一个线程占用</li>
+<li>忘记释放信号量</li>
+</ul>
+<p>不能够处理死锁问题</p>
+<h2 id="管程">管程</h2>
+<p>目的: 分离互斥和条件同步的关注</p>
+<p>什么是管程</p>
+<ul>
+<li>一个锁: 指定临界区</li>
+<li>0或者多个条件变量: 等待,通知信号量用于管程并发访问共享数据</li>
+</ul>
+<p>一般方法</p>
+<ul>
+<li>收集在对象,模块中的相关共享数据</li>
+<li>定义方法来访问共享数据</li>
+</ul>
+<p>Lock</p>
+<ul>
+<li>Lock::Acquire() 等待直到锁可用,然后抢占锁</li>
+<li>Lock::Release() 释放锁,唤醒等待者如果有</li>
+</ul>
+<p>Condition Variable</p>
+<ul>
+<li>允许等待状态进入临界区
+<ul>
+<li>允许处于等待(睡眠)的线程进入临界区</li>
+<li>某个时刻原子释放锁进入睡眠</li>
+</ul>
+</li>
+<li>Wait() operation
+<ul>
+<li>释放锁,睡眠,重新获得锁放回</li>
+</ul>
+</li>
+<li>Signal() operation(or broadcast() operation)
+<ul>
+<li>唤醒等待者(或者所有等待者),如果有</li>
+</ul>
+</li>
+</ul>
+<p>实现</p>
+<ul>
+<li>需要维持每个条件队列</li>
+<li>线程等待的条件等待signal()</li>
+</ul>
+<pre><code class="language-cpp">class Condition{
+		int numWaiting = 0;
+		WaitQueue q;
+};
+
+Condition::Wait(lock){
+		numWaiting++;
+		Add this thread t to q;
+		release(lock);
+		schedule(); //need mutex
+		require(lock);
+}
+
+Condition::Signal(){
+		if(numWaiting &gt; 0){
+				Remove a thread t from q;
+				wakeup(t); //need mutex
+				numWaiting--;
+		}
+}
+</code></pre>
+<p>管程解决生产者-消费者问题</p>
+<pre><code class="language-cpp">class BoundedBuffer{
+		Lock lock;
+		int count = 0;  //buffer 为空
+		Condition notFull, notEmpty;
+};
+
+BoundedBuffer::Deposit(c){
+		lock-&gt;Acquire();    //管程的定义:只有一个线程能够进入管程
+		while(count == n)
+				notFull.Wait(&amp;lock); //释放前面的锁
+		Add c to the buffer;
+		count++;
+		notEmpty.Signal();
+		lock-&gt;Release();
+}
+
+BoundedBuffer::Remove(c){
+		lock-&gt;Acquire();
+		while(count == 0)
+				notEmpty.Wait(&amp;lock);
+		Remove c from buffer;
+		count--;
+		notFull.Signal();
+		lock-&gt;Release();
+}
+</code></pre>
+<p>开发,调试并行程序很难</p>
+<ul>
+<li>非确定性的交叉指令</li>
+</ul>
+<p>同步结构</p>
+<ul>
+<li>锁: 互斥</li>
+<li>条件变量: 有条件的同步</li>
+<li>其他原语: 信号量</li>
+</ul>
+<p>怎么样有效地使用这些结构</p>
+<ul>
+<li>制定并遵循严格的程序设计风格,策略</li>
+</ul>
+<h2 id="经典同步问题">经典同步问题</h2>
+<ol>
+<li>
+<p>读者-写者问题</p>
+<p>动机: 共享数据的访问</p>
+<p>两种类型的使用者: 读者(不修改数据) 写者(读取和修改数据)</p>
+<p>问题的约束:</p>
+<ul>
+<li>允许同一时间有多个读者,但在任何时候只有一个写者</li>
+<li>当没有写者时,读者才能访问数据</li>
+<li>当没有读者和写者时,写者才能访问数据</li>
+<li>在任何时候只能有一个线程可以操作共享变量</li>
+</ul>
+<p>多个并发进程的数据集共享</p>
+<ul>
+<li>读者: 只读数据集;他们不执行任何更新</li>
+<li>写者: 可以读取和写入</li>
+</ul>
+<p>共享数据</p>
+<ul>
+<li>数据集</li>
+<li>信号量CountMutex初始化为1</li>
+<li>信号量WriteMutex初始化为1</li>
+<li>整数Rcount初始化为0(当前读者个数)</li>
+</ul>
+<p>读者优先设计</p>
+<p>只要有一个读者处于活动状态, 后来的读者都会被接纳.如果读者源源不断的出现,那么写者使用处于阻塞状态.</p>
+<pre><code class="language-cpp">//信号量实现
+//writer
+sem_wait(WriteMutex);
+write;
+sem_post(WriteMutex);
+
+//reader
+sem_wait(CountMutex);
+if(Rcount == 0)
+		sem_wait(WriteMutex); //确保后续不会有写者进入
+++Rcount;
+read;
+--Rcount;
+if(Rcount == 0)
+		sem_post(WriteMutex); //全部读者全部离开才能唤醒写者
+sem_post(CountMutex);
+</code></pre>
+<p>写者优先设计</p>
+<p>一旦写者就绪,那么写者会尽可能的执行写操作.如果写者源源不断的出现的话,那么读者就始终处于阻塞状态.</p>
+<pre><code class="language-cpp">//writer
+Database::Write(){
+		Wait until readers/writers;
+		write database;
+		check out - wake up waiting readers/writers;
+}
+//reader
+Database::Read(){
+		Wait until no writers;
+		read database;
+		check out - wake up waiting writers;
+}
+
+//管程实现
+AR = 0; // # of active readers
+AW = 0; // # of active writers
+WR = 0; // # of waiting readers
+WW = 0; // # of waiting writers
+Condition okToRead;
+Condition okToWrite;
+Lock lock;
+//writer
+Public Database::Write(){
+		//Wait until no readers/writers;
+		StartWrite();
+		write database;
+		//check out - wake up waiting readers/writers;
+		DoneWrite();
+}
+
+Private Database::StartWrite(){
+		lock.Acquire();
+		while((AW + AR) &gt; 0){
+				WW++;
+				okToWrite.wait(&amp;lock);
+				WW--;		
+		}
+		AW++;
+		lock.Release();
+}
+
+Private Database::DoneWrite(){
+		lock.Acquire();
+		AW--;
+		if(WW &gt; 0){
+				okToWrite.signal();
+		}
+		else if(WR &gt; 0){
+				okToRead.broadcast(); //唤醒所有reader 
+		}
+		lock.Release();
+}
+
+//reader
+Public Database::Read(){
+		//Wait until no writers;
+		StartRead();
+		read database;
+		//check out - wake up waiting writers;
+		DoneRead();
+}
+
+Private Database::StartRead(){
+		lock.Acquire();
+		while(AW + WW &gt; 0){    //关注等待的writer,体现出写者优先
+				WR++;
+				okToRead.wait(&amp;lock);
+				WR--;
+		}
+		AR++;
+		lock.Release();
+}
+
+private Database::DoneRead(){
+		lock.Acquire();
+		AR--;
+		if(AR == 0 &amp;&amp; WW &gt; 0){  //只有读者全部没有了,才需要唤醒
+				okToWrite.signal();
+		}
+		lock.Release();
+}
+</code></pre>
+</li>
+<li>
+<p>哲学家就餐问题(学习自 <a href="http://github.com/cyc2018">github.com/cyc2018</a>)</p>
+<p>共享数据:</p>
+<ul>
+<li>Bowl of rice(data set)</li>
+<li>Semaphone fork [5] initialized to 1</li>
+</ul>
+<pre><code class="language-cpp">#define N 5
+#define LEFT (i + N - 1) % N // 左邻居
+#define RIGHT (i + 1) % N    // 右邻居
+#define THINKING 0
+#define HUNGRY   1
+#define EATING   2
+typedef int semaphore;
+int state[N];                // 跟踪每个哲学家的状态
+semaphore mutex = 1;         // 临界区的互斥，临界区是 state 数组，对其修改需要互斥
+semaphore s[N];              // 每个哲学家一个信号量
+
+void philosopher(int i) {
+    while(TRUE) {
+        think(i);
+        take_two(i);
+        eat(i);
+        put_two(i);
+    }
+}
+
+void take_two(int i) {
+    down(&amp;mutex);
+    state[i] = HUNGRY;
+    check(i);
+    up(&amp;mutex);
+    down(&amp;s[i]); // 只有收到通知之后才可以开始吃，否则会一直等下去
+}
+
+void put_two(i) {
+    down(&amp;mutex);
+    state[i] = THINKING;
+    check(LEFT); // 尝试通知左右邻居，自己吃完了，你们可以开始吃了
+    check(RIGHT);
+    up(&amp;mutex);
+}
+
+void eat(int i) {
+    down(&amp;mutex);
+    state[i] = EATING;
+    up(&amp;mutex);
+}
+
+// 检查两个邻居是否都没有用餐，如果是的话，就 up(&amp;s[i])，使得 down(&amp;s[i]) 能够得到通知并继续执行
+void check(i) {         
+    if(state[i] == HUNGRY &amp;&amp; state[LEFT] != EATING &amp;&amp; state[RIGHT] !=EATING) {
+        state[i] = EATING;
+        up(&amp;s[i]);
+    }
+}
+</code></pre>
+</li>
+</ol>
+
+</article>
+
+                    
+                    
+                    
+
+                    
+
+
+
+                    
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >上一页</span
+        >
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-1/" class="block"></a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">下一页</span>
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-11/" class="block"></a>
+      
+    </div>
+  </div>
+
+
+                    
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        hljs.highlightAll();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">@Starevan
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

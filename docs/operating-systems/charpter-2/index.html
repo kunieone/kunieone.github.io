@@ -83,7 +83,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="Appropriate Freedom of Speech ​ America has long been one of the most free speech nations.">
+  content="深入理解操作系统 第二章 第二章的主要内容是 : 操作系统的异常/中断/系统调用
+计算机探究计算机启动过程 作用解析
+Disk : 存放OS和Bootloader">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,7 +98,7 @@
       "@type": "ListItem",
       "position": 2 ,
       "name":"",
-      "item":"https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/"}]
+      "item":"https://kunieone.github.io/docs/operating-systems/charpter-2/"}]
 }
 </script>
 
@@ -108,11 +110,9 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/"
+        "@id": "https://kunieone.github.io/docs/operating-systems/charpter-2/"
     },
-    "headline": "∆STAREVAN","datePublished": "2022-06-17T11:03:40+08:00",
-    "dateModified": "2022-06-22T18:13:04+08:00",
-    "wordCount":  811 ,
+    "headline": "∆STAREVAN","wordCount":  125 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -121,7 +121,7 @@
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "Appropriate Freedom of Speech ​ America has long been one of the most free speech nations."
+    "description": "深入理解操作系统 第二章 第二章的主要内容是 : 操作系统的异常\/中断\/系统调用\n计算机探究计算机启动过程 作用解析\nDisk : 存放OS和Bootloader"
 }
 </script><meta property="og:title" content="∆STAREVAN" />
 <meta property="og:type" content="article" />
@@ -130,12 +130,14 @@
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/" />
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/charpter-2/" />
 
 
 
 
-<meta property="og:description" content="Appropriate Freedom of Speech ​ America has long been one of the most free speech nations." />
+<meta property="og:description" content="深入理解操作系统 第二章 第二章的主要内容是 : 操作系统的异常/中断/系统调用
+计算机探究计算机启动过程 作用解析
+Disk : 存放OS和Bootloader" />
 
 
 
@@ -152,10 +154,6 @@
 
 
 
-<meta property="article:published_time" content="2022-06-17T11:03:40&#43;08:00" />
-
-
-<meta property="article:modified_time" content="2022-06-22T18:13:04&#43;08:00" />
 
 
 
@@ -260,7 +258,7 @@
     class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
     <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
         <a class="text-eureka hover:text-eureka"
-            href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/"></a>
+            href="https://kunieone.github.io/docs/operating-systems/charpter-2/"></a>
         
         
         
@@ -291,12 +289,12 @@
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022/06-17 11:03:40</span
+      >0001/01-01 00:00:00</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>4分钟阅读时长</span>
+    <span>1分钟阅读时长</span>
   </div>
 
   
@@ -308,15 +306,151 @@
   
   
 
-  <h1 id="appropriate-freedom-of-speech"><strong>Appropriate Freedom of Speech</strong></h1>
-<p>​ America <strong>has long been</strong> one of the most free speech nations. Instead, China is the target of criticism from the Western media for its &ldquo;lack of freedom of speech&rdquo;. As a native Chinese student, let&rsquo;s talk about the so-called freedom of speech, why our country “lacks” this freedom, and most importantly, is it reasonable for our country to stay that way.</p>
-<p>​ <strong>To start with</strong>, we should understand the definition of freedom of speech. <strong>Generally speaking</strong>, it&rsquo;s the right that civilians can communicate e one&rsquo;s opinions and ideas without worrying about the government&rsquo;s censorship and retaliation. It originated with The First Amendment, the publication of which affect the whole world so much because it gave people the right of expressing their freedom of thinking. Human is not a rigid animal, which means many human activities require the spark of different ideas. That&rsquo;s why there is a huge development in culture, technology even the military.</p>
-<p>​ Freedom of speech can be subdivided into two parts, speech involving politics and freedom of speech that doesn&rsquo;t involve politics. In my opinion, China and the United States are roughly at a level of freedom of expression that does not involve politics. As the country with the largest number of Internet users in the country, China has a high degree of development of Internet speech, and people&rsquo;s thinking has blossomed, especially in recent years. We can discuss almost any speech on the Internet that is not involved in politics, and we will also receive &ldquo;free&rdquo; replies from netizens. Of course, there will be malice, which is also the embodiment of free speech.</p>
-<p>​ But it is also beyond reproach to say that freedom of speech in China is incomplete. When it comes to speech that involves politics, we tend to be constrained by some <em>friendliness</em>. This is often an unspoken rule that Chinese people are well versed in. In China, people who announce unpredictive remarks against the government tend to be dangerous and troublesome. Since the founding of China, we have been a staunch one-party dictatorship, and freedom of expression is likely to be used by renegades to subvert the regime. Since the reform and opening up, the government has given the people a great right to freedom of speech, which has made us very satisfied. As ordinary people, we understand that in a country with one party and government, if there is a high degree of freedom of speech, the people can freely attack the government, which is bound to cause social unrest and bring disadvantages to China&rsquo;s economic development. This is also the difference that the Chinese and American people have been discussing for a long time.</p>
-<p>​ Freedom of speech is surely a positive matter <strong>for the reason that it</strong> can liberate, and free human beings from the shackles of thinking. <strong>But freedom without borders is not freedom.</strong> If you go to a company and scold your boss on your first day on the job, what will be the consequences? This situation should be uniform throughout the world. The First Amendment protects your attacks on the government from being censored but doesn&rsquo;t guarantee that your remarks to the boss won&rsquo;t result in dismissal.</p>
-<p>​ It is true that the West has liberalized people&rsquo;s criticism of the government, but is the effect of this criticism significant? The West advocates freedom of speech in this way because their long-term partisan competitive relationship needs to be purified by freedom of speech, and freedom of speech is needed to invest in the fierce competition of their party and develop in competition. However, in today&rsquo;s media, which is often controlled by a small number of giant capitals, we can also see how much malicious competition there is. Social unrest caused by the vicious competition of countless parties is something that China does not want to encounter. At the same time, to make the one-party dictatorship unshakable in China, we will also control the degree of people&rsquo;s discussion of politics.</p>
-<p>​ China&rsquo;s inability to let go of free speech is also partly because of the lessons learned from the military crackdown on the student movement in the summer of the 1989 since the reform and opening up. After China attempted to liberalize free speech, the Communist Party did suffer from the dominant social unrest of the student movement. Students seek political openness, but for the Communist Party, it is a malicious act of challenging party and government power. Since the crackdown, the deepening of freedom of expression on the political front has also become more difficult.</p>
-<p>As a result, we can see the benefits of free speech, but for every country I still think that appropriate freedom of speech is justified, and when the government reaches the point of restricting the minds of the people, it is worth the real protest. Obviously not yet.</p>
+  <h1 id="深入理解操作系统-第二章">深入理解操作系统 第二章</h1>
+<blockquote>
+<p>第二章的主要内容是 : 操作系统的异常/中断/系统调用</p>
+</blockquote>
+<h2 id="计算机探究计算机启动过程">计算机探究计算机启动过程</h2>
+<p><strong>作用解析</strong></p>
+<p>Disk : 存放OS和Bootloader</p>
+<p>BIOS : 基于I/O处理系统</p>
+<p>Bootloader : 加载OS，将OS放入内存</p>
+<p><strong>结构</strong></p>
+<p>Disk</p>
+<p>|___ OS</p>
+<p>|___ Bootloader</p>
+<p><strong>开机流程</strong></p>
+<ol>
+<li>
+<p>BIOS</p>
+<ul>
+<li>开机后，寻找显卡和执行BIOS (此时, <code>CS : IP = 0xF000 : 0xFFF0</code>,  CS/IP 两个寄存器)</li>
+<li>将Bootloader从磁盘的引导扇区加载到0x7C00 (Bootloader一共占用512M字节的内存)</li>
+<li>跳转到 <code>CS : IP = 0x0000 : 0x7C00</code></li>
+</ul>
+</li>
+<li>
+<p>Bootloader</p>
+<ul>
+<li>将操作系统的代码和数据从硬盘加载到内存中</li>
+<li>跳转到操作系统的起始地址</li>
+</ul>
+</li>
+</ol>
+<h2 id="中断异常系统调用">中断、异常、系统调用</h2>
+<h3 id="中断">中断</h3>
+<p>中断来源于外设，来自不同的硬件设备的计时器和网络的中断。</p>
+<p><strong>中断流程</strong></p>
+<p>硬件：设置中断标记（CPU初始化）</p>
+<ol>
+<li>将内部、外部事件设置中断标记</li>
+<li>中断事件的ID</li>
+</ol>
+<p>软件</p>
+<ol>
+<li>保存当前处理状态（寄存器之类的一些数据）</li>
+<li>根据中断事件的ID跳转到中断服务程序，中断服务程序处理</li>
+<li>清楚中断标记</li>
+</ol>
+<h3 id="异常">异常</h3>
+<p>异常来源于不良的应用程序，非法指令或者其他坏的处理状态（如：内存出错）。</p>
+<p><strong>异常处理流程</strong></p>
+<ol>
+<li>保存现场</li>
+<li>异常处理
+<ol>
+<li>杀死了产生异常的程序</li>
+<li>重新执行异常指令</li>
+</ol>
+</li>
+<li>恢复现场</li>
+</ol>
+<h3 id="系统调用">系统调用</h3>
+<p>系统调用来源于应用程序，应用程序主动向操作系统发出服务请求。程序访问主要是通过高层次的API，而不是直接调用系统调用函数。</p>
+<p><strong>APIs</strong></p>
+<ul>
+<li>Win32 API 用于Windows</li>
+<li>POSIX API 用于 POSIX-based systems（包括UNIX，LINUX，Mac OS X）</li>
+<li>Java API 用于JAVA虚拟机</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>通常情况下，每个系统调用有对应的序号
+<ul>
+<li>系统调用接口根据这些序号来维护表的索引</li>
+</ul>
+</li>
+<li>系统调用接口调用内核态中预期的系统调用
+<ul>
+<li>并返回系统调用的状态和其他任何返回值</li>
+</ul>
+</li>
+<li>用户不需要知道系统调用是如何实现的
+<ul>
+<li>只需要获取API和了解操作系统将什么作为返回结果</li>
+<li>操作系统接口的细节大部分都隐藏在API中</li>
+</ul>
+</li>
+</ul>
+<p><strong>用户态</strong>：操作系统运行中，CPU处于的特权级别，不能直接执行特权指令</p>
+<p><strong>内核态</strong>：操作系统运行中，CPU处于的特权级别，可以执行任何一条指令</p>
+<p><strong>系统调用</strong>：触发CPU从用户态到内核态的转换，切换程序和内核的堆栈，需要一定的开销</p>
+<p><strong>跨越操作系统边界的开销（值得的且必须的，保证了操作系统的安全性）</strong></p>
+<ul>
+<li>在执行时间上的开销超过程序调用</li>
+<li>开销：
+<ul>
+<li>建立中断、异常、系统调用号与对应服务例程映射关系的初始化开销</li>
+<li>建立内核堆栈</li>
+<li>验证参数</li>
+<li>内核态映射到用户态的地址空间（更新页面映射权限）</li>
+<li>内核态独立地址空间（TLB）</li>
+</ul>
+</li>
+</ul>
+<h3 id="区别">区别</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>源头</th>
+<th>处理时间</th>
+<th>响应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中断</td>
+<td>外设</td>
+<td>异步</td>
+<td>持续，对应用程序透明</td>
+</tr>
+<tr>
+<td>异常</td>
+<td>应用程序意向不到的行为</td>
+<td>同步</td>
+<td>杀死或重新执行指令</td>
+</tr>
+<tr>
+<td>系统调用</td>
+<td>应用程序请求系统提供服务</td>
+<td>同步或异步</td>
+<td>等待和持续</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>异步：应用程序不知道什么时候会发生中断</p>
+</blockquote>
+<blockquote>
+<p>同步：执行到某一条指令一定会发生该事件</p>
+</blockquote>
+<h3 id="为什么应用程序不能直接访问硬件">为什么应用程序不能直接访问硬件？</h3>
+<ul>
+<li>在计算机运行时，内核是被信任的第三方</li>
+<li>只有内核可以执行特权指令</li>
+<li>为了方便应用程序</li>
+</ul>
 
 </article>
 
@@ -337,13 +471,13 @@
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/%E9%9A%8F%E6%83%B3%E4%BD%9C%E6%96%87/2013%E8%8B%B1%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/" class="block"></a>
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-12/" class="block"></a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/operating-systems/charpter-1/" class="block"></a>
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-3/" class="block"></a>
       
     </div>
   </div>

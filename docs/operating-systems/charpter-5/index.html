@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>∆STAREVAN</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-123-45');
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="深入理解操作系统 第五章 第五章的主要内容是：操作系统的虚拟内存管理技术
+虚拟内存的起因 使用硬盘/磁盘使更多的程序在有限的内存中运行
+理想的存储器 : 更大更快更便宜和非易失性的存储区
+覆盖技术 如果是程序太大, 超出了内存的容量, 可以采用手动的概率(overlay)技术, 只把需要的指令和数据保存在内存当中">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"文档",
+      "item":"https://kunieone.github.io/docs/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"",
+      "item":"https://kunieone.github.io/docs/operating-systems/charpter-5/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kunieone.github.io/docs/operating-systems/charpter-5/"
+    },
+    "headline": "∆STAREVAN","wordCount":  380 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Zhao StarEvan",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://kunieone.github.io/images/icon.png"
+        }
+        },
+    "description": "深入理解操作系统 第五章 第五章的主要内容是：操作系统的虚拟内存管理技术\n虚拟内存的起因 使用硬盘\/磁盘使更多的程序在有限的内存中运行\n理想的存储器 : 更大更快更便宜和非易失性的存储区\n覆盖技术 如果是程序太大, 超出了内存的容量, 可以采用手动的概率(overlay)技术, 只把需要的指令和数据保存在内存当中"
+}
+</script><meta property="og:title" content="∆STAREVAN" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/charpter-5/" />
+
+
+
+
+<meta property="og:description" content="深入理解操作系统 第五章 第五章的主要内容是：操作系统的虚拟内存管理技术
+虚拟内存的起因 使用硬盘/磁盘使更多的程序在有限的内存中运行
+理想的存储器 : 更大更快更便宜和非易失性的存储区
+覆盖技术 如果是程序太大, 超出了内存的容量, 可以采用手动的概率(overlay)技术, 只把需要的指令和数据保存在内存当中" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="∆STAREVAN" />
+
+
+
+
+
+
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
+            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
+            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-e">
+            <div class="sticky top-16 pt-6">
+                
+
+
+
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">目录</span>
+    <i class='fas fa-caret-right ms-1'></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class="text-eureka hover:text-eureka"
+            href="https://kunieone.github.io/docs/operating-systems/charpter-5/"></a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="ps-6">
+    
+</ul>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    <article class="prose">
+  <h1 class="mb-4"></h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >0001/01-01 00:00:00</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2分钟阅读时长</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <h1 id="深入理解操作系统-第五章">深入理解操作系统 第五章</h1>
+<blockquote>
+<p>第五章的主要内容是：操作系统的虚拟内存管理技术</p>
+</blockquote>
+<h2 id="虚拟内存的起因">虚拟内存的起因</h2>
+<p>使用硬盘/磁盘使更多的程序在有限的内存中运行</p>
+<p>理想的存储器 : 更大更快更便宜和非易失性的存储区</p>
+<h2 id="覆盖技术">覆盖技术</h2>
+<p>如果是程序太大, 超出了内存的容量, 可以采用手动的概率(overlay)技术, 只把需要的指令和数据保存在内存当中</p>
+<p>目的 : 是在较小的可用内存中运行较大的程序, 常用于多道程序系统, 与分区存储管理配合使用.</p>
+<p>原理 :</p>
+<p>把程序按照其自身逻辑结构, 划分为若干个功能上相互独立的程序模块, 那些不会同时执行的模块共享同一块内存区域, 按时间先后来运行.</p>
+<ul>
+<li>必要部分(常用功能)的代码和数据常驻内存;</li>
+<li>可选部分(不常用功能)在其他程序模块中实现, 平时存放在外存中, 在需要用到时才装入内存;</li>
+<li>不存在调用关系的模块不必同时装入到内存, 从而可以相互覆盖, 即这些模块共用一个分区.</li>
+</ul>
+<blockquote>
+<p>也就是说,程序松耦合的部分可以按需装入内存,不需要的时候放在外存中,多个不常用部分共用一个分区.</p>
+</blockquote>
+<p>实例 :</p>
+<p>A(20k) <strong><strong>B(50k) ____ D(30k)
+| ____ C(30k) ____ E(20k)
+|</strong></strong> F(40k)</p>
+<p>因此不需要将整个程序190k的数据全部放入内存中, 而是划分为 常驻区(20k) 覆盖区0(50k) 覆盖区1(40k) 压缩至了110k的内存空间使用</p>
+<p>缺点 :</p>
+<ul>
+<li>由程序员来把一个大的程序划分为若干个小的功能模块, 并确定各个模块之间的覆盖关系, 费时费力, 增加了编程的复杂度;</li>
+<li>覆盖模块并从外存装入内存, 实际上是以时间延长来换取空间节省.</li>
+</ul>
+<h2 id="交换技术">交换技术</h2>
+<p>如果是程序太多, 超过了内存的容量, 可以采用自动的交换(swapping)技术, 把暂时不能执行的程序送到外存中</p>
+<p>目的 : 多道程序在内存时, 让正在运行的程序或需要运行的程序获得更多的内存资源</p>
+<p>原理 :</p>
+<p>可将暂时不能运行的程序送到外存, 从而获得空闲内存空间. 操作系统把一个进程的整个地址空间的内容保存到外存中(换出 swap out), 而将外存中的某个进程的地址空间读入到内存中(换入 swap in). 换入换出内容的大小为整个程序的地址空间.</p>
+<p>存在问题 :</p>
+<ul>
+<li>交换时机的确定 : 何时需要发生交换? 只当内存空间不够或有不够的危险时换出;</li>
+<li>交换区的大小 : 必须足够大以存放所有用户进程的所有内存映像的拷贝, 必须能够对这些内存映像进行直接存取</li>
+<li>程序换入时的重定位 : 换出后再换入的内存位置一定要在原来的位置上嘛?(可能出现寻址问题) 最好采用动态地址映射的方法</li>
+</ul>
+<h2 id="覆盖技术和交换技术的对比">覆盖技术和交换技术的对比</h2>
+<p>特点 :</p>
+<ul>
+<li>覆盖只能发生在那些相互之间没有调用关系的程序模块之间, 因此程序员必须给出程序内的各个模块之间的逻辑覆盖结构.</li>
+<li>交换技术是以在内存中的程序大小为单位进行的, 它不需要程序员给出各个模块之间的逻辑覆盖结构.</li>
+<li>换言之, 交换发生在内存中程序与管理程序或操作系统之间, 而覆盖则发生在运行程序的内部.</li>
+</ul>
+<p>在内存不够用的情形下, 可以采用覆盖技术和交换技术, 但是 :</p>
+<ul>
+<li>覆盖技术 : 需要程序要自己把整个程序划分为若干个小的功能模块, 并确定各个模块之间的覆盖关系, 增加了程序员的负担.</li>
+<li>交换技术 : 以进程作为交换的单位, 需要把进程的整个地址空间都换入换出, 增加了处理器的开销.</li>
+</ul>
+<h2 id="虚拟内存管理技术">虚拟内存管理技术</h2>
+<p>如果想要在有限容量的内存中, 以更小的页粒度为单位装入更多更大的程序, 可以采用自动的虚拟存储技术</p>
+<ul>
+<li>
+<p>目标</p>
+<p>像覆盖技术那样, 不是把程序的所有内容都放在内存中, 因而能够运行比当前的空闲内存空间还要大的程序. 但做的更好, 由操作系统自动来完成, 无需程序员的干涉.</p>
+<p>像交换技术那样, 能够实现进程在内存与外存之间的交换, 因而获得更多的空闲内存空间. 但做的更好, 只对进程的部分内容在内存和外存之间进行交换.</p>
+</li>
+<li>
+<p>程序局部性原理</p>
+<p>程序的局部性原理(principle of locality) : 指程序在执行过程中的一个较短时期, 所执行的指令地址和指令的操作数地址, 分别局限于一定的区域.</p>
+<ul>
+<li>时间局部性 : 一条指令的一次执行和下次执行, 一个数据的一次访问和下次访问都集中在一个较短时期内 ;</li>
+<li>空间局部性 : 当前指令和邻近的几条指令, 当前访问的数据和邻近的几个数据都集中在一个较小区域内.</li>
+</ul>
+<p>程序的局部性原理表明, 从理论上来说, 虚拟存储技术是能够实现的. 而且在实现了以后应该是能够取得一个满意的效果.</p>
+<p>实例 :</p>
+<pre><code class="language-cpp">题目描述 :
+页面大小为4k, 分配给每个进程的物理页面是1. 
+在一个进程中, 定义了如下的二维数组 int A[1024][1024]. 该数组按行存放在内存, 每一行放在一个页面中.
+考虑一下程序的编写方法对缺页率的影响?
+
+程序编写方法1 : (发生了1024*1024次缺页中断)
+for(j = 0; j &lt; 1024; j++)
+		for(i = 0; i &lt; 1024; i++)
+				A[i][j] = 0;
+
+程序编写方法2 : (发生了1024次缺页中断)
+for(i = 0; i &lt; 1024; i++)
+		for(j = 0; j &lt; 1024; j++)
+				A[i][j] = 0;
+</code></pre>
+</li>
+<li>
+<p>基本概念</p>
+<p>可以在页式或段式内存管理的基础上实现</p>
+<ul>
+<li>在装入程序时, 不必将其全部装入内存, 而只需将当前需要执行的部分页面或段装入到内存中, 就可以让程序开始执行;</li>
+<li>在程序执行过程中, 如果需执行的指令或访问的数据尚未在内存中(称为缺页或缺段), 则由处理器通知操作系统将相应的页面或段调入到内存, 然后继续执行程序;</li>
+<li>另一方面, 操作系统将内存中暂时不使用的页面或段调出保存在外存上, 从而腾出更多空闲内存空间存放将要装入的程序以及将要调入的页面或段.</li>
+</ul>
+</li>
+<li>
+<p>基本特征</p>
+<ul>
+<li>大的用户空间 : 通过把物理内存和外存相结合, 提供给用户的虚拟内存空间通常大于实际的物理内存, 即实现了这两者的分离. 如32位的虚拟地址理论上可以访问4GB, 而可能计算机上仅有256M的物理内存, 但硬盘容量大于4GB.</li>
+<li>部分交换 : 与交换技术相比较, 虚拟存储的调入和调出是对部分虚拟地址空间进行的;</li>
+<li>不连续性 : 物理内存分配的不连续性, 虚拟地址空间使用的不连续性.</li>
+</ul>
+</li>
+<li>
+<p>虚拟页式内存管理</p>
+<p>页式内存管理</p>
+<p>页表 : 完成逻辑页到物理页帧的映射</p>
+<p>根据页号去页表中寻找索引, 先查看 resident bit 是否为0, 0表示不存在, 1表示映射关系存在, 获得帧号加上原本的偏移, 获得了物理地址.</p>
+<p>虚拟页式内存管理</p>
+<ul>
+<li>
+<p>大部分虚拟存储系统都采用虚拟页式存储管理技术, 即在页式存储管理的基础上, 增加请求调页和页面置换功能.</p>
+</li>
+<li>
+<p>基本思路</p>
+<ul>
+<li>当一个用户程序要调入内存运行时, 不是将该程序的所有页面都装入内存, 而是只装入部分的页面, 就可启动程序运行.</li>
+<li>在运行的过程中, 如果发现要运行的程序或要访问的数据不再内存, 则向系统发出缺页的中断请求, 系统在处理这个中断时, 将外存中相应的页面调入内存, 使得该程序能够继续运行.</li>
+</ul>
+</li>
+<li>
+<p>页表表项</p>
+<p>逻辑页号 | 访问位 | 修改位 | 保护位 | 驻留位 | 物理页帧号</p>
+<p>驻留位 : 表示该页是在内存中还是在外存.</p>
+<p>保护位 : 表示允许对该页做何种类型的访问, 如只读, 可读写, 可执行等</p>
+<p>修改位 : 表示此页在内存中是否被修改过. 当系统回收该物理页面时, 根据此位来决定是否把它的内容写回外存</p>
+<p>访问位 : 如果该页被访问过(包括读写操作), 则设置此位. 用于页面置换算法.</p>
+</li>
+<li>
+<p>缺页中断处理过程 :</p>
+<ol>
+<li>如果在内存中有空闲的物理页面, 则分配一物理页帧f, 然后转第4步; 否则转到第2步;</li>
+<li>采用某种页面置换算法, 选择一个将被替换的物理页帧f, 它所对应的逻辑页为q, 如果该页在内存期间被修改过, 则需要把它写回外存;</li>
+<li>对q所对应的页表项修改, 把驻留位置为0;</li>
+<li>将需要访问的页p装入到物理页面f当中;</li>
+<li>修改p所对应的页表项的内容, 把驻留位置为1, 把物理页帧号置为f;</li>
+<li>重新运行被中断是指令.</li>
+</ol>
+<blockquote>
+<p>在何处保存未被映射的页?</p>
+<ul>
+<li>能够简单地识别在二级存储器中的页</li>
+<li>交换空间(磁盘或者文件) : 特殊格式, 用于存储未被映射的页面</li>
+</ul>
+</blockquote>
+<p>后备存储(二级存储) :</p>
+<ul>
+<li>一个虚拟地址空间的页面可以被映射到一个文件(在二级存储中)的某个位置</li>
+<li>代码段 : 映射到可执行二进制文件</li>
+<li>动态加载的共享库程序段 : 映射到动态调用的库文件</li>
+<li>其他段 : 可能被映射到交换文件(swap file)</li>
+</ul>
+</li>
+<li>
+<p>虚拟内存性能</p>
+<p>为了便于理解分页的开销, 使用有效存储器访问时间 effective memory access time (EAT)</p>
+<p>EAT = 访存时间 * 页表命中几率 + page fault处理时间 * page fault几率</p>
+<p>实例 :</p>
+<p>访存时间 : 10 ns</p>
+<p>磁盘访问时间 : 5 ms</p>
+<p>参数 p  = page fault 几率</p>
+<p>参数 q = dirty page 几率(对页面写操作)</p>
+<p>EAT = 10*(1-p) + 5000000*p*(1+q)</p>
+</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+                    
+                    
+                    
+
+                    
+
+
+
+                    
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >上一页</span
+        >
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-4/" class="block"></a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">下一页</span>
+        <a href="https://kunieone.github.io/docs/operating-systems/charpter-6/" class="block"></a>
+      
+    </div>
+  </div>
+
+
+                    
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        hljs.highlightAll();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">@Starevan
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>
