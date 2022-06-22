@@ -455,12 +455,12 @@ while(flag[j] &amp;&amp; turn == j);
 </code></pre>
 <p>实例:</p>
 <pre><code class="language-cpp">do{
-	flag[i] = true;
-	turn = j;
-	while(flag[j] &amp;&amp; turn == j);
-	CRITICAL SECTION
-	flag[i] = false;
-	REMAINDER SECTION
+ flag[i] = true;
+ turn = j;
+ while(flag[j] &amp;&amp; turn == j);
+ CRITICAL SECTION
+ flag[i] = false;
+ REMAINDER SECTION
 }while(true);
 </code></pre>
 <p>Bakery 算法(N个进程的临界区)</p>
@@ -518,15 +518,15 @@ lock_next_pid-&gt;Release();
 <li>交换内存中的两个值</li>
 </ul>
 <pre><code class="language-cpp">bool TestandSet(bool *target){
-		bool rv = *target;
-		*target = true;
-		return rv;
+  bool rv = *target;
+  *target = true;
+  return rv;
 }
 
 void Exchange(bool *a, bool *b){
-		bool tmp = *a;
-		*a = *b;
-		*b = tmp;
+  bool tmp = *a;
+  *a = *b;
+  *b = tmp;
 }
 </code></pre>
 <ul>
@@ -534,19 +534,29 @@ void Exchange(bool *a, bool *b){
 <p>总结</p>
 <p>锁是更高等级的编程抽象</p>
 <ul>
-<li>互斥可以使用锁来实现</li>
-<li>通常需要一定等级的硬件支持</li>
-</ul>
+<li>
+<p>互斥可以使用锁来实现</p>
+</li>
+<li>
+<p>通常需要一定等级的硬件支持</p>
 <p>常用的三种实现方法</p>
-<ul>
-<li>禁用中断(仅限于单处理器)</li>
-<li>软件方法(复杂)</li>
-<li>原子操作指令(单处理器或多处理器均可)</li>
-</ul>
+</li>
+<li>
+<p>禁用中断(仅限于单处理器)</p>
+</li>
+<li>
+<p>软件方法(复杂)</p>
+</li>
+<li>
+<p>原子操作指令(单处理器或多处理器均可)</p>
 <p>可选的实现内容:</p>
-<ul>
-<li>有忙等待</li>
-<li>无忙等待</li>
+</li>
+<li>
+<p>有忙等待</p>
+</li>
+<li>
+<p>无忙等待</p>
+</li>
 </ul>
 </li>
 </ul>
