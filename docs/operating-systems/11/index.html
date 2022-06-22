@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>∆STAREVAN</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-123-45');
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="深入理解操作系统 第十一章 第十一章的主要内容是：死锁和进程通信
+死锁问题 一组阻塞的进程持有一种资源等待获取另一个进程所占有的一个资源
+示例:
+系统有2个磁带驱动器 P1和P2各有一个,都需要另外一个 系统模型 资源类型R1,R2,..,Rm(CPU, memory space, IO devices)">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"文档",
+      "item":"https://kunieone.github.io/docs/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"",
+      "item":"https://kunieone.github.io/docs/operating-systems/11/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kunieone.github.io/docs/operating-systems/11/"
+    },
+    "headline": "∆STAREVAN","datePublished": "2022-06-22T18:15:12+08:00",
+    "dateModified": "2022-06-22T18:16:18+08:00",
+    "wordCount":  313 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Zhao StarEvan",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://kunieone.github.io/images/icon.png"
+        }
+        },
+    "description": "深入理解操作系统 第十一章 第十一章的主要内容是：死锁和进程通信\n死锁问题 一组阻塞的进程持有一种资源等待获取另一个进程所占有的一个资源\n示例:\n系统有2个磁带驱动器 P1和P2各有一个,都需要另外一个 系统模型 资源类型R1,R2,..,Rm(CPU, memory space, IO devices)"
+}
+</script><meta property="og:title" content="∆STAREVAN" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/11/" />
+
+
+
+
+<meta property="og:description" content="深入理解操作系统 第十一章 第十一章的主要内容是：死锁和进程通信
+死锁问题 一组阻塞的进程持有一种资源等待获取另一个进程所占有的一个资源
+示例:
+系统有2个磁带驱动器 P1和P2各有一个,都需要另外一个 系统模型 资源类型R1,R2,..,Rm(CPU, memory space, IO devices)" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="∆STAREVAN" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-06-22T18:15:12&#43;08:00" />
+
+
+<meta property="article:modified_time" content="2022-06-22T18:16:18&#43;08:00" />
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
+            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
+            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-e">
+            <div class="sticky top-16 pt-6">
+                
+
+
+
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">目录</span>
+    <i class='fas fa-caret-right ms-1'></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class="text-eureka hover:text-eureka"
+            href="https://kunieone.github.io/docs/operating-systems/11/"></a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="ps-6">
+    
+</ul>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    <article class="prose">
+  <h1 class="mb-4"></h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022/06-22 18:15:12</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2分钟阅读时长</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <h1 id="深入理解操作系统-第十一章">深入理解操作系统 第十一章</h1>
+<blockquote>
+<p>第十一章的主要内容是：死锁和进程通信</p>
+</blockquote>
+<h2 id="死锁问题">死锁问题</h2>
+<p>一组阻塞的进程持有一种资源等待获取另一个进程所占有的一个资源</p>
+<p>示例:</p>
+<ul>
+<li>系统有2个磁带驱动器</li>
+<li>P1和P2各有一个,都需要另外一个</li>
+</ul>
+<h2 id="系统模型">系统模型</h2>
+<p>资源类型R1,R2,..,Rm(CPU, memory space, IO devices)</p>
+<p>每个资源类型Ri有Wi个实例.</p>
+<p>每个进程使用资源如下:</p>
+<ul>
+<li>require,get ← free resource</li>
+<li>use,hold    ← requested,used resource</li>
+<li>release     ← free resource</li>
+</ul>
+<p>可重复使用的资源</p>
+<ul>
+<li>在一个时间只能有一个进程使用且不能被删除</li>
+<li>进程获得资源,后来释放由其他进程重用</li>
+<li>处理器,IO通道,主和副存储器,设备和数据结构,如文件,数据库和信号量</li>
+<li>如果每个进程拥有一个资源并请求其他资源,死锁可能发生</li>
+</ul>
+<p>使用资源</p>
+<ul>
+<li>创建和销毁</li>
+<li>在IO缓存区的中断,信号,消息,信息</li>
+<li>如果接收消息阻塞可能会发生死锁</li>
+<li>可能少见的组合事件会引起死锁</li>
+</ul>
+<p>资源分配图</p>
+<p>一组顶点V和边E的集合</p>
+<ul>
+<li>V有两种类型:
+<ul>
+<li>P={P1,P2,&hellip;,Pn},集合包括系统中的所有进程</li>
+<li>R={R1,R2,&hellip;,Rm},集合包括系统中的所有资源类型</li>
+</ul>
+</li>
+<li>requesting,claiming edge - directed edge Pi → Rj</li>
+<li>assignment,holding  edge - directed edge Rj → Pi</li>
+</ul>
+<p>基本情况</p>
+<p>如果图中不包含循环:</p>
+<ul>
+<li>没有死锁</li>
+</ul>
+<p>如果图中包含循环:</p>
+<ul>
+<li>如果每个资源类只有一个实例,那么死锁</li>
+<li>如果每个资源类有几个实例,可能死锁</li>
+</ul>
+<h2 id="死锁特征">死锁特征</h2>
+<p>死锁出现一定会出现以下四个条件,但是出现以下四个条件不一定死锁:</p>
+<ul>
+<li>互斥: 在一个时间只能有一个进程使用资源</li>
+<li>持有并等待: 进程保持至少一个资源正在等待获取其他进程持有的额外资源</li>
+<li>无抢占: 一个资源只能被进程资源释放,进程已经完成了它的任务之后</li>
+<li>循环等待: 存在等待进程集合{P0,P1,&hellip;,Pn},P0正在等待P1所占用的资源,P1正在等待P2占用的资源&hellip;Pn-1在等待Pn的资源,Pn正在等待P0所占用的资源</li>
+</ul>
+<h2 id="死锁处理方法">死锁处理方法</h2>
+<p>常见方法</p>
+<ul>
+<li>确保系统永远不会进入死锁状态</li>
+<li>运行系统进入死锁状态,然后恢复.</li>
+<li>忽略这个问题,假装系统中从来没有发生死锁,用于大多数操作系统,包括UNIX</li>
+</ul>
+<h3 id="deadlock-prevention----预防">Deadlock Prevention    预防</h3>
+<p>限制申请方式</p>
+<ul>
+<li>互斥 - 共享资源不是必须的,必须占用非共享资源</li>
+<li>占用并等待 - 必须保证当一个进程请求的资源,它不持有任何其他资源
+<ul>
+<li>需要进程请求并分配其所有资源,它开始执行之前或允许进程请求资源仅当进程没有资源</li>
+<li>资源利用率低,可能发生饥饿</li>
+</ul>
+</li>
+<li>无抢占 -
+<ul>
+<li>如果进程占有某些资源,并请求其他不能被立即分配的资源,则释放当前正占有的资源</li>
+<li>被抢占资源添加到资源列表中</li>
+<li>只有当它能够获得旧的资源以及它请求新的资源,进程可以得到执行</li>
+</ul>
+</li>
+<li>循环等待 - 对所有资源类型进行排序,并要求每个进程按照资源的顺序进行申请</li>
+</ul>
+<h3 id="deadlock-avoidance-----避免">Deadlock Avoidance     避免</h3>
+<p>需要系统具有一些额外的先验信息提供</p>
+<ul>
+<li>最简单和最有效的模式是要求每个进程声明它可能需要的每个类型资源的最大数目</li>
+<li>资源的分配状态是通过限定提供与分配的资源数量,和进程的最大需求</li>
+<li>死锁避免算法动态检查的资源分配状态,以确保永远不会有一个环形等待状态</li>
+<li>当一个进程请求可用资源,系统必须判断立即分配是否能使系统处于安全状态</li>
+<li>系统处于安全状态指: 针对所有进程,存在安全序列</li>
+<li>序列&lt;P1,P2,&hellip;,Pn&gt;是安全的: 针对每个Pi,Pi要求的资源能够由当前可用的资源+所有的Pj持有的资源来满足,其中j&lt;i.
+<ul>
+<li>如果Pi资源的需求不是立即可用,那么Pi可以等到所有Pj完成</li>
+<li>当Pi完成后,Pi+1可以得到所需要的资源,执行,返回所分配的资源,并终止.</li>
+<li>用同样的方法,Pi+2,Pi+3和Pn能获得其所需的资源.</li>
+</ul>
+</li>
+<li>如果系统处于安全状态→无死锁</li>
+<li>如果系统处于不安全状态→可能死锁</li>
+<li>避免死锁: 确保系统永远不会进入不安全状态</li>
+</ul>
+<h3 id="deadlock-detection-----检测">Deadlock Detection     检测</h3>
+<p>每个资源类型单一实例</p>
+<p>Maintain wait-for graph</p>
+<ul>
+<li>节点是进程</li>
+<li>Pi→Pj: Pi等待Pj</li>
+</ul>
+<p>定期调用检测算法来搜索图中是否存在循环</p>
+<p>算法需要n^2次操作,n是图中顶点的数目</p>
+<p>数据结构:</p>
+<ul>
+<li>Available: 长度为M的向量表示每种类型可用资源的数量</li>
+<li>Allocation: 一个nxm矩阵定义了当前分配给各个进程每种类型资源的数量,如果Alocation[i, j] = k, 进程Pi拥有资源Rj的k个实例</li>
+<li>Request: 一个nxm矩阵表示各进程的当前请求.如果Request[i, j] = k,表示进程Pi请求k个资源Pj的实例</li>
+</ul>
+<p>具体算法(跳过了,看视频)</p>
+<p>检查算法使用</p>
+<p>何时,使用什么样的频率来检测依赖于:</p>
+<ul>
+<li>死锁多久可能会发生?</li>
+<li>多少进程需要被回滚? one for each disjoint cycle</li>
+</ul>
+<p>如果检测算法多次被调用,有可能是资源图有多个循环,所以我们无法分辨出多个可能死锁进程中的哪些&quot;造成&quot;死锁</p>
+<h3 id="recovery-from-deadlock-恢复">Recovery from Deadlock 恢复</h3>
+<p>终止所有的死锁进程</p>
+<p>在一个时间内终止一个进程直到死锁消除</p>
+<p>终止进程的顺序应该是:</p>
+<ul>
+<li>进程的优先级</li>
+<li>进程运行了多久以及需要多少时间才能完成</li>
+<li>进程占用的资源</li>
+<li>进程完成需要的资源</li>
+<li>多少进程需要被终止</li>
+<li>进程是交互还是批处理</li>
+</ul>
+<p>选择一个受孩子 - 最小的成本</p>
+<p>回滚 - 返回到一些安全状态,重启进程到安全状态</p>
+<p>饥饿 - 同一进程可能一直被选作受害者,包括回滚的数量</p>
+<h2 id="ipc">IPC</h2>
+<h3 id="概述">概述</h3>
+<p>进程通信的机制及同步</p>
+<p>不使用共享变量的进程通信</p>
+<p>IPC facility 提供2个操作:</p>
+<ul>
+<li>send(message) - 消息大小固定或者可变</li>
+<li>receive(message)</li>
+</ul>
+<p>如果P和Q想通信,需要:</p>
+<ul>
+<li>在它们之间建立通信链路</li>
+<li>通过send/recevie交换消息</li>
+</ul>
+<p>通信链路的实现</p>
+<ul>
+<li>物理(例如,共享内存,硬件总线)</li>
+<li>逻辑(例如,逻辑属性)</li>
+</ul>
+<h3 id="直接通信">直接通信</h3>
+<p>进程必须正确的命名对方:</p>
+<ul>
+<li>send(P, message) - 发送消息到进程P</li>
+<li>receive(Q, message) - 从进程Q接收信息</li>
+</ul>
+<p>通信链路的属性</p>
+<ul>
+<li>自动建立链路</li>
+<li>一条链路恰好对应一对通信进程</li>
+<li>每对进程之间只有一个链路存在</li>
+<li>链路可以是单向的,但通常是双向的</li>
+</ul>
+<h3 id="间接通信">间接通信</h3>
+<p>定向从消息队列接收消息</p>
+<ul>
+<li>每个消息对垒都有一个唯一的ID</li>
+<li>只有它们共享了一个消息队列,进程才能够通信</li>
+</ul>
+<p>通信链路的属性</p>
+<ul>
+<li>只有进程共享一个共同的消息队列,才建立链路</li>
+<li>链接可以与许多进程相关联</li>
+<li>每对进程可以共享多个通信链路</li>
+<li>链接可以是单向或者双向</li>
+</ul>
+<p>操作</p>
+<ul>
+<li>创建一个新的消息队列</li>
+<li>通过消息队列发送和接收消息</li>
+<li>销毁消息队列</li>
+</ul>
+<p>原语的定义如下:</p>
+<ul>
+<li>
+<p>send(A, message)</p>
+</li>
+<li>
+<p>receive(A, message)</p>
+</li>
+<li>
+<p>通信链路缓冲</p>
+<p>通信链路缓存大小:</p>
+<ol>
+<li>0容量 - 0 message : 发送方必须等待接收方</li>
+<li>有限容量 - n messages的有限长度 : 发送方必须等待,如果队列满</li>
+<li>无限容量 - 无限长度 : 发送方不需要等待</li>
+</ol>
+</li>
+</ul>
+<h3 id="信号">信号</h3>
+<p>信号Signal</p>
+<ul>
+<li>软件中断通知事件处理</li>
+<li>Examples: SIGFPE, SIGKILL, SIGUSRI, SIGSTOP, SIGCONT</li>
+</ul>
+<p>接收到信号时会发生什么?</p>
+<ul>
+<li>catch:  指定信号处理函数被调用</li>
+<li>ignore: 依靠操作系统的默认操作(abort, memory dump, suspend or resume process)</li>
+<li>mask:   闭塞信号因此不会传送(可能是暂时的,当处理同样类型的信号)</li>
+</ul>
+<p>不足:</p>
+<ul>
+<li>不能传输要交换的任何数据</li>
+</ul>
+<h3 id="管道">管道</h3>
+<p>数据交换</p>
+<p>子进程从父进程继承文件描述符(0 stdin, 1 stdout, 2 stderr)</p>
+<p>进程不知道(或不关心)从键盘,文件,程序读取或写入到终端,文件,程序.</p>
+<p>例如: $ ls | more (两个进程, 管道是缓存,对于ls来说是stdout,对于more来说是stdin )</p>
+<h3 id="消息队列">消息队列</h3>
+<p>消息队列按FIFO来管理消息</p>
+<ul>
+<li>message: 作为一个字节序列存储</li>
+<li>message queues: 消息数组</li>
+<li>FIFO &amp;  FILO configuration</li>
+</ul>
+<h3 id="共享内存">共享内存</h3>
+<p>进程</p>
+<ul>
+<li>每个进程都有私有地址空间</li>
+<li>在每个地址空间内,明确地设置了共享内存段</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>快速,方便地共享数据</li>
+</ul>
+<p>不足</p>
+<ul>
+<li>必须同步数据访问</li>
+</ul>
+<p>最快的方法</p>
+<p>一个进程写另一个进程立即可见</p>
+<p>没有系统调用干预</p>
+<p>没有数据复制</p>
+<p>不提供同步</p>
+<ul>
+<li>Socket</li>
+</ul>
+
+</article>
+
+                    
+                    
+                    
+
+                    
+
+
+
+                    
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >上一页</span
+        >
+        <a href="https://kunieone.github.io/docs/operating-systems/10/" class="block"></a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">下一页</span>
+        <a href="https://kunieone.github.io/docs/operating-systems/12/" class="block"></a>
+      
+    </div>
+  </div>
+
+
+                    
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        hljs.highlightAll();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">@Starevan
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

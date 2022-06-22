@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Chapter 2 | svelte开发记录 | ∆STAREVAN</title>
+<title>∆STAREVAN</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -83,7 +83,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="Chapter 2 of example doc">
+  content="深入理解操作系统 第九章 第九章的主要内容是：同步
+背景 第一章到第八章内容, 到目前为止
+多道程序设计: 现代操作系统的重要特性 并行很有用(为什么?) 提示: 多个并发实体: CPU IO 用户 等 进程,线程: 操作系统抽象出来用于支持多道程序设计 CPU调度: 实现多道程序设计的机制 调度算法: 不同的策略 独立的线程:">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,12 +97,8 @@
       "item":"https://kunieone.github.io/docs/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"svelte开发记录",
-      "item":"https://kunieone.github.io/docs/svelte/"},{
-      "@type": "ListItem",
-      "position": 3 ,
-      "name":"Chapter 2",
-      "item":"https://kunieone.github.io/docs/svelte/chapter-3/"}]
+      "name":"",
+      "item":"https://kunieone.github.io/docs/operating-systems/9/"}]
 }
 </script>
 
@@ -112,11 +110,11 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/svelte/chapter-3/"
+        "@id": "https://kunieone.github.io/docs/operating-systems/9/"
     },
-    "headline": "Chapter 2 | svelte开发记录 | ∆STAREVAN","datePublished": "2022-06-17T10:23:35+08:00",
-    "dateModified": "2022-06-22T18:13:22+08:00",
-    "wordCount":  532 ,
+    "headline": "∆STAREVAN","datePublished": "2022-06-22T18:15:12+08:00",
+    "dateModified": "2022-06-22T18:16:19+08:00",
+    "wordCount":  261 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -125,20 +123,24 @@
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "Chapter 2 of example doc"
+    "description": "深入理解操作系统 第九章 第九章的主要内容是：同步\n背景 第一章到第八章内容, 到目前为止\n多道程序设计: 现代操作系统的重要特性 并行很有用(为什么?) 提示: 多个并发实体: CPU IO 用户 等 进程,线程: 操作系统抽象出来用于支持多道程序设计 CPU调度: 实现多道程序设计的机制 调度算法: 不同的策略 独立的线程:"
 }
-</script><meta property="og:title" content="Chapter 2 | svelte开发记录 | ∆STAREVAN" />
+</script><meta property="og:title" content="∆STAREVAN" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/docs/svelte/chapter-3/" />
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/9/" />
 
 
 
-<meta property="og:description" content="Chapter 2 of example doc" />
+
+<meta property="og:description" content="深入理解操作系统 第九章 第九章的主要内容是：同步
+背景 第一章到第八章内容, 到目前为止
+多道程序设计: 现代操作系统的重要特性 并行很有用(为什么?) 提示: 多个并发实体: CPU IO 用户 等 进程,线程: 操作系统抽象出来用于支持多道程序设计 CPU调度: 实现多道程序设计的机制 调度算法: 不同的策略 独立的线程:" />
+
 
 
 
@@ -154,10 +156,10 @@
 
 
 
-<meta property="article:published_time" content="2022-06-17T10:23:35&#43;08:00" />
+<meta property="article:published_time" content="2022-06-22T18:15:12&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-06-22T18:13:22&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-22T18:16:19&#43;08:00" />
 
 
 
@@ -253,11 +255,6 @@
 
 
 
-
-
-
-
-
 <div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
     <span class="font-semibold">目录</span>
     <i class='fas fa-caret-right ms-1'></i>
@@ -266,8 +263,8 @@
 <div id="sidebar-toc"
     class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
     <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
-        <a class=" hover:text-eureka"
-            href="https://kunieone.github.io/docs/svelte/">svelte开发记录</a>
+        <a class="text-eureka hover:text-eureka"
+            href="https://kunieone.github.io/docs/operating-systems/9/"></a>
         
         
         
@@ -277,94 +274,9 @@
     
 <ul class="ps-6">
     
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-4/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" text-eureka  hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-3/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-1/">Chapter 1</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/chapter-2/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class=" pb-2 ">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/">Nested Chapter</a>
-        </div>
-        
-        
-<ul class="ps-6">
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/chapter-1/">Chapter 1</a>
-        </div>
-        
-    </li>
-    
-    
-    
-    
-    <li class="py-2">
-        <div class="">
-            <a class=" hover:text-eureka"
-                href="https://kunieone.github.io/docs/svelte/nested-chapter/chapter-2/">Chapter 2</a>
-        </div>
-        
-    </li>
-    
-    
-</ul>
-
-        
-    </li>
-    
-    
 </ul>
 
 </div>
-
-
 
 
 
@@ -375,7 +287,7 @@
             <div class="flex">
                 <div class="w-full lg:w-3/4 px-6">
                     <article class="prose">
-  <h1 class="mb-4">Chapter 2</h1>
+  <h1 class="mb-4"></h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -383,12 +295,12 @@
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022/06-17 10:23:35</span
+      >2022/06-22 18:15:12</span
     >
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>3分钟阅读时长</span>
+    <span>2分钟阅读时长</span>
   </div>
 
   
@@ -400,17 +312,261 @@
   
   
 
-  <p>This is chapter 2 of example doc.</p>
-<h2 id="integer-nec-dolor-pharetra">Integer nec dolor pharetra</h2>
-<p>Integer eget arcu velit. Suspendisse tristique magna nec turpis accumsan ultricies. Duis congue urna non nisl eleifend suscipit. Mauris commodo diam quis nunc dignissim volutpat. Morbi vitae aliquet neque, ut semper arcu. Vivamus ac nunc in velit vehicula auctor. Cras eget congue augue. Vestibulum ipsum ante, consectetur id ligula vitae, iaculis finibus libero. Phasellus elementum libero eget nisi imperdiet consectetur. Sed vitae dui non augue tristique mollis sed aliquet enim. Duis nunc ligula, volutpat a luctus non, fringilla eu mi. Nam pulvinar, dolor a scelerisque tristique, erat nisi interdum mi, et posuere dui odio sed lacus. Nulla facilisi. Mauris auctor erat urna, ut tempus eros rutrum ac. Proin luctus ultricies massa ac finibus.</p>
-<h3 id="suspendisse-in-enim-ut-purus-ullamcorper-pellentesque">Suspendisse in enim ut purus ullamcorper pellentesque</h3>
-<p>Morbi ullamcorper sit amet magna eu congue. Sed id lectus risus. Quisque porta feugiat ex, id volutpat tortor molestie sed. Suspendisse consequat pellentesque iaculis. Etiam venenatis ac nunc iaculis placerat. Duis vitae commodo ipsum. Cras fermentum pharetra sapien, vestibulum faucibus erat luctus ac. Phasellus at tellus convallis, feugiat ipsum vitae, dignissim arcu. Suspendisse accumsan tortor ac iaculis tempor. Pellentesque dignissim vehicula nisi, auctor vulputate lectus fringilla ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et lorem odio. Cras arcu ipsum, pellentesque nec purus at, lobortis placerat lacus.</p>
-<h2 id="aenean-consequat-ante-vel-interdum-fermentum">Aenean consequat ante vel interdum fermentum</h2>
-<p>Morbi nisl neque, rutrum quis tristique ac, accumsan eget diam. Vestibulum iaculis neque justo, vel hendrerit diam dictum ac. Maecenas pretium blandit quam in hendrerit. Quisque consectetur, velit vel eleifend scelerisque, orci arcu efficitur neque, quis suscipit ex augue sit amet ex. Morbi fermentum tellus arcu, quis porta sem mollis eget. Praesent sit amet dictum odio, sed aliquam orci. Duis ac purus eget odio dictum aliquet. Proin finibus, sem non commodo venenatis, ex nunc tempor justo, sit amet pulvinar purus leo egestas est. Curabitur molestie arcu eget sem tristique congue. Praesent congue sollicitudin felis viverra interdum. Proin at odio dapibus, sodales mauris ut, elementum tortor. Fusce sed luctus velit. Vestibulum scelerisque, lectus ac aliquet pretium, ligula turpis lobortis elit, ut dictum urna nunc in orci. Etiam scelerisque augue varius felis luctus molestie. Nunc interdum leo quis faucibus ultricies.</p>
-<h3 id="integer-volutpat-tortor-ut-vulputate-venenatis">Integer volutpat tortor ut vulputate venenatis</h3>
-<p>Nullam finibus mollis vestibulum. Quisque eu venenatis purus, facilisis pulvinar sapien. Praesent ultrices eros sit amet pellentesque vulputate. In non malesuada ex, quis sagittis sem. Phasellus dapibus massa scelerisque libero venenatis, ut vulputate felis rutrum. Nam efficitur porttitor sem, sed ullamcorper turpis mattis a. Pellentesque quis est neque. Integer elit metus, auctor in tempor accumsan, egestas vitae arcu.</p>
-<h3 id="vestibulum-fermentum-massa">Vestibulum fermentum massa</h3>
-<p>Maecenas molestie egestas purus a gravida. Aliquam erat volutpat. Aenean varius turpis id purus accumsan, quis pellentesque turpis fringilla. Duis quis lacus a nisi rhoncus ullamcorper eget id augue. Praesent dapibus vel lectus ac consequat. Sed nec vehicula magna. Aenean viverra convallis dolor dignissim auctor. Ut semper, quam et sodales vehicula, tellus sapien consequat magna, feugiat vehicula libero nulla eget lorem. Proin libero purus, condimentum eu viverra id, placerat et nibh. Donec feugiat nunc quis erat congue tristique. Sed ut mauris quis eros malesuada placerat. Pellentesque imperdiet dui vitae dui pellentesque, sit amet rutrum risus pretium.</p>
+  <h1 id="深入理解操作系统-第九章">深入理解操作系统 第九章</h1>
+<blockquote>
+<p>第九章的主要内容是：同步</p>
+</blockquote>
+<h2 id="背景">背景</h2>
+<p>第一章到第八章内容, 到目前为止</p>
+<ul>
+<li>多道程序设计: 现代操作系统的重要特性</li>
+<li>并行很有用(为什么?) 提示: 多个并发实体: CPU IO 用户 等</li>
+<li>进程,线程: 操作系统抽象出来用于支持多道程序设计</li>
+<li>CPU调度: 实现多道程序设计的机制</li>
+<li>调度算法: 不同的策略</li>
+</ul>
+<p>独立的线程:</p>
+<ul>
+<li>不和其他线程共享资源或状态</li>
+<li>确定性: 输入状态决定结果</li>
+<li>可重现: 能够重现起始条件, IO</li>
+<li>调度顺序不重要</li>
+</ul>
+<p>合作线程:</p>
+<ul>
+<li>在多个线程中共享状态</li>
+<li>不确定性</li>
+<li>不可重现</li>
+</ul>
+<p>不确定性和不可重现意味着bug可能是间歇性发生的</p>
+<p>进程,线程;计算机,设备需要合作</p>
+<p>合作优点:</p>
+<ol>
+<li>共享资源
+<ul>
+<li>一台电脑,多个用户</li>
+<li>一个银行存款余额,多台ATM机</li>
+<li>嵌入式系统</li>
+</ul>
+</li>
+<li>加速
+<ul>
+<li>IO操作和计算可以重叠</li>
+<li>多处理器</li>
+</ul>
+</li>
+<li>模块化
+<ul>
+<li>将大程序分解成小程序 gcc会调用cpp,cc1,cc2,as,ld</li>
+<li>使系统易于扩展</li>
+</ul>
+</li>
+</ol>
+<p>程序可以调用函数fork()来创建一个新的进程</p>
+<ul>
+<li>操作系统需要分配一个新的并且唯一的进程ID</li>
+<li>因此在内核中,这个系统调用会运行 new_pid = next_pid++;</li>
+<li>翻译成机器指令:
+<ul>
+<li>Load next_pid Reg1</li>
+<li>STORE Reg1 new_pid</li>
+<li>INC Reg1</li>
+<li>STORE Reg1 next_pid</li>
+</ul>
+</li>
+</ul>
+<p>假设两个进程并发执行</p>
+<ul>
+<li>如果next_pid等于100, 那么其中一个进程得到的ID应该是100, 另一个进程的ID应该是101, next_pid应该增加到102</li>
+<li>可能在INC前进行了上下文切换, 最终导致两个进程的pid都是100,而next_pid也是101</li>
+</ul>
+<p>无论多个线程的指令序列怎样交替执行,程序都必须正常工作</p>
+<ul>
+<li>多线程程序具有不确定性和不可重现的特点</li>
+<li>不经过专门设计,调试难度很高</li>
+</ul>
+<p>不确定性要求并行程序的正确性</p>
+<ul>
+<li>先思考清楚问题,把程序的行为设计清楚</li>
+<li>切忌给予着手编写代码,碰到问题再调试</li>
+</ul>
+<h2 id="一些概念">一些概念</h2>
+<p>前面的现象称为Race Condition(竞态条件)</p>
+<p>系统缺陷: 结果依赖于并发执行或者时间的顺序,时间</p>
+<ul>
+<li>不确定性</li>
+<li>不可重现</li>
+</ul>
+<p>怎么样避免竞态?</p>
+<p>Atomic Operator(原子操作)</p>
+<p>原子操作是指一次不存在任何终端或者失败的执行</p>
+<ul>
+<li>该执行成功结束</li>
+<li>或者根本没有执行</li>
+<li>并且不应发生任何部分执行的状态</li>
+</ul>
+<p>实际上操作往往不是原子的</p>
+<ul>
+<li>有些看上去是原子操作,实际上不是</li>
+<li>连x++这样的简单语句,实际上是由三条指令构成的</li>
+<li>有时候甚至连单条假期指令都不是原子的(Pipeline,super-scalar,out-of-order,pape fault)</li>
+</ul>
+<p>临界区(Critical section)是指进程中的一段需要访问共享资源并且当另一个进程处于相应代码区域时便不会被执行的代码区域</p>
+<p>互斥(Mutual exclusion)是指当一个 进程处于临界区并访问共享资源时,没有其他进程会处于临界区并且访问任何相同的共享资源</p>
+<p>死锁(Dead lock)是指两个或以上进程,在相互等待完成特定任务,而最终没法将自身任务进行下去</p>
+<p>饥饿(Starvation)是指一个可执行的进程,被调度器持续忽略,以至于虽然处于可执行状态却不被执行</p>
+<h2 id="临界区">临界区</h2>
+<p>互斥: 同一时间临界区中最多存在一个线程</p>
+<p>Progress: 如果一个线程想要进入临界区,那么它最终会成功</p>
+<p>有限等待: 如果一个线程i处于入口区,那么在i的请求被接受之前,其他线程进入临界区的时间是有限制的</p>
+<p>无忙等待(可选): 如果一个进程在等待进入临界区,那么在它可以进入之前会被挂起</p>
+<h2 id="方法1禁用硬件中断">方法1:禁用硬件中断</h2>
+<p>没有中断,没有上下文切换,因此没有并发</p>
+<ul>
+<li>硬件将中断处理延迟到中断被启用之后</li>
+<li>大多数现代计算机体系结构都提供指令来完成</li>
+</ul>
+<p>进入临界区</p>
+<ul>
+<li>禁用中断</li>
+</ul>
+<p>离开临界区</p>
+<ul>
+<li>开启中断</li>
+</ul>
+<p>一旦中断被禁用,线程就无法被停止</p>
+<ul>
+<li>整个系统都会为你停下来</li>
+<li>可能导致其他线程处于饥饿状态</li>
+</ul>
+<p>要是临界区可以任意长怎么办?</p>
+<ul>
+<li>无法限制响应中断所需的时间(可能存在硬件影响)</li>
+</ul>
+<p>要小心使用,适合于较小的操作</p>
+<h2 id="方法2基于软件的解决方案">方法2:基于软件的解决方案</h2>
+<p>满足进程Pi和Pj之间互斥的经典的基于软件的解决方法(1981年)</p>
+<p>使用两个共享数据项</p>
+<ul>
+<li>int turn; //指示该谁进入临界区</li>
+<li>bool flag[]; //指示进程是否准备好进入临界区</li>
+</ul>
+<p>进入临界区:</p>
+<pre><code class="language-cpp">flag[i] = true;
+turn = j;
+while(flag[j] &amp;&amp; turn == j);
+</code></pre>
+<p>退出临界区:</p>
+<pre><code class="language-cpp">flag[i] = false;
+</code></pre>
+<p>实例:</p>
+<pre><code class="language-cpp">do{
+ flag[i] = true;
+ turn = j;
+ while(flag[j] &amp;&amp; turn == j);
+ CRITICAL SECTION
+ flag[i] = false;
+ REMAINDER SECTION
+}while(true);
+</code></pre>
+<p>Bakery 算法(N个进程的临界区)</p>
+<ul>
+<li>进入临界区之前,进程接收一个数字</li>
+<li>得到的数字最小的进入临界区</li>
+<li>如果进程Pi和Pj收到相同的数字,那么如果i&lt;j,Pi先进入临界区,否则Pj先进入临界区</li>
+<li>编号方案总是按照枚举的增加顺序生成数字</li>
+</ul>
+<p>Dekker算法(1965): 第一个针对双线程例子的正确解决方案</p>
+<p>Bakery算法(1979): 针对n线程的临界区问题解决方案</p>
+<p>复杂: 需要两个进程的共享数据项</p>
+<p>需要忙等待: 浪费CPU时间</p>
+<p>没有硬件保证的情况下无真正的软件解决方案: Perterson算法需要原子的LOAD和STORE指令</p>
+<h2 id="方法3更高级的抽象">方法3:更高级的抽象</h2>
+<p>硬件提供了一些原语</p>
+<ul>
+<li>像中断禁用, 原子操作指令等</li>
+<li>大多数现代体系结构都这样</li>
+</ul>
+<p>操作系统提供更高级的编程抽象来简化并行编程</p>
+<ul>
+<li>例如,锁,信号量</li>
+<li>从硬件原语中构建</li>
+</ul>
+<p>锁是一个抽象的数据结构</p>
+<ul>
+<li>一个二进制状态(锁定,解锁),两种方法</li>
+<li>Lock::Acquire() 锁被释放前一直等待,然后得到锁</li>
+<li>Lock::Release() 锁释放,唤醒任何等待的进程</li>
+</ul>
+<p>使用锁来编写临界区</p>
+<ul>
+<li>
+<p>前面的例子变得简单起来:</p>
+<pre><code class="language-cpp">lock_next_pid-&gt;Acquire();
+new_pid = next_pid++;
+lock_next_pid-&gt;Release();
+</code></pre>
+</li>
+</ul>
+<p>大多数现代体系结构都提供特殊的原子操作指令</p>
+<ul>
+<li>通过特殊的内存访问电路</li>
+<li>针对单处理器和多处理器</li>
+</ul>
+<p>Test-and-Set 测试和置位</p>
+<ul>
+<li>从内存中读取值</li>
+<li>测试该值是否为1(然后返回真或假)</li>
+<li>内存值设置为1</li>
+</ul>
+<p>交换</p>
+<ul>
+<li>交换内存中的两个值</li>
+</ul>
+<pre><code class="language-cpp">bool TestandSet(bool *target){
+  bool rv = *target;
+  *target = true;
+  return rv;
+}
+
+void Exchange(bool *a, bool *b){
+  bool tmp = *a;
+  *a = *b;
+  *b = tmp;
+}
+</code></pre>
+<ul>
+<li>
+<p>总结</p>
+<p>锁是更高等级的编程抽象</p>
+<ul>
+<li>
+<p>互斥可以使用锁来实现</p>
+</li>
+<li>
+<p>通常需要一定等级的硬件支持</p>
+<p>常用的三种实现方法</p>
+</li>
+<li>
+<p>禁用中断(仅限于单处理器)</p>
+</li>
+<li>
+<p>软件方法(复杂)</p>
+</li>
+<li>
+<p>原子操作指令(单处理器或多处理器均可)</p>
+<p>可选的实现内容:</p>
+</li>
+<li>
+<p>有忙等待</p>
+</li>
+<li>
+<p>无忙等待</p>
+</li>
+</ul>
+</li>
+</ul>
+
 </article>
 
                     
@@ -430,13 +586,13 @@
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="https://kunieone.github.io/docs/svelte/chapter-4/" class="block">Chapter 2</a>
+        <a href="https://kunieone.github.io/docs/operating-systems/8/" class="block"></a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/svelte/chapter-1/" class="block">Chapter 1</a>
+        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/easystackdevelopment/" class="block"></a>
       
     </div>
   </div>
@@ -446,45 +602,6 @@
 
 
 
-                </div>
-                
-                <div class="hidden lg:block lg:w-1/4">
-                    
-                    <div
-  class="
-    bg-secondary-bg
-   prose sticky top-16 z-10 hidden px-6 py-4 lg:block"
->
-  <h3>本页内容</h3>
-</div>
-<div
-  class="sticky-toc 
-    border-s
-   hidden px-6 pb-6 lg:block"
->
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#integer-nec-dolor-pharetra">Integer nec dolor pharetra</a>
-      <ul>
-        <li><a href="#suspendisse-in-enim-ut-purus-ullamcorper-pellentesque">Suspendisse in enim ut purus ullamcorper pellentesque</a></li>
-      </ul>
-    </li>
-    <li><a href="#aenean-consequat-ante-vel-interdum-fermentum">Aenean consequat ante vel interdum fermentum</a>
-      <ul>
-        <li><a href="#integer-volutpat-tortor-ut-vulputate-venenatis">Integer volutpat tortor ut vulputate venenatis</a></li>
-        <li><a href="#vestibulum-fermentum-massa">Vestibulum fermentum massa</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-</div>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    enableStickyToc();
-  });
-</script>
-
-                    
                 </div>
                 
             </div>

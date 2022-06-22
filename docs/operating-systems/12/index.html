@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  dir="ltr"
+  
+><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>∆STAREVAN</title>
+
+<meta name="generator" content="Hugo Eureka 0.9.3" />
+<link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
+<script defer src="https://kunieone.github.io/js/eureka.min.fa9a6bf6d7a50bb635b4cca7d2ba5cf3dfb095ae3798773f1328f7950028b48c17d06276594e1b5f244a25a6c969a705.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Noto&#43;Serif&#43;SC:wght@400;600;700&amp;display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/base16/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"
+   crossorigin></script>
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/languages/dart.min.js"
+     crossorigin></script>
+<link rel="stylesheet" href="https://kunieone.github.io/css/highlightjs.min.2958991528e43eb6fc9b8c4f2b8e052f79c4010718e1d1e888a777620e9ee63021c2c57ec7417a3108019bb8c41943e6.css" media="print" onload="this.media='all';this.onload=null">
+
+
+<script defer type="text/javascript" src="https://kunieone.github.io/js/fontawesome.min.fbf58334762fcb42c16e0593596bb7b04a0c32bf8e0cdd596701a58706a96ef120cb2abab225e9591ee227ffd9043e5a.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+   integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" 
+  integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+   integrity="sha384-&#43;XBljXPPiv&#43;OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js" 
+  integrity="sha384-atOyb0FxAgN9LyAc6PEf9BjgwLISyansgdH8/VXQH8p2o5vfrRgmGIJ2Sg22L0A0"  crossorigin></script>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-123-45');
+</script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="深入理解操作系统 第十二章 第十二章的主要内容是：文件管理
+基本概念 文件系统和文件 文件系统: 一种用于持久性存储的系统抽象
+在存储上: 组织,控制,导航,访问和检索数据 在大多数计算机系统包含文件系统 个人电脑,服务器,笔记本电脑 ipod,tivo,机顶盒,手机,电脑 google可能也是由一个文件系统构成的 文件: 文件系统中的一个单元的相关数据在操作系统中的抽象">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"文档",
+      "item":"https://kunieone.github.io/docs/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"",
+      "item":"https://kunieone.github.io/docs/operating-systems/12/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://kunieone.github.io/docs/operating-systems/12/"
+    },
+    "headline": "∆STAREVAN","datePublished": "2022-06-22T18:15:12+08:00",
+    "dateModified": "2022-06-22T18:16:17+08:00",
+    "wordCount":  450 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "Zhao StarEvan",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://kunieone.github.io/images/icon.png"
+        }
+        },
+    "description": "深入理解操作系统 第十二章 第十二章的主要内容是：文件管理\n基本概念 文件系统和文件 文件系统: 一种用于持久性存储的系统抽象\n在存储上: 组织,控制,导航,访问和检索数据 在大多数计算机系统包含文件系统 个人电脑,服务器,笔记本电脑 ipod,tivo,机顶盒,手机,电脑 google可能也是由一个文件系统构成的 文件: 文件系统中的一个单元的相关数据在操作系统中的抽象"
+}
+</script><meta property="og:title" content="∆STAREVAN" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="https://kunieone.github.io/images/icon.png">
+
+
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/12/" />
+
+
+
+
+<meta property="og:description" content="深入理解操作系统 第十二章 第十二章的主要内容是：文件管理
+基本概念 文件系统和文件 文件系统: 一种用于持久性存储的系统抽象
+在存储上: 组织,控制,导航,访问和检索数据 在大多数计算机系统包含文件系统 个人电脑,服务器,笔记本电脑 ipod,tivo,机顶盒,手机,电脑 google可能也是由一个文件系统构成的 文件: 文件系统中的一个单元的相关数据在操作系统中的抽象" />
+
+
+
+
+<meta property="og:locale" content="zh" />
+
+
+
+
+<meta property="og:site_name" content="∆STAREVAN" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-06-22T18:15:12&#43;08:00" />
+
+
+<meta property="article:modified_time" content="2022-06-22T18:16:17&#43;08:00" />
+
+
+
+<meta property="article:section" content="docs" />
+
+
+
+
+
+  <body class="flex min-h-screen flex-col">
+    <header
+      class="min-h-16 pl-scrollbar bg-secondary-bg fixed z-50 flex w-full items-center shadow-sm"
+    >
+      <div class="mx-auto w-full max-w-screen-xl"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="me-6 text-primary-text text-xl font-bold">∆STAREVAN</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
+            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
+            <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+    </header>
+    <main class="grow pt-16">
+        <div class="pl-scrollbar">
+          <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
+
+
+<div class="lg:pt-12">
+    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
+        <div class="md:w-1/4 lg:w-1/5 border-e">
+            <div class="sticky top-16 pt-6">
+                
+
+
+
+
+
+<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
+    <span class="font-semibold">目录</span>
+    <i class='fas fa-caret-right ms-1'></i>
+</div>
+
+<div id="sidebar-toc"
+    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
+    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
+        <a class="text-eureka hover:text-eureka"
+            href="https://kunieone.github.io/docs/operating-systems/12/"></a>
+        
+        
+        
+
+
+    </div>
+    
+<ul class="ps-6">
+    
+</ul>
+
+</div>
+
+
+
+            </div>
+
+        </div>
+        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
+            <div class="flex">
+                <div class="w-full lg:w-3/4 px-6">
+                    <article class="prose">
+  <h1 class="mb-4"></h1>
+
+  <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2022/06-22 18:15:12</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>3分钟阅读时长</span>
+  </div>
+
+  
+
+  
+</div>
+
+
+  
+  
+
+  <h1 id="深入理解操作系统-第十二章">深入理解操作系统 第十二章</h1>
+<blockquote>
+<p>第十二章的主要内容是：文件管理</p>
+</blockquote>
+<h2 id="基本概念">基本概念</h2>
+<h3 id="文件系统和文件">文件系统和文件</h3>
+<p>文件系统: 一种用于持久性存储的系统抽象</p>
+<ul>
+<li>在存储上: 组织,控制,导航,访问和检索数据</li>
+<li>在大多数计算机系统包含文件系统</li>
+<li>个人电脑,服务器,笔记本电脑</li>
+<li>ipod,tivo,机顶盒,手机,电脑</li>
+<li>google可能也是由一个文件系统构成的</li>
+</ul>
+<p>文件: 文件系统中的一个单元的相关数据在操作系统中的抽象</p>
+<p>文件系统的功能:</p>
+<ul>
+<li>分配文件磁盘空间
+<ul>
+<li>管理文件块(哪一块属于哪一个文件)</li>
+<li>管理空闲空间(哪一块是空闲的)</li>
+<li>分配算法(策略)</li>
+</ul>
+</li>
+<li>管理文件集合
+<ul>
+<li>定位文件及其内容</li>
+<li>命名: 通过名字找到文件的接口</li>
+<li>最常见: 分层文件系统</li>
+<li>文件系统类型(组织文件的不同方式)</li>
+</ul>
+</li>
+<li>提供的便利及特征
+<ul>
+<li>保护: 分层来保护数据安全</li>
+<li>可靠性,持久性: 保持文件的持久即使发生崩溃,媒体错误,攻击等</li>
+</ul>
+</li>
+</ul>
+<p>文件和块:</p>
+<p>文件属性: 名称,类型,位置,大小,保护,创建者,创建时间,最久修改时间&hellip;</p>
+<p>文件头: 在存储元数据中保存了每个文件的信息,保存文件的属性,跟踪哪一块存储块属于逻辑上文件结构的哪个偏移</p>
+<h3 id="文件描述符">文件描述符</h3>
+<p>文件使用模式:</p>
+<p>使用程序必须在使用前先&quot;打开&quot;文件</p>
+<pre><code class="language-cpp">f = open(name, flag);
+...
+... = read(f, ...);
+...
+close(f);
+</code></pre>
+<p>内核跟踪每个进程打开的文件:</p>
+<ul>
+<li>操作系统为每个进程维护一个打开文件表</li>
+<li>一个打开文件描述符是这个表中的索引</li>
+</ul>
+<p>需要元数据来管理打开文件:</p>
+<p>文件指针: 指向最近的一次读写位置,每个打开了这个文件的进程都这个指针</p>
+<p>文件打开计数: 记录文件打开的次数 - 当最后一个进程关闭了文件时,允许将其从打开文件表中移除</p>
+<p>文件磁盘位置: 缓存数据访问信息</p>
+<p>访问权限: 每个程序访问模式信息</p>
+<p>用户视图: 持久的数据结构</p>
+<p>系统访问接口:</p>
+<p>字节的集合(UNIX)</p>
+<p>系统不会关心你想存储在磁盘上的任何的数据结构</p>
+<p>操作系统内部视角:</p>
+<p>块的集合(块是逻辑转换单元,而扇区是物理转换单元)</p>
+<p>块大小&lt;&gt; 扇区大小: 在UNIX中, 块的大小是 4KB</p>
+<p>当用户说: 给我2-12字节空间时会发生什么?</p>
+<p>获取字节所在的快</p>
+<p>返回快内对应部分</p>
+<p>如果要写2-12字节?</p>
+<p>获取块</p>
+<p>修改块内对应部分</p>
+<p>写回块</p>
+<p>在文件系统中的所有操作都是在整个块空间上进行的: <code>getc()</code> <code>putc()</code> 即使每次只访问1字节的数据,也会缓存目标数据4096字节(一个磁盘块)</p>
+<p>用户怎么访问文件: 在系统层面需要知道用户的访问模式</p>
+<p>顺序访问: 按字节依次读取(几乎所有的访问都是这种方式)</p>
+<p>随机访问: 从中间读写(不常用,但是仍然重要,如: 虚拟内存支持文件,内存页存储在文件中;更加快速,不希望获取文件中间的内容的时候也必须先获取块内所有字节)</p>
+<p>内容访问: 通过特征</p>
+<p>文件内部结构:</p>
+<p>无结构: 单词,比特的队列</p>
+<p>简单记录结构: 列,固定长度,可变长度</p>
+<p>复杂结构: 格式化的文档(word, PDF), 可执行文件, &hellip;</p>
+<p>多用户系统中的文件共享是很必要的</p>
+<p>访问控制:</p>
+<p>谁能够获得哪些文件的哪些访问权限</p>
+<p>访问模式: 读,写,执行,删除,列举等</p>
+<p>文件访问控制列表(ACL):</p>
+<p>&lt;文件实体, 权限&gt;</p>
+<p>UNIX模式:</p>
+<p>&lt;用户|组|所有人,读|写|可执行&gt;</p>
+<p>用户ID识别用户,表明每个用户所允许的权限及保护模式</p>
+<p>组ID允许用户组成组,并指定了组访问权限</p>
+<p>指定多用户,客户如何同时访问共享文件:</p>
+<p>和过程同步算法相似</p>
+<p>因磁盘IO和网络延迟而设计简单</p>
+<p>UNIX文件系统(UFS)语义:</p>
+<p>对打开文件的写入内容立即对其他打开同一文件的其他用户可见</p>
+<p>共享文件指针允许多用户同时读取和写入文件</p>
+<p>会话语义:</p>
+<p>写入内容只有当文件关闭时可见</p>
+<p>锁:</p>
+<p>一些操作系统和文件系统提供该功能</p>
+<h3 id="目录">目录</h3>
+<p>文件以目录的方式组织起来</p>
+<p>目录是一类特殊的文件: 每个目录都包含了一张表&lt;name, pointer to file header&gt;</p>
+<p>目录和文件的树形结构: 早期的文件系统是扁平的(只有一层目录)</p>
+<p>层次名称空间: /spell/mail/prt/first  /programs/p/list</p>
+<p>典型操作:</p>
+<p>搜索文件</p>
+<p>创建文件</p>
+<p>删除文件</p>
+<p>枚举目录</p>
+<p>重命名文件</p>
+<p>在文件系统中遍历一个路径</p>
+<p>操作系统应该只允许内核模式修改目录: 确保映射的完整性,应用程序能够读目录(ls)</p>
+<p>文件名的线性列表,包含了指向数据块的指针: 编程简单,执行耗时</p>
+<p>Hash表 - hash数据结构的线性表: 减少目录搜索时间,碰撞,固定大小</p>
+<p>名字解析: 逻辑名字转换成物理资源(如文件)的过程:</p>
+<p>在文件系统中: 到实际文件的文件名(路径)</p>
+<p>遍历文件目录直到找到目标文件</p>
+<p>举例: 解析&quot;/bin/ls&quot;:</p>
+<p>读取root的文件头(在磁盘固定位置)</p>
+<p>读取root的数据块: 搜索bin项</p>
+<p>读取bin的文件头</p>
+<p>读取bin的数据块: 搜索ls项</p>
+<p>读取ls的文件头</p>
+<p>当前工作目录:</p>
+<p>每个进程都会指向一个文件目录用于解析文件名</p>
+<p>允许用户指定相对路径来代替绝对路径</p>
+<p>一个文件系统需要先挂载才能被访问</p>
+<p>一个未挂载的文件系统被挂载在挂载点上</p>
+<h3 id="文件别名">文件别名</h3>
+<p>两个或多个文件名关联同一个文件:</p>
+<p>硬链接: 多个文件项指向一个文件</p>
+<p>软链接: 以快捷方式指向其他文件</p>
+<p>通过存储真实文件的逻辑名称来实现</p>
+<p>如果删除一个有别名的文件会如何呢? : 这个别名将成为一个悬空指针</p>
+<p>Backpointers 方案:</p>
+<p>每个文件有一个包含多个backpointers的列表,所以删除所有的Backpointers</p>
+<p>backpointers使用菊花链管理</p>
+<p>添加一个间接层: 目录项数据结构</p>
+<p>链接: 已存在文件的另外一个名字(指针)</p>
+<p>链接处理: 跟随指针来定位文件</p>
+<p>我们如何保证没有循环呢?</p>
+<p>只允许到文件的链接, 不允许在子目录的链接</p>
+<p>每增加一个新的链接都用循环检测算法确定是否合理</p>
+<p>限制路径可遍历文件目录的数量</p>
+<h3 id="文件系统种类">文件系统种类</h3>
+<p>磁盘文件系统: 文件存储在数据存储设备上,如磁盘; 例如: FAT,NTFS,ext2,3,ISO9660等</p>
+<p>数据库文件系统: 文件根据其特征是可被寻址的; 例如: WinFS</p>
+<p>日志文件系统: 记录文件系统的修改,事件; 例如: journaling file system</p>
+<p>网络,分布式文件系统: 例如: NFS,SMB,AFS,GFS</p>
+<p>特殊,虚拟文件系统</p>
+<h2 id="虚拟文件系统">虚拟文件系统</h2>
+<p>分层结构:</p>
+<p>顶层: 文件,文件系统API</p>
+<p>上层: 虚拟(逻辑)文件系统 (将所有设备IO,网络IO全抽象成为文件,使得接口一致)</p>
+<p>底层: 特定文件系统模块</p>
+<p>目的: 对所有不同文件系统的抽象</p>
+<p>功能:</p>
+<p>提供相同的文件和文件系统接口</p>
+<p>管理所有文件和文件系统关联的数据结构</p>
+<p>高效查询例程,遍历文件系统</p>
+<p>与特定文件系统模块的交互</p>
+<p>数据结构:</p>
+<p>卷[第四声]控制块(UNIX: &ldquo;superblock&rdquo;)</p>
+<p>每个文件系统一个</p>
+<p>文件系统详细信息</p>
+<p>块,块大小,空余块,计数,指针等</p>
+<p>文件控制块(UNIX: &ldquo;vnode&rdquo; or &ldquo;inode&rdquo;)</p>
+<p>每个文件一个</p>
+<p>文件详细信息</p>
+<p>许可,拥有者,大小,数据库位置等</p>
+<p>目录节点(Linux: &ldquo;dentry&rdquo;)</p>
+<p>每个目录项一个(目录和文件)</p>
+<p>将目录项数据结构及树形布局编码成树形数据结构</p>
+<p>指向文件控制块,父节点,项目列表等</p>
+<p>其中: 卷控制块(每个文件系统一个),文件控制块(每个文件一个),目录节点(每个目录项一个)</p>
+<p>持续存储在二级存储中: 在分配在存储设备中的数据块中</p>
+<p>当需要时加载进内存:</p>
+<p>卷控制块: 当文件系统挂载时进入内存</p>
+<p>文件控制块: 当文件被访问时进入内存</p>
+<p>目录节点: 在遍历一个文件路径时进入内存</p>
+<h2 id="数据块缓存">数据块缓存</h2>
+<p>数据块按需读入内存:</p>
+<p>提供 <code>read()</code> 操作</p>
+<p>预读: 预先读取后面的数据块</p>
+<p>数据块使用后被缓存:</p>
+<p>假设数据将会再次被使用</p>
+<p>写操作可能被缓存和延迟写入</p>
+<p>两种数据块缓存方式:</p>
+<p>普通缓冲区缓存</p>
+<p>页缓存: 同一缓存数据块和内存页</p>
+<p>分页要求: 当需要一个页时才将其载入内存</p>
+<p>支持存储: 一个页(在虚拟地址空间中)可以被映射到一个本地文件中(在二级存储中)</p>
+<h2 id="打开文件的数据结构">打开文件的数据结构</h2>
+<p>打开文件描述:</p>
+<p>每个被打开的文件一个</p>
+<p>文件状态信息</p>
+<p>目录项,当前文件指针,文件操作设置等</p>
+<p>打开文件表:</p>
+<p>一个进程一个</p>
+<p>一个系统级的</p>
+<p>每个卷控制块也会保存一个列表</p>
+<p>所以如果有文件被打开将不能被卸载</p>
+<p>一些操作系统和文件系统提供该功能</p>
+<p>调节对文件的访问</p>
+<p>强制和劝告:</p>
+<p>强制 - 根据锁保持情况和需求拒绝访问</p>
+<p>劝告 - 进程可以查找锁的状态来决定怎么做</p>
+<h2 id="文件分配">文件分配</h2>
+<p>大多数文件都很小:</p>
+<p>需要对小文件提供强力的支持</p>
+<p>块空间不能太小</p>
+<p>一些文件非常大:</p>
+<p>必须支持大文件(64-bit 文件偏移)</p>
+<p>大文件访问需要相当高效</p>
+<p>如何为一个文件分配数据块</p>
+<p>分配方式:</p>
+<p>连续分配</p>
+<p>链式分配</p>
+<p>索引分配</p>
+<p>指标:</p>
+<p>高效: 如存储利用(外部碎片)</p>
+<p>表现: 如访问速度</p>
+<p>连续分配:</p>
+<p>文件头指定起始块和长度</p>
+<p>位置,分配策略: 最先匹配,最佳匹配,&hellip;</p>
+<p>优势: 文件读取表现好;高效的顺序和随机访问</p>
+<p>劣势: 碎片;文件增长问题</p>
+<p>链式分配:</p>
+<p>文件以数据块链表方式存储</p>
+<p>文件头包含了到第一块和最后一块的指针</p>
+<p>优势: 创建,增大,缩小很容易;没有碎片</p>
+<p>劣势: 不可能进行真正的随机访问;可靠性</p>
+<p>索引分配:</p>
+<p>为每个文件创建一个名为索引数据块的非数据数据块(到文件数据块的指针列表)</p>
+<p>文件头包含了索引数据块</p>
+<p>优势: 创建,增大,缩小很容易;没有碎片;支持直接访问</p>
+<p>劣势: 当文件很小时,存储索引的开销大;处理大文件难</p>
+<h2 id="空闲空间列表">空闲空间列表</h2>
+<p>跟踪在存储中的所有未分配的数据块</p>
+<p>空闲空间列表存储在哪里?</p>
+<p>空闲空间列表的最佳数据结构怎么样?</p>
+<p>用位图代表空闲数据块列表: 11111101101110111 如果 i = 0表明数据块i是空闲的,反之是分配的</p>
+<p>使用简单但是可能会是一个big vector:</p>
+<p>160GB disk → 40M blocks → 5MB worth of bits</p>
+<p>然而,如果空闲空间在磁盘中均匀分布,那么再找到&quot;0&quot;之前需要扫描 磁盘上数据块总数 / 空闲块的数目</p>
+<p>需要保护:</p>
+<p>指向空闲列表的指针</p>
+<p>位图:</p>
+<p>必须保存在磁盘上;在内存和磁盘拷贝可能有所不同;不允许block[i]在内存中的状态为bit[i]=1而在磁盘中bit[i]=0</p>
+<p>解决:</p>
+<p>在磁盘上设置bit[i] = 1; 分配block[i]; 在内存中设置bit[i] = 1</p>
+<h2 id="多磁盘管理---raid">多磁盘管理 - RAID</h2>
+<p>通常磁盘通过分区来最大限度减小寻道时间:</p>
+<p>一个分区是一个柱面的集合</p>
+<p>每个分区都是逻辑上独立的磁盘</p>
+<p>分区: 硬件磁盘的一种适合操作系统指定格式的划分</p>
+<p>卷: 一个拥有一个文件系统实例的可访问的存储空间(通常常驻在磁盘的单个分区上)</p>
+<p>使用多个并行磁盘来增加: 吞吐量(通过并行),可靠性和可用性(通过冗余)</p>
+<p>RAID - 冗余磁盘阵列: 各种磁盘管理技术;RAID levels: 不同RAID分类,如RAID-0,RAID-1,RAID-5</p>
+<p>实现: 在操作系统内核: 存储,卷管理; RAID硬件控制器(IO)</p>
+<p>RAID-0</p>
+<p>数据块分成多个子块, 存储在独立的磁盘中: 和内存交叉相似</p>
+<p>通过更大的有效块大小来提供更大的磁盘带宽</p>
+<p>RAID-1</p>
+<p>可靠性成倍增长</p>
+<p>读取性能线性增加(向两个磁盘写入,从任何一个读取)</p>
+<p>RAID-4</p>
+<p>数据块级磁带配有专用奇偶校验磁盘: 允许从任意一个故障磁盘中恢复</p>
+<p>条带化和奇偶校验按byte-by-byte或者bit-by-bit: RAID-0,4,5: block-wise ;RAID-3: bit-wise</p>
+<p>RAID-5</p>
+<p>每个条带快有一个奇偶校验块,允许有一个磁盘错误</p>
+<p>RAID-6</p>
+<p>两个冗余块,有一种特殊的编码方式,允许两个磁盘错误</p>
+<h2 id="磁盘调度">磁盘调度</h2>
+<p>读取或写入时,磁头必须被定位在期望的磁道,并从所期望的扇区开始</p>
+<p>寻道时间: 定位到期望的磁道所花费的时间</p>
+<p>旋转延迟: 从扇区的开始处到到达目的处花费的时间</p>
+<p>平均旋转延迟时间 = 磁盘旋转一周时间的一半</p>
+<p>寻道时间是性能上区别的原因</p>
+<p>对单个磁盘,会有一个IO请求数目</p>
+<p>如果请求是随机的,那么会表现很差</p>
+<p>FIFO:</p>
+<p>按顺序处理请求</p>
+<p>公平对待所有进程</p>
+<p>在有很多进程的情况下,接近随机调度的性能</p>
+<p>最短服务优先:</p>
+<p>选择从磁臂当前位置需要移动最少的IO请求</p>
+<p>总是选择最短寻道时间</p>
+<p>skan:</p>
+<p>磁臂在一个方向上移动,满足所有为完成的请求,直到磁臂到达该方向上最后的磁道</p>
+<p>调换方向</p>
+<p>c-skan:</p>
+<p>限制了仅在一个方向上扫描</p>
+<p>当最后一个磁道也被访问过了后,磁臂返回到磁盘的另外一端再次进行扫描</p>
+<p>c-loop(c-skan改进):</p>
+<p>磁臂先到达该方向上最后一个请求处,然后立即反转</p>
+
+</article>
+
+                    
+                    
+                    
+
+                    
+
+
+
+                    
+  <div
+    class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
+  >
+    <div>
+      
+        <span class="text-primary-text block font-bold"
+          >上一页</span
+        >
+        <a href="https://kunieone.github.io/docs/operating-systems/11/" class="block"></a>
+      
+    </div>
+    <div class="mt-4 md:mt-0 md:text-right">
+      
+        <span class="text-primary-text block font-bold">下一页</span>
+        <a href="https://kunieone.github.io/docs/operating-systems/2/" class="block"></a>
+      
+    </div>
+  </div>
+
+
+                    
+
+
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        hljs.highlightAll();
+        changeSidebarHeight();
+        switchDocToc();
+    })
+</script>
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      
+    </main>
+    <footer class="pl-scrollbar">
+      <div class="mx-auto w-full max-w-screen-xl"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">@Starevan
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+    </footer>
+  </body>
+</html>

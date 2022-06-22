@@ -83,11 +83,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
-为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）
-提示
-你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。
-Routing（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面">
+  content="深入理解操作系统 第八章 第八章的主要内容是：调度算法(感觉清华这门课程前几章比较精彩,后续讲的有点混乱)
+背景 上下文切换 切换CPU的当前任务, 从一个进程/线程到另一个 保存当前进程/线程在PCB/TCB中的执行上下文(CPU状态) 读取下一个进程/线程的上下文 CPU调度 从就绪队列中挑选一个进程/线程作为CPU将要运行的下一个进程/线程 调度程序: 挑选进程/线程的内核函数(通过一些调度策略) 什么时候进行调度?">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,7 +97,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
       "@type": "ListItem",
       "position": 2 ,
       "name":"",
-      "item":"https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"}]
+      "item":"https://kunieone.github.io/docs/operating-systems/8/"}]
 }
 </script>
 
@@ -112,11 +109,11 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"
+        "@id": "https://kunieone.github.io/docs/operating-systems/8/"
     },
-    "headline": "∆STAREVAN","datePublished": "2022-06-17T11:03:40+08:00",
-    "dateModified": "2022-06-22T18:13:22+08:00",
-    "wordCount":  17 ,
+    "headline": "∆STAREVAN","datePublished": "2022-06-22T18:15:12+08:00",
+    "dateModified": "2022-06-22T18:16:14+08:00",
+    "wordCount":  201 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -125,7 +122,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。\n为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）\n提示\n你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。\nRouting（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面"
+    "description": "深入理解操作系统 第八章 第八章的主要内容是：调度算法(感觉清华这门课程前几章比较精彩,后续讲的有点混乱)\n背景 上下文切换 切换CPU的当前任务, 从一个进程\/线程到另一个 保存当前进程\/线程在PCB\/TCB中的执行上下文(CPU状态) 读取下一个进程\/线程的上下文 CPU调度 从就绪队列中挑选一个进程\/线程作为CPU将要运行的下一个进程\/线程 调度程序: 挑选进程\/线程的内核函数(通过一些调度策略) 什么时候进行调度?"
 }
 </script><meta property="og:title" content="∆STAREVAN" />
 <meta property="og:type" content="article" />
@@ -134,16 +131,13 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/" />
+<meta property="og:url" content="https://kunieone.github.io/docs/operating-systems/8/" />
 
 
 
 
-<meta property="og:description" content="Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
-为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）
-提示
-你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。
-Routing（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面" />
+<meta property="og:description" content="深入理解操作系统 第八章 第八章的主要内容是：调度算法(感觉清华这门课程前几章比较精彩,后续讲的有点混乱)
+背景 上下文切换 切换CPU的当前任务, 从一个进程/线程到另一个 保存当前进程/线程在PCB/TCB中的执行上下文(CPU状态) 读取下一个进程/线程的上下文 CPU调度 从就绪队列中挑选一个进程/线程作为CPU将要运行的下一个进程/线程 调度程序: 挑选进程/线程的内核函数(通过一些调度策略) 什么时候进行调度?" />
 
 
 
@@ -160,10 +154,10 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
 
 
 
-<meta property="article:published_time" content="2022-06-17T11:03:40&#43;08:00" />
+<meta property="article:published_time" content="2022-06-22T18:15:12&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-06-22T18:13:22&#43;08:00" />
+<meta property="article:modified_time" content="2022-06-22T18:16:14&#43;08:00" />
 
 
 
@@ -268,7 +262,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
     <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
         <a class="text-eureka hover:text-eureka"
-            href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"></a>
+            href="https://kunieone.github.io/docs/operating-systems/8/"></a>
         
         
         
@@ -299,7 +293,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022/06-17 11:03:40</span
+      >2022/06-22 18:15:12</span
     >
   </div>
   <div class="me-6 my-2">
@@ -316,22 +310,235 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
   
   
 
-  <h2 id="controller控制器负责处理即将到来的请求并且返回响应给客户端">Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。</h2>
-<p><img src="https://docs.nestjs.com/assets/Controllers_1.png" alt="img"></p>
-<p>controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。</p>
-<p>为了构建一个基本的controller，我们使用类与<strong>装饰器</strong>。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）</p>
+  <h1 id="深入理解操作系统-第八章">深入理解操作系统 第八章</h1>
 <blockquote>
-<p>提示</p>
-<p>你可以使用CRUD生成器<code>nest g resource [name]</code>来快速构建内建的CRUD控制器。</p>
+<p>第八章的主要内容是：调度算法(感觉清华这门课程前几章比较精彩,后续讲的有点混乱)</p>
 </blockquote>
-<h3 id="routing路由">Routing（路由）</h3>
-<p>在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面</p>
-<p>@Controller(&ldquo;cats&rdquo;)，装饰器允许我们轻易地构建一组相关路由的集合，并且最小化重复的代码。</p>
-<blockquote>
-<p>提示</p>
-<p>你可以使用CLI <code>nest g controller(co) cats</code>来生成猫路由。</p>
-</blockquote>
-<hr>
+<h2 id="背景">背景</h2>
+<h3 id="上下文切换">上下文切换</h3>
+<ul>
+<li>切换CPU的当前任务, 从一个进程/线程到另一个</li>
+<li>保存当前进程/线程在PCB/TCB中的执行上下文(CPU状态)</li>
+<li>读取下一个进程/线程的上下文</li>
+</ul>
+<h3 id="cpu调度">CPU调度</h3>
+<ul>
+<li>从就绪队列中挑选一个进程/线程作为CPU将要运行的下一个进程/线程</li>
+<li>调度程序: 挑选进程/线程的内核函数(通过一些调度策略)</li>
+<li>什么时候进行调度?</li>
+</ul>
+<h3 id="内核运行调度程序的条件满足一条即可">内核运行调度程序的条件(满足一条即可)</h3>
+<ul>
+<li>一个进程从运行状态切换到等待状态</li>
+<li>一个进程被终结</li>
+</ul>
+<h3 id="不可抢占">不可抢占</h3>
+<ul>
+<li>调度程序必须等待事件结束</li>
+</ul>
+<h3 id="可以抢占">可以抢占</h3>
+<ul>
+<li>调度程序在中断被相应后执行</li>
+<li>当前的进程从运行切换到就绪, 或者一个进程从等待切换到就绪</li>
+<li>当前运行的进程可以被换出</li>
+</ul>
+<h2 id="调度原则">调度原则</h2>
+<ul>
+<li>
+<p>调度策略</p>
+<p>人们通常都需要&quot;更快&quot;的服务</p>
+<p>什么是更快?</p>
+<ul>
+<li>传输文件时的高带宽</li>
+<li>玩游戏时的低延迟</li>
+<li>这两个因素是独立的</li>
+</ul>
+<p>和水管类比</p>
+<ul>
+<li>低延迟: 喝水的时候想要一打开水龙头水就流出来</li>
+<li>高带宽: 给游泳池充水时希望从水龙头里同时流出大量的水,并且不介意是否存在延迟</li>
+</ul>
+<p>我们的目标:</p>
+<ul>
+<li>减少响应时间: 及时处理用户的输出并且尽快将输出提供给用户</li>
+<li>减少平均响应时间的波动: 在交互系统中,可预测性比高差异性低平均更重要</li>
+<li>增加吞吐量: 减少开销(操作系统开销,上下文切换);系统资源的高效率用(CPU,IO设备)</li>
+<li>减少等待时间: 减少每个进程的等待时间</li>
+</ul>
+</li>
+<li>
+<p>程序执行模型</p>
+<p>执行模型 : 程序在CPU突发和IO中交替</p>
+<ul>
+<li>每个调度决定都是关于在下一个CPU突发时将哪个工作交给CPU</li>
+<li>在时间分片机制下,线程可能在结束当前CPU突发前被迫放弃CPU</li>
+</ul>
+</li>
+<li>
+<p>评价指标</p>
+<p>CPU使用率: CPU处于忙状态所占时间的百分比</p>
+<p>吞吐量: 在单位时间内完成的进程数量</p>
+<p>周转时间: 一个进程从初始化到结束,包括所有等待时间所花费的时间</p>
+<p>等待时间: 进程在就绪队列中的总时间</p>
+<p>响应时间: 从一个请求被提交到产生第一次相应所花费的总时间</p>
+<p>各指标在操作系统上的表现:</p>
+<p>低延迟调度增加了交互式表现(如果移动了鼠标,但是屏幕中的光标却没动,我们可能会重启电脑)</p>
+<p>操作系统需要保证低吞吐量不受影响(我想要结束长时间的编程,所以操作系统必须不时进行调度,即使存在许多交互任务)</p>
+<p>吞吐量是操作系统的计算带宽</p>
+<p>响应时间是操作系统的计算延迟</p>
+</li>
+<li>
+<p>公平的目标</p>
+<p>举例:</p>
+<ul>
+<li>保证每个进程占用相同的CPU时间</li>
+<li>这公平嘛?如果一个用户比其他用户运行更多的进程怎么办</li>
+</ul>
+<p>举例:</p>
+<ul>
+<li>保证每个进程都等待相同的时间</li>
+</ul>
+<p>公平通常会增加平均响应时间</p>
+</li>
+</ul>
+<h2 id="调度算法">调度算法</h2>
+<ul>
+<li>
+<p><strong>FCFS(先来先服务)</strong></p>
+<p>First come, First Served</p>
+<p>如果进程在执行中阻塞,队列中的下一个会得到CPU</p>
+<p>优点: 简单</p>
+<p>缺点:</p>
+<ul>
+<li>平均等待时间波动较大</li>
+<li>花费时间少的任务可能排在花费时间长的任务后面</li>
+<li>可能导致IO和CPU之间的重叠处理(CPU密集型进程会导致IO设备闲置时,IO密集型进程也在等待)</li>
+</ul>
+</li>
+<li>
+<p><strong>SPN(SJF) SRT(短进程优先(短作业优先)短剩余时间优先)[最优平均等待时间]</strong></p>
+<p>Shortest Process Next(Shortest Job First) Shortest Remaining Time</p>
+<p>选择预测的完成时间来将任务入队</p>
+<p>可以是抢占的或者是不可抢占的</p>
+<p>可能导致饥饿</p>
+<ul>
+<li>连续的短任务流会使场任务饥饿</li>
+<li>短任务可用时的任何场任务的CPU时间都会增加平均等待时间</li>
+</ul>
+<p>需要预测未来</p>
+<ul>
+<li>怎么预估下一个CPU突发的持续时间</li>
+<li>简单的解决: 询问用户</li>
+<li>如果用户欺骗就杀死进程</li>
+<li>如果不知道怎么办?</li>
+</ul>
+</li>
+<li>
+<p><strong>HRRN(最高响应比优先)</strong></p>
+<p>Highest Response Ratio Next</p>
+</li>
+<li>
+<p><strong>Round Robin(轮循)</strong></p>
+<p>使用时间切片和抢占来轮流执行任务</p>
+<p>在叫做量子(或者时间切片)的离散单元中分配处理器</p>
+<p>时间片结束时,切换到下一个准备好的进程</p>
+<p>花销: 额外的上下文切换</p>
+<p>时间量子太大:</p>
+<ul>
+<li>等待时间过长</li>
+<li>极限情况退化成FCFS</li>
+</ul>
+<p>时间量子太小:</p>
+<ul>
+<li>反应迅速</li>
+<li>吞吐量由于大量的上下文切换开销受到影响</li>
+</ul>
+<p>目标:</p>
+<ul>
+<li>选择一个合适的时间量子</li>
+<li>经验规则: 维持上下文切换开销处于1%以内</li>
+</ul>
+</li>
+<li>
+<p><strong>Multilevel Feedback Queues(多级反馈队列)</strong></p>
+<p>优先级队列中的轮循</p>
+<p>就绪队列被划分成独立的队列: 比如前台(交互),后台(批处理)</p>
+<p>每个队列拥有自己的调度策略: 比如前台(RR),后台(FCFS)</p>
+<p>调度必须在队列间进行:</p>
+<ul>
+<li>固定优先级: 先处理前台,然后处理后台;可能导致饥饿</li>
+<li>时间切片: 每个队列都得到一个确定的能够调度其进程的CPU总时间;比如80%使用RR的前台,20%使用FCFS的后台</li>
+</ul>
+<p>一个进程可以在不同的队列中移动</p>
+<p>例如,n级优先级-优先级调度在所有级别中,RR在每个级别中</p>
+<ul>
+<li>时间量子大小随优先级级别增加而增加</li>
+<li>如果任务在当前的时间量子中没有完成,则降到下一个优先级</li>
+</ul>
+<p>优点: CPU密集型任务的优先级下降很快;IO密集型任务停留在高优先级</p>
+</li>
+<li>
+<p><strong>Fair Share Scheduling(公平共享调度)</strong></p>
+<p>FSS控制用户对系统资源的访问</p>
+<ul>
+<li>一些用户组比其他用户组更重要</li>
+<li>保证不重要的组无法垄断资源</li>
+<li>未使用的资源按照每个组所分配的资源的比例来分配</li>
+<li>没有达到资源使用率目标的组获得更高的优先级</li>
+</ul>
+</li>
+</ul>
+<h2 id="评价方式">评价方式</h2>
+<p>确定性建模: 确定一个工作量,然后计算每个算法的表现</p>
+<p>队列模型: 用来处理随机工作负载的数学方法</p>
+<p>实现/模拟: 建立一个允许算法运行实际数据的系统;最灵活,最具一般性</p>
+<h2 id="实时调度">实时调度</h2>
+<ul>
+<li>
+<p>实时系统</p>
+<p>定义: 正确性依赖于其时间和功能两方面的一个操作系统</p>
+<p>性能指标: 时间约束的及时性;速度和平均性能相对不重要</p>
+<p>主要特征: 时间约束的可预测性</p>
+<p>分类:</p>
+<ul>
+<li>强实时系统: 需要在保证时间内完成重要的任务,必须完成</li>
+<li>弱实时系统: 要求重要的进程的优先级更高,尽量完成,并非必须</li>
+</ul>
+<p>任务(工作单元): 一次计算,一次文件读取,一次信息传递等</p>
+<p>属性: 去的进展所需要的资源;定时参数.</p>
+</li>
+<li>
+<p>单调速率(RM)</p>
+<ul>
+<li>最佳静态优先级调度</li>
+<li>通过周期安排优先级</li>
+<li>周期越短优先级越高</li>
+<li>执行周期最短的任务</li>
+</ul>
+</li>
+<li>
+<p>截止日期最早优先(EDF)</p>
+<ul>
+<li>最佳的动态优先级调度</li>
+<li>Deadline越早优先级越高</li>
+<li>执行Deadline最早的任务</li>
+</ul>
+</li>
+</ul>
+<h2 id="多处理器调度">多处理器调度</h2>
+<p>多处理器的CPU调度更复杂:</p>
+<ul>
+<li>多个相同的单处理器组成一个多处理器</li>
+<li>优点: 复杂共享</li>
+</ul>
+<p>对称多处理器(SMP)</p>
+<ul>
+<li>每个处理器运行自己的调度程序</li>
+<li>需要在调度程序中同步</li>
+</ul>
+<h2 id="优先级反转">优先级反转</h2>
+<p>可以发生在任务基于优先级的可抢占的调度机制中</p>
+<p>当系统内的环境强制使高优先级任务等待低优先级任务时发生</p>
 
 </article>
 
@@ -352,13 +559,13 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/" class="block"></a>
+        <a href="https://kunieone.github.io/docs/operating-systems/7/" class="block"></a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/" class="block"></a>
+        <a href="https://kunieone.github.io/docs/operating-systems/9/" class="block"></a>
       
     </div>
   </div>
