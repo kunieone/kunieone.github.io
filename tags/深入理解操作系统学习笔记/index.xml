@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>深入理解操作系统学习笔记 on ∆STAREVAN</title>
+    <link>https://kunieone.github.io/tags/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 深入理解操作系统学习笔记 on ∆STAREVAN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>@Starevan
+</copyright>
+    <lastBuildDate>Sun, 08 Nov 2020 20:07:00 +0000</lastBuildDate><atom:link href="https://kunieone.github.io/tags/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深入理解操作系统学习笔记</title>
+      <link>https://kunieone.github.io/posts/deep_into_operatingsystem/</link>
+      <pubDate>Sun, 08 Nov 2020 20:07:00 +0000</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/deep_into_operatingsystem/</guid>
+      <description>&lt;h1 id=&#34;第一章&#34;&gt;第一章&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一章的主要内容是 : 操作系统的一些知识&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;操作系统是什么&#34;&gt;操作系统是什么？&lt;/h3&gt;
+&lt;p&gt;用户角度：操作系统是一个控制软件&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
