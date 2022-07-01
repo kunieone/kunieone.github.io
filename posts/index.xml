@@ -10,6 +10,18 @@
 </copyright>
     <lastBuildDate>Fri, 17 Jun 2022 06:23:50 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>基于比较的排序算法复杂度的下界</title>
+      <link>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E6%AF%94%E8%BE%83%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</link>
+      <pubDate>Sat, 02 Jul 2022 01:50:11 +0800</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E6%AF%94%E8%BE%83%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</guid>
+      <description>《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。
+我们先来回忆一下香农的信息熵公式：
+香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为: $$ I(A_i)=\log_2\frac{1}{P(A_i)} % \tag{6} $$
+对于随机变量$X$而言，定义其平均自信息量为信息熵，可表示为: $$H(x)=\sum P(A_i)\log_2\frac{1}{P(A_i)}$$</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://kunieone.github.io/posts/%E6%8B%9B%E4%BA%BA/</link>
       <pubDate>Tue, 28 Jun 2022 17:26:26 +0800</pubDate>
@@ -32,7 +44,10 @@
       <pubDate>Tue, 28 Jun 2022 17:17:16 +0800</pubDate>
       
       <guid>https://kunieone.github.io/posts/%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E7%9A%84oop%E6%80%9D%E6%83%B3/</guid>
-      <description>OOP OOP是一种思想，但是现在的编程语言只是对这种思想的实现。</description>
+      <description>OOP OOP是一种思想，但是现在的编程语言只是对这种思想的实现。
+OOP是一种程序设计的范式，是设计思想，在多种现代编程语言中都提供语法支持。然而，OOP就只是我们所知道的封装继承多态吗? 套用OOP的说法，OOP的设计思想是抽象，而OOP的编程语法只是实现。
+OOP的创始人,第一个OOP语言Smalltalk的设计者Alan Kay这么说
+I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages (so messaging came at the very beginning &amp;ndash; it took a while to see how to do messaging in a programming language efficiently enough to be useful) OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.</description>
     </item>
     
     <item>
