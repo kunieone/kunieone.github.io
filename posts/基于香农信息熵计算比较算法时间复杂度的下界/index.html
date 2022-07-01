@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>∆STAREVAN</title>
+<title>基于比较的排序算法复杂度的下界 | ∆STAREVAN</title>
 
 <meta name="generator" content="Hugo Eureka 0.9.3" />
 <link rel="stylesheet" href="https://kunieone.github.io/css/eureka.min.9cec6350e37e534b0338fa9a085bf06855de3b0f2dcf857e792e5e97b07ea905d4d5513db554cbc26a9c3da622bae92d.css">
@@ -83,10 +83,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="NESTJS NESTJS 介绍 ​	Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。
-​	在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！
-​	Nest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由
-NESTJS 哲学 在近些年内，多亏了Node.">
+  content="《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。
+我们先来回忆一下香农的信息熵公式：
+香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为: $$ I(A_i)=\log_2\frac{1}{P(A_i)} % \tag{6} $$
+对于随机变量$X$而言，定义其平均自信息量为信息熵，可表示为: $$H(x)=\sum P(A_i)\log_2\frac{1}{P(A_i)}$$">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,12 +94,12 @@ NESTJS 哲学 在近些年内，多亏了Node.">
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"文档",
-      "item":"https://kunieone.github.io/docs/"},{
+      "name":"文章",
+      "item":"https://kunieone.github.io/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"",
-      "item":"https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/"}]
+      "name":"基于比较的排序算法复杂度的下界",
+      "item":"https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E9%A6%99%E5%86%9C%E4%BF%A1%E6%81%AF%E7%86%B5%E8%AE%A1%E7%AE%97%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/"}]
 }
 </script>
 
@@ -111,11 +111,11 @@ NESTJS 哲学 在近些年内，多亏了Node.">
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/"
+        "@id": "https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E9%A6%99%E5%86%9C%E4%BF%A1%E6%81%AF%E7%86%B5%E8%AE%A1%E7%AE%97%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/"
     },
-    "headline": "∆STAREVAN","datePublished": "2022-06-17T11:03:40+08:00",
-    "dateModified": "2022-07-02T02:31:26+08:00",
-    "wordCount":  14 ,
+    "headline": "基于比较的排序算法复杂度的下界 | ∆STAREVAN","datePublished": "2022-07-02T01:50:11+08:00",
+    "dateModified": "2022-07-02T02:29:50+08:00",
+    "wordCount":  26 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -124,24 +124,24 @@ NESTJS 哲学 在近些年内，多亏了Node.">
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "NESTJS NESTJS 介绍 ​\tNestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。\n​\t在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！\n​\tNest提供了一个在Nodejs框架（Express\/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由\nNESTJS 哲学 在近些年内，多亏了Node."
+    "description": "《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。\n我们先来回忆一下香农的信息熵公式：\n香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为: $$ I(A_i)=\\log_2\\frac{1}{P(A_i)} % \\tag{6} $$\n对于随机变量$X$而言，定义其平均自信息量为信息熵，可表示为: $$H(x)=\\sum P(A_i)\\log_2\\frac{1}{P(A_i)}$$"
 }
-</script><meta property="og:title" content="∆STAREVAN" />
+</script><meta property="og:title" content="基于比较的排序算法复杂度的下界 | ∆STAREVAN" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/" />
+<meta property="og:url" content="https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E9%A6%99%E5%86%9C%E4%BF%A1%E6%81%AF%E7%86%B5%E8%AE%A1%E7%AE%97%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/" />
 
 
 
 
-<meta property="og:description" content="NESTJS NESTJS 介绍 ​	Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。
-​	在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！
-​	Nest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由
-NESTJS 哲学 在近些年内，多亏了Node." />
+<meta property="og:description" content="《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。
+我们先来回忆一下香农的信息熵公式：
+香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为: $$ I(A_i)=\log_2\frac{1}{P(A_i)} % \tag{6} $$
+对于随机变量$X$而言，定义其平均自信息量为信息熵，可表示为: $$H(x)=\sum P(A_i)\log_2\frac{1}{P(A_i)}$$" />
 
 
 
@@ -158,14 +158,14 @@ NESTJS 哲学 在近些年内，多亏了Node." />
 
 
 
-<meta property="article:published_time" content="2022-06-17T11:03:40&#43;08:00" />
+<meta property="article:published_time" content="2022-07-02T01:50:11&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-07-02T02:31:26&#43;08:00" />
+<meta property="article:modified_time" content="2022-07-02T02:29:50&#43;08:00" />
 
 
 
-<meta property="article:section" content="docs" />
+<meta property="article:section" content="posts" />
 
 
 
@@ -190,8 +190,8 @@ NESTJS 哲学 在近些年内，多亏了Node." />
     <div id="target"
         class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
-            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文档</a>
             <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
             <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
             <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
@@ -245,51 +245,14 @@ NESTJS 哲学 在近些年内，多亏了Node." />
     <main class="grow pt-16">
         <div class="pl-scrollbar">
           <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-
-
-<div class="lg:pt-12">
-    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
-        <div class="md:w-1/4 lg:w-1/5 border-e">
-            <div class="sticky top-16 pt-6">
-                
-
-
-
-
-
-<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
-    <span class="font-semibold">目录</span>
-    <i class='fas fa-caret-right ms-1'></i>
-</div>
-
-<div id="sidebar-toc"
-    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
-    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
-        <a class="text-eureka hover:text-eureka"
-            href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/"></a>
-        
-        
-        
-
-
-    </div>
-    
-<ul class="ps-6">
-    
-</ul>
-
-</div>
-
-
-
-            </div>
-
-        </div>
-        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
-            <div class="flex">
-                <div class="w-full lg:w-3/4 px-6">
-                    <article class="prose">
-  <h1 class="mb-4"></h1>
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
+  <h1 class="mb-4">基于比较的排序算法复杂度的下界</h1>
 
   <div
   class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
@@ -297,7 +260,7 @@ NESTJS 哲学 在近些年内，多亏了Node." />
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022/06-17 11:03:40</span
+      >2022/07-02 01:50:11</span
     >
   </div>
   <div class="me-6 my-2">
@@ -314,76 +277,69 @@ NESTJS 哲学 在近些年内，多亏了Node." />
   
   
 
-  <h1 id="nestjs">NESTJS</h1>
-<h2 id="nestjs-介绍">NESTJS 介绍</h2>
-<p>​		Nestjs是一个用于构建大规模的nodejs服务端应用程序的的高效率框架，它使用的是渐进的Javascript，并且完全支持Typescript（也支持仅使用Javascript开发）并且结合了面向对象编程、函数式编程和函数响应式编程的思想。</p>
-<p>​		在这个框架下，Nest充分使用了如Express这样高可靠性的HTTP框架并且同时也可以支持Fastify！！</p>
-<p>​		Nest提供了一个在Nodejs框架（Express/Fastify）之上的抽象级，并且直接把express的API暴露给开发者这给了开发者选择使用无数底层平台第三方库的自由</p>
-<h2 id="nestjs-哲学">NESTJS 哲学</h2>
-<p>在近些年内，多亏了Node.js使得Javascript可以成为前后端应用开发的通用语言，这也导致了比如一些像Angular，React和Vue项目的兴起，它们极大的提升了开发者构建更快，可测试，可拓展的前端应用的效率。不过，尽管有很多为Node.js准备的很棒的库，指导和工具，单没有一个解决了“架构”层面上的这个核心问题。</p>
-<p>​	NEST提供了一个开箱即用的应用架构服务，允许了开发者和团队能够构建高可测试性，大规模，松耦合并且易维护的应用。该架构理念灵感来自Angular。</p>
+  <blockquote>
+<p>《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。</p>
+</blockquote>
+<p>我们先来回忆一下香农的信息熵公式：</p>
+<p>香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为:
+$$
+I(A_i)=\log_2\frac{1}{P(A_i)}
+% \tag{6}
+$$</p>
+<p>对于随机变量$X$而言，定义其平均自信息量为信息熵，可表示为:
+$$H(x)=\sum P(A_i)\log_2\frac{1}{P(A_i)}$$</p>
+<p>对于排序问题，我们可以认为排序执行之前，待排数据没有获得任何信息(完全随机)，因此在排序的过程中，我们认为获得了信息使数据排列方式的<strong>不确定度减小</strong>了。</p>
+<p>假如现在有 n个数${a_1,a_2,a_3,a_4,&hellip;,a_n}$ ,排列数组的方式共有$n!$种,他们的排列组合总共的信息熵是多少？$$\log_2(n!)$$</p>
+<p>而对于每一次比较，可以获得$a_i&gt;a_j$或者$a_j&gt;a_i$，因此获得的信息量是 $log_2(2)=1$。排好序也就等同获得了总共如上所示的$\log_2(n!)$个信息量，因此最少比较$log_2(n!)$次才可以解决这个问题。</p>
+<p>对应的比较排序算法的下界为 $O(\log_2(n!))$，由于
+$$n! =\sqrt{2\pi n} (\frac{n}{e})^2e^{a_n} $$
+因此</p>
+<p>$$O(\log_2(n!))=O(nlog(n))$$</p>
 
 </article>
 
-                    
-                    
-                    
 
-                    
+      
 
+      
 
 
-                    
+
+      
+
+      
   <div
     class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
   >
     <div>
       
-        <span class="text-primary-text block font-bold"
-          >上一页</span
-        >
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/" class="block"></a>
-      
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/untitled/" class="block"></a>
+        <a href="https://kunieone.github.io/posts/%E6%8B%9B%E4%BA%BA/" class="block">招 人</a>
       
     </div>
   </div>
 
 
-                    
+      
 
-
-
-                </div>
-                
-            </div>
-
-        </div>
 
 
     </div>
-</div>
+    
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
+    
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
         hljs.highlightAll();
-        changeSidebarHeight();
-        switchDocToc();
-    })
-</script>
-
-
-
-
-
-
-
-
+      });
+    </script>
 
           </div>
         </div>

@@ -11,10 +11,10 @@
     <lastBuildDate>Sat, 02 Jul 2022 01:50:11 +0800</lastBuildDate><atom:link href="https://kunieone.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于比较的排序算法复杂度的下界</title>
-      <link>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E6%AF%94%E8%BE%83%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</link>
+      <link>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E9%A6%99%E5%86%9C%E4%BF%A1%E6%81%AF%E7%86%B5%E8%AE%A1%E7%AE%97%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</link>
       <pubDate>Sat, 02 Jul 2022 01:50:11 +0800</pubDate>
       
-      <guid>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E6%AF%94%E8%BE%83%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</guid>
+      <guid>https://kunieone.github.io/posts/%E5%9F%BA%E4%BA%8E%E9%A6%99%E5%86%9C%E4%BF%A1%E6%81%AF%E7%86%B5%E8%AE%A1%E7%AE%97%E6%AF%94%E8%BE%83%E7%AE%97%E6%B3%95%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E7%9A%84%E4%B8%8B%E7%95%8C/</guid>
       <description>《算法导论》中有一节讲的是“（比较）排序算法时间的下界”，本文将论述同一个问题，思路略有差异。本文将从信息熵的角度论述排序算法时间复杂度的下界。若本文论述过程中有错误或是不足，还请各位指正。
 我们先来回忆一下香农的信息熵公式：
 香农对信息的定义是事物运动状态和存在方式的不确定性描述。事件$A_i$发生所含有的信息量（自信息量）可以表示为: $$ I(A_i)=\log_2\frac{1}{P(A_i)} % \tag{6} $$
@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>招 人</title>
       <link>https://kunieone.github.io/posts/%E6%8B%9B%E4%BA%BA/</link>
       <pubDate>Tue, 28 Jun 2022 17:26:26 +0800</pubDate>
       
@@ -34,7 +34,7 @@
 面试官：“哦，我们现在做的这个项目是比较有前景的，是未来的趋势。公司将来也会有大的发展。入职后如果表现优秀，可以分配股权”
 程序员：“哦”。
 面试官：“下周能来上班吗？”
-程序员：“可以的。”
+程序员：“可以的。”~~~~
 面试官：“那你下周一来办入职吧。”</description>
     </item>
     
@@ -535,6 +535,16 @@ On no account can we &amp;hellip;</description>
       
       <guid>https://kunieone.github.io/homepage/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://kunieone.github.io/docs/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/7/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kunieone.github.io/docs/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/7/2/</guid>
+      <description>mafia-黑手党
+Britain has for decades helped a mafia state stash its stolen money.</description>
     </item>
     
   </channel>
