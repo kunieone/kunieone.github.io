@@ -83,11 +83,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
-为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）
-提示
-你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。
-Routing（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面">
+  content="一个人大概率不会因为苦难变得更好，因为苦难，就是苦难本身。">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,12 +91,12 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"文档",
-      "item":"https://kunieone.github.io/docs/"},{
+      "name":"文章",
+      "item":"https://kunieone.github.io/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
       "name":"",
-      "item":"https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"}]
+      "item":"https://kunieone.github.io/posts/%E8%8B%A6%E9%9A%BE%E7%A9%B6%E7%AB%9F%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88/"}]
 }
 </script>
 
@@ -112,11 +108,11 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"
+        "@id": "https://kunieone.github.io/posts/%E8%8B%A6%E9%9A%BE%E7%A9%B6%E7%AB%9F%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88/"
     },
-    "headline": "∆STAREVAN","datePublished": "2022-06-17T11:03:40+08:00",
-    "dateModified": "2022-07-02T05:32:24+08:00",
-    "wordCount":  17 ,
+    "headline": "∆STAREVAN","datePublished": "2022-06-24T09:55:59+08:00",
+    "dateModified": "2022-07-02T02:29:49+08:00",
+    "wordCount":  1 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -125,7 +121,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。\n为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）\n提示\n你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。\nRouting（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面"
+    "description": "一个人大概率不会因为苦难变得更好，因为苦难，就是苦难本身。"
 }
 </script><meta property="og:title" content="∆STAREVAN" />
 <meta property="og:type" content="article" />
@@ -134,16 +130,12 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
 <meta property="og:image" content="https://kunieone.github.io/images/icon.png">
 
 
-<meta property="og:url" content="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/" />
+<meta property="og:url" content="https://kunieone.github.io/posts/%E8%8B%A6%E9%9A%BE%E7%A9%B6%E7%AB%9F%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88/" />
 
 
 
 
-<meta property="og:description" content="Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。 controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。
-为了构建一个基本的controller，我们使用类与装饰器。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）
-提示
-你可以使用CRUD生成器nest g resource [name]来快速构建内建的CRUD控制器。
-Routing（路由） 在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面" />
+<meta property="og:description" content="一个人大概率不会因为苦难变得更好，因为苦难，就是苦难本身。" />
 
 
 
@@ -160,14 +152,14 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
 
 
 
-<meta property="article:published_time" content="2022-06-17T11:03:40&#43;08:00" />
+<meta property="article:published_time" content="2022-06-24T09:55:59&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2022-07-02T05:32:24&#43;08:00" />
+<meta property="article:modified_time" content="2022-07-02T02:29:49&#43;08:00" />
 
 
 
-<meta property="article:section" content="docs" />
+<meta property="article:section" content="posts" />
 
 
 
@@ -192,8 +184,8 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     <div id="target"
         class="hidden block md:flex md:grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
-            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文档</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">文章</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文档</a>
             <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">系列</a>
             <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">分类</a>
             <a href="/tags/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">标签</a>
@@ -247,50 +239,13 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
     <main class="grow pt-16">
         <div class="pl-scrollbar">
           <div class="mx-auto w-full max-w-screen-xl lg:px-4 xl:px-8">
-
-
-<div class="lg:pt-12">
-    <div class="flex flex-col md:flex-row bg-secondary-bg rounded">
-        <div class="md:w-1/4 lg:w-1/5 border-e">
-            <div class="sticky top-16 pt-6">
-                
-
-
-
-
-
-<div id="sidebar-title" class="md:hidden mx-4 px-2 pt-4 pb-2 md:border-b text-tertiary-text md:text-primary-text">
-    <span class="font-semibold">目录</span>
-    <i class='fas fa-caret-right ms-1'></i>
-</div>
-
-<div id="sidebar-toc"
-    class="hidden md:block overflow-y-auto mx-6 md:mx-0 pe-6 pt-2 md:max-h-doc-sidebar bg-primary-bg md:bg-transparent">
-    <div class="flex flex-wrap ms-4 -me-2 p-2 bg-secondary-bg md:bg-primary-bg rounded">
-        <a class="text-eureka hover:text-eureka"
-            href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/controller/"></a>
-        
-        
-        
-
-
-    </div>
-    
-<ul class="ps-6">
-    
-</ul>
-
-</div>
-
-
-
-            </div>
-
-        </div>
-        <div class="w-full md:w-3/4 lg:w-4/5 pb-8 pt-2 md:pt-8">
-            <div class="flex">
-                <div class="w-full lg:w-3/4 px-6">
-                    <article class="prose">
+  
+  
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-8 lg:pt-12">
+    <div
+      class="lg:col-start-2 bg-secondary-bg col-span-2 rounded px-6 py-8 lg:col-span-6"
+    >
+      <article class="prose">
   <h1 class="mb-4"></h1>
 
   <div
@@ -299,7 +254,7 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
   <div class="me-6 my-2">
     <i class="fas fa-calendar me-1"></i>
     <span
-      >2022/06-17 11:03:40</span
+      >2022/06-24 09:55:59</span
     >
   </div>
   <div class="me-6 my-2">
@@ -316,34 +271,20 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
   
   
 
-  <h2 id="controller控制器负责处理即将到来的请求并且返回响应给客户端">Controller（控制器）负责处理即将到来的请求并且返回响应给客户端。</h2>
-<p><img src="https://docs.nestjs.com/assets/Controllers_1.png" alt="img"></p>
-<p>controller的意图是接收一个特定的请求，路由机制控制了哪个controller将会接收哪些请求。常常每一个controller都有不止一个路由，并且不同的路由执行不同的动作。</p>
-<p>为了构建一个基本的controller，我们使用类与<strong>装饰器</strong>。装饰器能够联系一些类的元数据并且使Nest可以构建路由映射表。（将请求和对应的controller绑定）</p>
-<blockquote>
-<p>提示</p>
-<p>你可以使用CRUD生成器<code>nest g resource [name]</code>来快速构建内建的CRUD控制器。</p>
-</blockquote>
-<h3 id="routing路由">Routing（路由）</h3>
-<p>在接下来的示例中，我们将使用@Controller装饰器，它需要定义一个基础的controller。我们选择特定一个路由路径，叫做cats。把cats字符串放到装饰器里面</p>
-<p>@Controller(&ldquo;cats&rdquo;)，装饰器允许我们轻易地构建一组相关路由的集合，并且最小化重复的代码。</p>
-<blockquote>
-<p>提示</p>
-<p>你可以使用CLI <code>nest g controller(co) cats</code>来生成猫路由。</p>
-</blockquote>
-<hr>
+  <p>一个人大概率不会因为苦难变得更好，因为苦难，就是苦难本身。</p>
 
 </article>
 
-                    
-                    
-                    
 
-                    
+      
 
+      
 
 
-                    
+
+      
+
+      
   <div
     class="-mx-2 mt-4 flex flex-col border-t px-2 pt-4 md:flex-row md:justify-between"
   >
@@ -352,48 +293,35 @@ Routing（路由） 在接下来的示例中，我们将使用@Controller装饰�
         <span class="text-primary-text block font-bold"
           >上一页</span
         >
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/golang/golang%E5%8D%8F%E7%A8%8B/" class="block"></a>
+        <a href="https://kunieone.github.io/posts/%E5%87%A0%E7%A7%8D%E4%B8%8D%E5%90%8C%E7%9A%84oop%E6%80%9D%E6%83%B3/" class="block">几种不同的OOP思想</a>
       
     </div>
     <div class="mt-4 md:mt-0 md:text-right">
       
         <span class="text-primary-text block font-bold">下一页</span>
-        <a href="https://kunieone.github.io/docs/%E6%88%91%E7%9A%84%E6%96%87%E6%A1%A3/nestjs/%E4%BB%8B%E7%BB%8D/" class="block"></a>
+        <a href="https://kunieone.github.io/posts/deep_into_operatingsystem/" class="block">深入理解操作系统学习笔记</a>
       
     </div>
   </div>
 
 
-                    
+      
 
-
-
-                </div>
-                
-            </div>
-
-        </div>
 
 
     </div>
-</div>
+    
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
+    
+    
+  </div>
+
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
         hljs.highlightAll();
-        changeSidebarHeight();
-        switchDocToc();
-    })
-</script>
-
-
-
-
-
-
-
-
+      });
+    </script>
 
           </div>
         </div>
