@@ -189,15 +189,6 @@ On no account can we &amp;hellip;</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://kunieone.github.io/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%B6%E6%88%90%E6%9C%AC%E6%8A%BD%E8%B1%A1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kunieone.github.io/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%B6%E6%88%90%E6%9C%AC%E6%8A%BD%E8%B1%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>gRPC/RPC</title>
       <link>https://kunieone.github.io/posts/grpc%E6%98%AF%E4%B8%AA%E5%95%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -207,6 +198,15 @@ On no account can we &amp;hellip;</description>
 假如有两台服务器，一个应用部署在A服务器上，想要调用另一个B服务器上提供的一个函数方法，由于他们不在同一个地址空间，不能直接调用，需要通过网络来表达调用的语意和传达调用的数据。
 比如这样
 Employee getEmployeeByName(String fullName) 那么首先需要解决通讯的问题，主要是通过客户端和服务器之间建立TCP连接，远程过程调用的所有交换数据都在这个链接里面传输。连接可以是按需连接，调用结束之后就断掉，也可以是长连接，多个远程过程调用共享同一个连接。</description>
+    </item>
+    
+    <item>
+      <title>什么是零成本抽象? Zero Cost Abstractions</title>
+      <link>https://kunieone.github.io/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%B6%E6%88%90%E6%9C%AC%E6%8A%BD%E8%B1%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kunieone.github.io/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%B6%E6%88%90%E6%9C%AC%E6%8A%BD%E8%B1%A1/</guid>
+      <description>对于特定的编程语言来说，零成本抽象的思维十分重要，比如Rust和C++，这使得用户可以使x相对少的精力写出具有很好性能程序。因为这个想法对于我设计Rust的基础，因此让我们来探讨一下“零成本抽象”到底是什么。</description>
     </item>
     
     <item>
