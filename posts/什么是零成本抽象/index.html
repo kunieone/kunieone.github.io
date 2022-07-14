@@ -83,7 +83,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://kunieone.github.io/images/icon_hu628b2fc48bf6629fe871625913c3d339_72733_180x180_fill_box_center_3.png">
 
 <meta name="description"
-  content="对于特定的编程语言来说，零成本抽象的思维十分重要，比如Rust和C&#43;&#43;，这使得用户可以使x相对少的精力写出具有很好性能程序。因为这个想法对于我设计Rust的基础，因此让我们来探讨一下“零成本抽象”到底是什么。">
+  content="对于特定的编程语言来说，零成本抽象的思维十分重要，比如 Rust 和 C&#43;&#43;，这使得用户可以使 x 相对少的精力写出具有很好性能程序。因为这个想法对于我设计 Rust 的基础，因此让我们来探讨一下“零成本抽象”到底是什么。
+以下这个想法是出自 C&#43;&#43;初创开发者 Bjarne Stroustrup:">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,7 +113,7 @@
     },
     "headline": "什么是零成本抽象? Zero Cost Abstractions | ∆STAREVAN","datePublished": "2022-07-14T19:37:05+08:00",
     "dateModified": "2022-07-14T19:47:28+08:00",
-    "wordCount":  1 ,
+    "wordCount":  716 ,
     "publisher": {
         "@type": "Person",
         "name": "Zhao StarEvan",
@@ -121,7 +122,7 @@
             "url": "https://kunieone.github.io/images/icon.png"
         }
         },
-    "description": "对于特定的编程语言来说，零成本抽象的思维十分重要，比如Rust和C\u002b\u002b，这使得用户可以使x相对少的精力写出具有很好性能程序。因为这个想法对于我设计Rust的基础，因此让我们来探讨一下“零成本抽象”到底是什么。"
+    "description": "对于特定的编程语言来说，零成本抽象的思维十分重要，比如 Rust 和 C\u002b\u002b，这使得用户可以使 x 相对少的精力写出具有很好性能程序。因为这个想法对于我设计 Rust 的基础，因此让我们来探讨一下“零成本抽象”到底是什么。\n以下这个想法是出自 C\u002b\u002b初创开发者 Bjarne Stroustrup:"
 }
 </script><meta property="og:title" content="什么是零成本抽象? Zero Cost Abstractions | ∆STAREVAN" />
 <meta property="og:type" content="article" />
@@ -135,7 +136,8 @@
 
 
 
-<meta property="og:description" content="对于特定的编程语言来说，零成本抽象的思维十分重要，比如Rust和C&#43;&#43;，这使得用户可以使x相对少的精力写出具有很好性能程序。因为这个想法对于我设计Rust的基础，因此让我们来探讨一下“零成本抽象”到底是什么。" />
+<meta property="og:description" content="对于特定的编程语言来说，零成本抽象的思维十分重要，比如 Rust 和 C&#43;&#43;，这使得用户可以使 x 相对少的精力写出具有很好性能程序。因为这个想法对于我设计 Rust 的基础，因此让我们来探讨一下“零成本抽象”到底是什么。
+以下这个想法是出自 C&#43;&#43;初创开发者 Bjarne Stroustrup:" />
 
 
 
@@ -259,7 +261,7 @@
   </div>
   <div class="me-6 my-2">
     <i class="fas fa-clock me-1"></i>
-    <span>1分钟阅读时长</span>
+    <span>4分钟阅读时长</span>
   </div>
 
   
@@ -271,7 +273,30 @@
   
   
 
-  <p>对于特定的编程语言来说，零成本抽象的思维十分重要，比如Rust和C++，这使得用户可以使x相对少的精力写出具有很好性能程序。因为这个想法对于我设计Rust的基础，因此让我们来探讨一下“零成本抽象”到底是什么。</p>
+  <p>对于特定的编程语言来说，零成本抽象的思维十分重要，比如 Rust 和 C++，这使得用户可以使 x 相对少的精力写出具有很好性能程序。因为这个想法对于我设计 Rust 的基础，因此让我们来探讨一下“零成本抽象”到底是什么。</p>
+<p>以下这个想法是出自 C++初创开发者 Bjarne Stroustrup:</p>
+<blockquote>
+<p>What you don&rsquo;t use, you don&rsquo;t pay for. And further: What you do use,you couldn&rsquo;t hand code any better.
+以下是什么是正确的零成本抽象的两个重要因素：</p>
+</blockquote>
+<ul>
+<li><strong>No global costs.</strong> 零成本抽象不应该消极地影响程序的性能，当我们实际不用的时候。就比如：我们不能要求整个程序都携带着庞大的运行时，仅为了其中的某个模块依赖到了它的时候。</li>
+<li><strong>Optimal performance.</strong> 最佳的性能表现。零成本抽象语言应该把程序代码编译成使用低级语言编写出来的最优解代码那样。不能因为抽象就引入本来可以避免影响性能的代码。</li>
+</ul>
+<p>还必须知道有第三个关键。然而，因为它同样是所有好抽象（无论是否零成本）的关键，所以经常被忽略：</p>
+<ul>
+<li><strong>Imporve user&rsquo;s experience.</strong> 抽象，是为了包装低层代码，使程序员更容易地写出他们所想。零成本抽象（及所有的抽象）必须提供比任何替代抽象更好的体验。</li>
+</ul>
+<p>这三点一直以来总是不能被完全实现。但特别是第三点，这无关大家喜好的问题，第三点对于零成本抽象尤为重要。因为零成本抽象与其他两个选择存在着竞争：On the one hand, it must be better than handwriting code with the same performance profile yourself, that’s rather clear. But on the other, it must also be better than eating the performance cost and using an abstraction which isn’t zero cost. That doesn’t mean we need to be strictly better than the non-zero cost abstraction, because the performance cost is a factor, but we do have to be within spitting distance so that whatever additional programmer overhead you take on to be “zero cost” feels worthwhile.
+翻译不动了&hellip;</p>
+<p>(I think to some extent Rust has tried to cheat this by making non-zero cost abstractions actively unpleasant to write, making it feel like the zero cost abstraction is better. I think this is a mistake that hurts the overall UX of the language and probably just keeps some people from using it at all, hurting our overall goals.)</p>
+<p>I want to say, also, that actually creating a zero cost abstraction that achieves this trifecta is both incredibly difficult and incredibly awesome. Rust has only really done this excellently a few times (all extremely high impact), and having been involved in what I think is going to be one of those success stories - async/await of course - it feels like holding fire in your hands. Last September I commented to a friend that I was worried I would never do any work as good as the work I had just done (in reference to the Pin API), and I really did feel that. But we rarely achieve something so great, because its extremely difficult and involves a fair amount of luck as well (many problems probably just don’t have a really great zero cost abstraction yet to be discovered, at least within the design constraints prior decisions have put around them).</p>
+<p>To be clear about what I mean, I want to list a few of the really great zero cost abstractions in Rust:</p>
+<p>Ownership and borrowing. Of course this is the biggest one, guaranteed memory and thread safety without a garbage collector is Rust’s original, huge success story.
+Iterator and closure APIs. This is another classic. While there are some cases where internal iteration might be optimized better, the fact that you can write map, filter, iterative for loops, and so on over slices and be optimized to the equivalent of some handwritten C is absolutely astounding.
+Async/await and Futures. The Futures API is an important example, because the early versions of futures hit the “zero cost” part of zero cost abstraction really well, but was not actually providing a good enough UX to drive adoption. By adding pinning to support async/await, references across awaits, and so on, we’ve made a product that I really think will solve users’ problems and make Rust more viable for writing high performance network services.
+Unsafe and the module boundary. Underlying all of these, and every one of Rust’s success stories, is the notion of unsafe blocks and privacy that allow us to dip into raw pointer manipulation to build these zero cost abstractions. None of Rust’s brilliant features would be possible without this really fundamental ability to break the rules locally to extend the system beyond what the typechecker can handle. This is the zero cost abstraction that is the mother of all other zero cost abstractions in Rust.
+In other areas, we still haven’t succeeded so much at finding zero cost abstractions. One example of this is the trait object as a solution for dynamically dispatched polymorphism. (Note here that the dynamic dispatch is a part of the goal here, so the virtual call is not non-zero cost.) The problem is that the concept of object safety, as well as sized and unsized types, and probably just some bad ergonomics around the coercions, has made trait objects really unwieldly to work with; I’m usually pretty annoyed when I have to use them. For a good 18 months at least I’ve wanted to really dig into this problem space, but other things have always taken priority.</p>
 
 </article>
 
